@@ -14,11 +14,10 @@ visualización en RViz y simulación en Gazebo Sim con puente de tópicos a ROS 
 ## Video de demostración
 
 <details>
-<summary><b>▶ Ver video: el robot en RViz y en Gazebo Sim</b> (clic para abrir o cerrar)</summary>
+<summary><b>▶ Ver video: el robot diferencial en Gazebo Sim</b> (clic para abrir o cerrar)</summary>
 <br>
 
-<!-- VIDEO: reemplazar la línea siguiente por el enlace del video -->
-*Video pendiente: se agregará en esta sección.*
+[Enlace del video](docs/VIDEO.md)
 
 </details>
 
@@ -29,6 +28,9 @@ visualización en RViz y simulación en Gazebo Sim con puente de tópicos a ROS 
 ```
 rospart3/
 ├── README.md
+├── docs/
+│   ├── VIDEO.md                     Enlace al video de demostración
+│   └── video_demostracion_ros2.mp4
 └── robotica_part3/                  Paquete ROS 2 (ament_cmake)
     ├── CMakeLists.txt
     ├── package.xml
