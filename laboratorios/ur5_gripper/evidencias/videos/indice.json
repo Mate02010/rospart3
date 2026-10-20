@@ -1,0 +1,22 @@
+[
+  {
+    "file": "01_setup_assistant_resumen.mp4",
+    "duration": "117.733333",
+    "size": "1019389"
+  },
+  {
+    "file": "02_rviz_grupos_resumen.mp4",
+    "duration": "112.600000",
+    "size": "1463287"
+  },
+  {
+    "file": "03_topics_gazebo.mp4",
+    "duration": "99.000000",
+    "size": "812315"
+  },
+  {
+    "file": "04_moveit_gazebo.mp4",
+    "duration": "81.600000",
+    "size": "612924"
+  }
+]

@@ -1,5 +1,11 @@
 # ROS 2 Parte 3: robot diferencial con Launch, TF2, URDF/Xacro, RViz y Gazebo Sim
 
+## Laboratorio UR5 con gripper y MoveIt
+
+[Ver código, configuración, reporte y cuatro videos](laboratorios/ur5_gripper/README.md).
+
+Esta carpeta contiene la nueva práctica del UR5; los archivos del robot diferencial siguen disponibles en las secciones siguientes.
+
 **Curso:** Robótica, Escuela Colombiana de Ingeniería Julio Garavito\
 **Autor:** Brayan Mateo Bravo L.\
 **Entorno:** Ubuntu 24.04 (WSL2), ROS 2 Kilted, Gazebo Sim (Ionic)

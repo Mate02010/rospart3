@@ -1,0 +1,16 @@
+{
+  "success": true,
+  "extracted_copy": "/mnt/c/Users/BRAYAN MATEO BRAVO L/Documents/ChatGPT/Universidad/Robotica/Corte 2/Practica_2_UR5_Gripper/tmp/portabilidad_20261020/Laboratorio_UR5_Gripper",
+  "clean_build_packages": 4,
+  "launches_parsed": [
+    "gazebo_moveit.launch.py",
+    "demo.launch.py"
+  ],
+  "urdf_and_srdf_loaded_from_extracted_copy": true,
+  "groups": [
+    "arm",
+    "gripper"
+  ],
+  "recording_relative_path_checked": true,
+  "installed_software_modified": false
+}

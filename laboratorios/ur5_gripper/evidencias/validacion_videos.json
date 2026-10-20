@@ -1,0 +1,16 @@
+[
+  {
+    "mode": "topics",
+    "success": true,
+    "wall_duration_sec": 99.57974576950073,
+    "video": "03_topics_gazebo.mp4",
+    "movements": 8
+  },
+  {
+    "mode": "moveit",
+    "success": true,
+    "wall_duration_sec": 82.02799606323242,
+    "video": "04_moveit_gazebo.mp4",
+    "movements": 8
+  }
+]
