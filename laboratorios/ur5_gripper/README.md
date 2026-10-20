@@ -10,7 +10,7 @@ Ubuntu 24.04 en WSL2, ROS 2 Kilted, Gazebo Sim Ionic 9.5.0, MoveIt 2 y `gz_ros2_
 
 ## Archivos
 
-Código, configuración, reporte y videos del laboratorio: [abrir carpeta en GitHub](https://github.com/Mate02010/rospart3/tree/main/laboratorios/ur5_gripper). El PDF de `output/pdf` enlaza los recursos públicos. La copia local conserva los mismos archivos; extraer el ZIP completo para abrir las evidencias directamente desde sus carpetas.
+Código, configuración, reporte y videos del laboratorio: [abrir carpeta en GitHub](https://github.com/Mate02010/rospart3/tree/codex/ur5-gripper-moveit/laboratorios/ur5_gripper). El PDF de `output/pdf` enlaza los recursos públicos. La copia local conserva los mismos archivos; extraer el ZIP completo para abrir las evidencias directamente desde sus carpetas.
 
 - [Reporte PDF](output/pdf/Reporte_Laboratorio_UR5_Gripper.pdf).
 - [Índice de los cuatro videos](evidencias/videos/README.md).
@@ -29,7 +29,7 @@ Código, configuración, reporte y videos del laboratorio: [abrir carpeta en Git
 Para obtener esta versión desde GitHub, sin instalar programas:
 
 ```bash
-git clone https://github.com/Mate02010/rospart3.git
+git clone --branch codex/ur5-gripper-moveit --single-branch https://github.com/Mate02010/rospart3.git
 cd rospart3/laboratorios/ur5_gripper
 bash ejecutar.sh build
 ```

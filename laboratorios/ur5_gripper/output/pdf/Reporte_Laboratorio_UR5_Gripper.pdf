@@ -81,56 +81,56 @@ endobj
 10 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://github.com/Mate02010/rospart3/tree/main/laboratorios/ur5_gripper)
+/S /URI /Type /Action /URI (https://github.com/Mate02010/rospart3/tree/codex/ur5-gripper-moveit/laboratorios/ur5_gripper)
 >> /Border [ 0 0 0 ] /Rect [ 62 417.29 158.5117 426.89 ] /Subtype /Link /Type /Annot
 >>
 endobj
 11 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://github.com/Mate02010/rospart3/blob/main/laboratorios/ur5_gripper/codigo/src/lab_manipulador/lab_manipulador/pick_place.py)
+/S /URI /Type /Action /URI (https://github.com/Mate02010/rospart3/blob/codex/ur5-gripper-moveit/laboratorios/ur5_gripper/codigo/src/lab_manipulador/lab_manipulador/pick_place.py)
 >> /Border [ 0 0 0 ] /Rect [ 62 406.29 136.2656 415.89 ] /Subtype /Link /Type /Annot
 >>
 endobj
 12 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://github.com/Mate02010/rospart3/blob/main/laboratorios/ur5_gripper/codigo/src/ur5_gripper_moveit/package.xml)
+/S /URI /Type /Action /URI (https://github.com/Mate02010/rospart3/blob/codex/ur5-gripper-moveit/laboratorios/ur5_gripper/codigo/src/ur5_gripper_moveit/package.xml)
 >> /Border [ 0 0 0 ] /Rect [ 62 395.29 178.9648 404.89 ] /Subtype /Link /Type /Annot
 >>
 endobj
 13 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://github.com/Mate02010/rospart3/blob/main/laboratorios/ur5_gripper/evidencias/resultado_moveit.json)
+/S /URI /Type /Action /URI (https://github.com/Mate02010/rospart3/blob/codex/ur5-gripper-moveit/laboratorios/ur5_gripper/evidencias/resultado_moveit.json)
 >> /Border [ 0 0 0 ] /Rect [ 62 384.29 210.0898 393.89 ] /Subtype /Link /Type /Annot
 >>
 endobj
 14 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://raw.githubusercontent.com/Mate02010/rospart3/refs/heads/main/laboratorios/ur5_gripper/evidencias/videos/01_setup_assistant_resumen.mp4)
+/S /URI /Type /Action /URI (https://raw.githubusercontent.com/Mate02010/rospart3/refs/heads/codex/ur5-gripper-moveit/laboratorios/ur5_gripper/evidencias/videos/01_setup_assistant_resumen.mp4)
 >> /Border [ 0 0 0 ] /Rect [ 62 368.89 200.293 379.89 ] /Subtype /Link /Type /Annot
 >>
 endobj
 15 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://raw.githubusercontent.com/Mate02010/rospart3/refs/heads/main/laboratorios/ur5_gripper/evidencias/videos/02_rviz_grupos_resumen.mp4)
+/S /URI /Type /Action /URI (https://raw.githubusercontent.com/Mate02010/rospart3/refs/heads/codex/ur5-gripper-moveit/laboratorios/ur5_gripper/evidencias/videos/02_rviz_grupos_resumen.mp4)
 >> /Border [ 0 0 0 ] /Rect [ 62 352.89 217.1875 363.89 ] /Subtype /Link /Type /Annot
 >>
 endobj
 16 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://raw.githubusercontent.com/Mate02010/rospart3/refs/heads/main/laboratorios/ur5_gripper/evidencias/videos/03_topics_gazebo.mp4)
+/S /URI /Type /Action /URI (https://raw.githubusercontent.com/Mate02010/rospart3/refs/heads/codex/ur5-gripper-moveit/laboratorios/ur5_gripper/evidencias/videos/03_topics_gazebo.mp4)
 >> /Border [ 0 0 0 ] /Rect [ 62 336.89 211.4062 347.89 ] /Subtype /Link /Type /Annot
 >>
 endobj
 17 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://raw.githubusercontent.com/Mate02010/rospart3/refs/heads/main/laboratorios/ur5_gripper/evidencias/videos/04_moveit_gazebo.mp4)
+/S /URI /Type /Action /URI (https://raw.githubusercontent.com/Mate02010/rospart3/refs/heads/codex/ur5-gripper-moveit/laboratorios/ur5_gripper/evidencias/videos/04_moveit_gazebo.mp4)
 >> /Border [ 0 0 0 ] /Rect [ 62 320.89 190.5078 331.89 ] /Subtype /Link /Type /Annot
 >>
 endobj
@@ -543,7 +543,7 @@ endobj
 endobj
 31 0 obj
 <<
-/Author (Brayan Mateo Bravo Losada) /CreationDate (D:20261020114059-05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261020114059-05'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+/Author (Brayan Mateo Bravo Losada) /CreationDate (D:20261020114741-05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261020114741-05'00') /Producer (ReportLab PDF Library - \(opensource\)) 
   /Subject (\(unspecified\)) /Title (UR5 con gripper: ROS 2 y MoveIt) /Trapped /False
 >>
 endobj
@@ -600,37 +600,37 @@ xref
 0000399724 00000 n 
 0000571300 00000 n 
 0000571612 00000 n 
-0000571827 00000 n 
-0000572099 00000 n 
-0000572356 00000 n 
-0000572604 00000 n 
-0000572888 00000 n 
-0000573169 00000 n 
-0000573444 00000 n 
-0000573719 00000 n 
-0000573917 00000 n 
-0000574128 00000 n 
-0000574324 00000 n 
-0000574618 00000 n 
-0000575386 00000 n 
-0000613876 00000 n 
-0000614122 00000 n 
-0000615282 00000 n 
-0000616043 00000 n 
-0000645949 00000 n 
-0000646207 00000 n 
-0000647393 00000 n 
-0000647463 00000 n 
-0000647774 00000 n 
-0000647859 00000 n 
-0000649726 00000 n 
-0000651818 00000 n 
-0000653565 00000 n 
-0000655487 00000 n 
+0000571847 00000 n 
+0000572139 00000 n 
+0000572416 00000 n 
+0000572684 00000 n 
+0000572988 00000 n 
+0000573289 00000 n 
+0000573584 00000 n 
+0000573879 00000 n 
+0000574077 00000 n 
+0000574288 00000 n 
+0000574484 00000 n 
+0000574778 00000 n 
+0000575546 00000 n 
+0000614036 00000 n 
+0000614282 00000 n 
+0000615442 00000 n 
+0000616203 00000 n 
+0000646109 00000 n 
+0000646367 00000 n 
+0000647553 00000 n 
+0000647623 00000 n 
+0000647934 00000 n 
+0000648019 00000 n 
+0000649886 00000 n 
+0000651978 00000 n 
+0000653725 00000 n 
+0000655647 00000 n 
 trailer
 <<
 /ID 
-[<d1bc22df3834dd0324db7f37355248df><d1bc22df3834dd0324db7f37355248df>]
+[<12c494a4c761f54f48a5152700d6b9c7><12c494a4c761f54f48a5152700d6b9c7>]
 % ReportLab generated PDF document -- digest (opensource)
 
 /Info 31 0 R
@@ -638,5 +638,5 @@ trailer
 /Size 38
 >>
 startxref
-657779
+657939
 %%EOF

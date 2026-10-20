@@ -20,14 +20,14 @@
   "pdf_pages": 5,
   "local_pdf_links_verified": 0,
   "github_pdf_links": [
-    "https://github.com/Mate02010/rospart3/tree/main/laboratorios/ur5_gripper",
-    "https://github.com/Mate02010/rospart3/blob/main/laboratorios/ur5_gripper/codigo/src/lab_manipulador/lab_manipulador/pick_place.py",
-    "https://github.com/Mate02010/rospart3/blob/main/laboratorios/ur5_gripper/codigo/src/ur5_gripper_moveit/package.xml",
-    "https://github.com/Mate02010/rospart3/blob/main/laboratorios/ur5_gripper/evidencias/resultado_moveit.json",
-    "https://raw.githubusercontent.com/Mate02010/rospart3/refs/heads/main/laboratorios/ur5_gripper/evidencias/videos/01_setup_assistant_resumen.mp4",
-    "https://raw.githubusercontent.com/Mate02010/rospart3/refs/heads/main/laboratorios/ur5_gripper/evidencias/videos/02_rviz_grupos_resumen.mp4",
-    "https://raw.githubusercontent.com/Mate02010/rospart3/refs/heads/main/laboratorios/ur5_gripper/evidencias/videos/03_topics_gazebo.mp4",
-    "https://raw.githubusercontent.com/Mate02010/rospart3/refs/heads/main/laboratorios/ur5_gripper/evidencias/videos/04_moveit_gazebo.mp4"
+    "https://github.com/Mate02010/rospart3/tree/codex/ur5-gripper-moveit/laboratorios/ur5_gripper",
+    "https://github.com/Mate02010/rospart3/blob/codex/ur5-gripper-moveit/laboratorios/ur5_gripper/codigo/src/lab_manipulador/lab_manipulador/pick_place.py",
+    "https://github.com/Mate02010/rospart3/blob/codex/ur5-gripper-moveit/laboratorios/ur5_gripper/codigo/src/ur5_gripper_moveit/package.xml",
+    "https://github.com/Mate02010/rospart3/blob/codex/ur5-gripper-moveit/laboratorios/ur5_gripper/evidencias/resultado_moveit.json",
+    "https://raw.githubusercontent.com/Mate02010/rospart3/refs/heads/codex/ur5-gripper-moveit/laboratorios/ur5_gripper/evidencias/videos/01_setup_assistant_resumen.mp4",
+    "https://raw.githubusercontent.com/Mate02010/rospart3/refs/heads/codex/ur5-gripper-moveit/laboratorios/ur5_gripper/evidencias/videos/02_rviz_grupos_resumen.mp4",
+    "https://raw.githubusercontent.com/Mate02010/rospart3/refs/heads/codex/ur5-gripper-moveit/laboratorios/ur5_gripper/evidencias/videos/03_topics_gazebo.mp4",
+    "https://raw.githubusercontent.com/Mate02010/rospart3/refs/heads/codex/ur5-gripper-moveit/laboratorios/ur5_gripper/evidencias/videos/04_moveit_gazebo.mp4"
   ],
   "videos": [
     {
