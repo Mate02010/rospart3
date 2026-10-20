@@ -1,0 +1,4425 @@
+{
+  "success": true,
+  "error": null,
+  "mode": "moveit",
+  "poses": {
+    "Preparacion": [
+      0.0,
+      -1.57,
+      1.57,
+      -1.57,
+      -1.57,
+      0.0
+    ],
+    "Recogida": [
+      0.35,
+      -1.45,
+      1.8,
+      -1.92,
+      -1.57,
+      0.0
+    ],
+    "Intermedio": [
+      0.0,
+      -1.2,
+      1.4,
+      -1.77,
+      -1.57,
+      0.0
+    ],
+    "Entrega": [
+      -0.4,
+      -1.45,
+      1.8,
+      -1.92,
+      -1.57,
+      0.0
+    ]
+  },
+  "events": [
+    {
+      "time": 1792484193.5632174,
+      "kind": "motion_start",
+      "group": "arm",
+      "point": "Preparacion",
+      "target": [
+        0.0,
+        -1.57,
+        1.57,
+        -1.57,
+        -1.57,
+        0.0
+      ],
+      "mode": "moveit"
+    },
+    {
+      "time": 1792484194.3624806,
+      "kind": "plan_success",
+      "point": "Preparacion",
+      "group": "arm",
+      "trajectory_points": 1
+    },
+    {
+      "time": 1792484194.6422265,
+      "kind": "motion_success",
+      "point": "Preparacion",
+      "group": "arm",
+      "max_error": 2.568611989772762e-12
+    },
+    {
+      "time": 1792484194.8393176,
+      "kind": "info",
+      "point": "Preparacion",
+      "message": "Inicio de rutina Pick and Place"
+    },
+    {
+      "time": 1792484195.0441265,
+      "kind": "motion_start",
+      "group": "gripper",
+      "point": "Pinza abierta",
+      "target": [
+        0.04,
+        0.04
+      ],
+      "mode": "moveit"
+    },
+    {
+      "time": 1792484195.2395132,
+      "kind": "plan_success",
+      "point": "Pinza abierta",
+      "group": "gripper",
+      "trajectory_points": 1
+    },
+    {
+      "time": 1792484195.4748595,
+      "kind": "motion_success",
+      "point": "Pinza abierta",
+      "group": "gripper",
+      "max_error": 1.942890293094024e-16
+    },
+    {
+      "time": 1792484195.6588988,
+      "kind": "motion_start",
+      "group": "arm",
+      "point": "Recogida",
+      "target": [
+        0.35,
+        -1.45,
+        1.8,
+        -1.92,
+        -1.57,
+        0.0
+      ],
+      "mode": "moveit"
+    },
+    {
+      "time": 1792484195.9467738,
+      "kind": "plan_success",
+      "point": "Recogida",
+      "group": "arm",
+      "trajectory_points": 23
+    },
+    {
+      "time": 1792484203.8159401,
+      "kind": "motion_success",
+      "point": "Recogida",
+      "group": "arm",
+      "max_error": 0.0008572505216287163
+    },
+    {
+      "time": 1792484204.0159633,
+      "kind": "motion_start",
+      "group": "gripper",
+      "point": "Pinza cerrada",
+      "target": [
+        0.004,
+        0.004
+      ],
+      "mode": "moveit"
+    },
+    {
+      "time": 1792484204.3363945,
+      "kind": "plan_success",
+      "point": "Pinza cerrada",
+      "group": "gripper",
+      "trajectory_points": 18
+    },
+    {
+      "time": 1792484210.340837,
+      "kind": "motion_success",
+      "point": "Pinza cerrada",
+      "group": "gripper",
+      "max_error": 0.0009489397731778189
+    },
+    {
+      "time": 1792484210.5001922,
+      "kind": "logical_pick",
+      "point": "Recogida",
+      "message": "Pieza representada por estado logico"
+    },
+    {
+      "time": 1792484210.6529665,
+      "kind": "motion_start",
+      "group": "arm",
+      "point": "Intermedio",
+      "target": [
+        0.0,
+        -1.2,
+        1.4,
+        -1.77,
+        -1.57,
+        0.0
+      ],
+      "mode": "moveit"
+    },
+    {
+      "time": 1792484210.8790185,
+      "kind": "plan_success",
+      "point": "Intermedio",
+      "group": "arm",
+      "trajectory_points": 25
+    },
+    {
+      "time": 1792484219.0328584,
+      "kind": "motion_success",
+      "point": "Intermedio",
+      "group": "arm",
+      "max_error": 0.0009367300740510398
+    },
+    {
+      "time": 1792484219.272834,
+      "kind": "digital_output",
+      "point": "Intermedio",
+      "value": true
+    },
+    {
+      "time": 1792484219.4564385,
+      "kind": "motion_start",
+      "group": "arm",
+      "point": "Entrega",
+      "target": [
+        -0.4,
+        -1.45,
+        1.8,
+        -1.92,
+        -1.57,
+        0.0
+      ],
+      "mode": "moveit"
+    },
+    {
+      "time": 1792484219.783147,
+      "kind": "plan_success",
+      "point": "Entrega",
+      "group": "arm",
+      "trajectory_points": 25
+    },
+    {
+      "time": 1792484228.855959,
+      "kind": "motion_success",
+      "point": "Entrega",
+      "group": "arm",
+      "max_error": 0.0008340769661527894
+    },
+    {
+      "time": 1792484229.0438516,
+      "kind": "motion_start",
+      "group": "gripper",
+      "point": "Pinza abierta",
+      "target": [
+        0.04,
+        0.04
+      ],
+      "mode": "moveit"
+    },
+    {
+      "time": 1792484229.3353064,
+      "kind": "plan_success",
+      "point": "Pinza abierta",
+      "group": "gripper",
+      "trajectory_points": 18
+    },
+    {
+      "time": 1792484235.874458,
+      "kind": "motion_success",
+      "point": "Pinza abierta",
+      "group": "gripper",
+      "max_error": 0.000871400775784438
+    },
+    {
+      "time": 1792484236.0363798,
+      "kind": "logical_place",
+      "point": "Entrega"
+    },
+    {
+      "time": 1792484236.1896148,
+      "kind": "wait_input",
+      "point": "Entrega",
+      "message": "Esperando entrada BAJA seguida de ALTA"
+    },
+    {
+      "time": 1792484237.792783,
+      "kind": "digital_input_confirmed",
+      "point": "Entrega",
+      "value": true
+    },
+    {
+      "time": 1792484237.9383607,
+      "kind": "motion_start",
+      "group": "arm",
+      "point": "Preparacion final",
+      "target": [
+        0.0,
+        -1.57,
+        1.57,
+        -1.57,
+        -1.57,
+        0.0
+      ],
+      "mode": "moveit"
+    },
+    {
+      "time": 1792484238.164184,
+      "kind": "plan_success",
+      "point": "Preparacion final",
+      "group": "arm",
+      "trajectory_points": 25
+    },
+    {
+      "time": 1792484246.9252567,
+      "kind": "motion_success",
+      "point": "Preparacion final",
+      "group": "arm",
+      "max_error": 0.0007286322972521742
+    },
+    {
+      "time": 1792484247.0893452,
+      "kind": "completed",
+      "distinct_arm_points": 4
+    }
+  ],
+  "joint_samples": [
+    {
+      "time": 1792484193.561933,
+      "joints": {
+        "elbow_joint": 1.5700000000012695,
+        "gripper_finger_joint": 0.04000000000000011,
+        "right_finger_joint": 0.03999999999999989,
+        "shoulder_lift_joint": -1.5699999999997043,
+        "shoulder_pan_joint": 5.771807515152128e-21,
+        "wrist_1_joint": -1.5699999999974315,
+        "wrist_2_joint": -1.5699999999999996,
+        "wrist_3_joint": -8.33242435006877e-21
+      }
+    },
+    {
+      "time": 1792484194.2896934,
+      "joints": {
+        "elbow_joint": 1.5700000000012695,
+        "gripper_finger_joint": 0.04000000000000011,
+        "right_finger_joint": 0.03999999999999989,
+        "shoulder_lift_joint": -1.5699999999997043,
+        "shoulder_pan_joint": 4.524975016793792e-21,
+        "wrist_1_joint": -1.5699999999974315,
+        "wrist_2_joint": -1.5699999999999996,
+        "wrist_3_joint": -9.767298162717545e-21
+      }
+    },
+    {
+      "time": 1792484194.5813591,
+      "joints": {
+        "elbow_joint": 1.5700000000012695,
+        "gripper_finger_joint": 0.04000000000000011,
+        "right_finger_joint": 0.03999999999999989,
+        "shoulder_lift_joint": -1.5699999999997043,
+        "shoulder_pan_joint": 5.77350158104663e-21,
+        "wrist_1_joint": -1.5699999999974315,
+        "wrist_2_joint": -1.5699999999999996,
+        "wrist_3_joint": -7.388829646827469e-21
+      }
+    },
+    {
+      "time": 1792484195.2212756,
+      "joints": {
+        "elbow_joint": 1.5700000000025347,
+        "gripper_finger_joint": 0.04000000000000011,
+        "right_finger_joint": 0.03999999999999989,
+        "shoulder_lift_joint": -1.5699999999994125,
+        "shoulder_pan_joint": 1.419752232159523e-21,
+        "wrist_1_joint": -1.5699999999948642,
+        "wrist_2_joint": -1.5699999999999996,
+        "wrist_3_joint": -2.590496987380649e-20
+      }
+    },
+    {
+      "time": 1792484195.4120827,
+      "joints": {
+        "elbow_joint": 1.5700000000025347,
+        "gripper_finger_joint": 0.04000000000000011,
+        "right_finger_joint": 0.03999999999999989,
+        "shoulder_lift_joint": -1.5699999999994125,
+        "shoulder_pan_joint": -5.9867038586320785e-21,
+        "wrist_1_joint": -1.5699999999948628,
+        "wrist_2_joint": -1.5699999999999996,
+        "wrist_3_joint": -2.233218490228785e-20
+      }
+    },
+    {
+      "time": 1792484195.854001,
+      "joints": {
+        "elbow_joint": 1.5700000000025347,
+        "gripper_finger_joint": 0.04000000000000022,
+        "right_finger_joint": 0.03999999999999978,
+        "shoulder_lift_joint": -1.5699999999994125,
+        "shoulder_pan_joint": -1.069959517715501e-20,
+        "wrist_1_joint": -1.5699999999948628,
+        "wrist_2_joint": -1.5699999999999996,
+        "wrist_3_joint": -7.750960515232747e-20
+      }
+    },
+    {
+      "time": 1792484196.1419349,
+      "joints": {
+        "elbow_joint": 1.5700000000025347,
+        "gripper_finger_joint": 0.04000000000000022,
+        "right_finger_joint": 0.03999999999999978,
+        "shoulder_lift_joint": -1.5699999999994125,
+        "shoulder_pan_joint": -9.86442069116227e-21,
+        "wrist_1_joint": -1.5699999999948628,
+        "wrist_2_joint": -1.5699999999999996,
+        "wrist_3_joint": -7.700307944986944e-20
+      }
+    },
+    {
+      "time": 1792484196.2991667,
+      "joints": {
+        "elbow_joint": 1.5700521182384186,
+        "gripper_finger_joint": 0.04000000000000202,
+        "right_finger_joint": 0.03999999999999798,
+        "shoulder_lift_joint": -1.5699728823289392,
+        "shoulder_pan_joint": 7.927955805415456e-05,
+        "wrist_1_joint": -1.5700790772412125,
+        "wrist_2_joint": -1.5699998659822574,
+        "wrist_3_joint": 1.8994611646350378e-07
+      }
+    },
+    {
+      "time": 1792484196.4523957,
+      "joints": {
+        "elbow_joint": 1.570366187985476,
+        "gripper_finger_joint": 0.04000000000000331,
+        "right_finger_joint": 0.03999999999999669,
+        "shoulder_lift_joint": -1.5698094685092978,
+        "shoulder_pan_joint": 0.0005570261818642069,
+        "wrist_1_joint": -1.570555604726679,
+        "wrist_2_joint": -1.5699990583777115,
+        "wrist_3_joint": 1.3345805811985143e-06
+      }
+    },
+    {
+      "time": 1792484196.6055284,
+      "joints": {
+        "elbow_joint": 1.5709794646163842,
+        "gripper_finger_joint": 0.040000000000003706,
+        "right_finger_joint": 0.039999999999996295,
+        "shoulder_lift_joint": -1.569490374175243,
+        "shoulder_pan_joint": 0.0014899108127008828,
+        "wrist_1_joint": -1.571486108775338,
+        "wrist_2_joint": -1.56999748138723,
+        "wrist_3_joint": 3.5696814589534984e-06
+      }
+    },
+    {
+      "time": 1792484196.7560043,
+      "joints": {
+        "elbow_joint": 1.5718557476033486,
+        "gripper_finger_joint": 0.04000000000000369,
+        "right_finger_joint": 0.039999999999996316,
+        "shoulder_lift_joint": -1.569034434845287,
+        "shoulder_pan_joint": 0.0028228670833742257,
+        "wrist_1_joint": -1.572815663540839,
+        "wrist_2_joint": -1.5699952280975014,
+        "wrist_3_joint": 6.763315088580224e-06
+      }
+    },
+    {
+      "time": 1792484196.9113936,
+      "joints": {
+        "elbow_joint": 1.5730057288895571,
+        "gripper_finger_joint": 0.04000000000000448,
+        "right_finger_joint": 0.039999999999995525,
+        "shoulder_lift_joint": -1.5684360873880203,
+        "shoulder_pan_joint": 0.00457215902378304,
+        "wrist_1_joint": -1.5745604915496887,
+        "wrist_2_joint": -1.5699922710150829,
+        "wrist_3_joint": 1.095444850671027e-05
+      }
+    },
+    {
+      "time": 1792484197.063928,
+      "joints": {
+        "elbow_joint": 1.5745488437645896,
+        "gripper_finger_joint": 0.04000000000000352,
+        "right_finger_joint": 0.03999999999999649,
+        "shoulder_lift_joint": -1.5676331883558197,
+        "shoulder_pan_joint": 0.006919465407273353,
+        "wrist_1_joint": -1.576901807958126,
+        "wrist_2_joint": -1.5699883030219148,
+        "wrist_3_joint": 1.6578366386069842e-05
+      }
+    },
+    {
+      "time": 1792484197.2165136,
+      "joints": {
+        "elbow_joint": 1.576382733252308,
+        "gripper_finger_joint": 0.04000000000000453,
+        "right_finger_joint": 0.03999999999999548,
+        "shoulder_lift_joint": -1.5666789962093512,
+        "shoulder_pan_joint": 0.009709083063613566,
+        "wrist_1_joint": -1.579684306927179,
+        "wrist_2_joint": -1.5699835873257315,
+        "wrist_3_joint": 2.3262019075716757e-05
+      }
+    },
+    {
+      "time": 1792484197.3707564,
+      "joints": {
+        "elbow_joint": 1.5787891760798751,
+        "gripper_finger_joint": 0.04000000000000361,
+        "right_finger_joint": 0.039999999999996406,
+        "shoulder_lift_joint": -1.5654268984889792,
+        "shoulder_pan_joint": 0.013369639190737474,
+        "wrist_1_joint": -1.5833355218621952,
+        "wrist_2_joint": -1.5699773993556416,
+        "wrist_3_joint": 3.2032355661978575e-05
+      }
+    },
+    {
+      "time": 1792484197.5269566,
+      "joints": {
+        "elbow_joint": 1.5810338844729106,
+        "gripper_finger_joint": 0.04000000000000362,
+        "right_finger_joint": 0.0399999999999964,
+        "shoulder_lift_joint": -1.5642589529098763,
+        "shoulder_pan_joint": 0.016784173277155853,
+        "wrist_1_joint": -1.586741342567992,
+        "wrist_2_joint": -1.5699716272723763,
+        "wrist_3_joint": 4.0213247359590895e-05
+      }
+    },
+    {
+      "time": 1792484197.6789882,
+      "joints": {
+        "elbow_joint": 1.5842578902535749,
+        "gripper_finger_joint": 0.04000000000000465,
+        "right_finger_joint": 0.03999999999999538,
+        "shoulder_lift_joint": -1.562581468515817,
+        "shoulder_pan_joint": 0.02168836380232579,
+        "wrist_1_joint": -1.5916330183319758,
+        "wrist_2_joint": -1.5699633370063222,
+        "wrist_3_joint": 5.1963211056458684e-05
+      }
+    },
+    {
+      "time": 1792484197.8371785,
+      "joints": {
+        "elbow_joint": 1.5877432397352826,
+        "gripper_finger_joint": 0.04000000000000463,
+        "right_finger_joint": 0.03999999999999541,
+        "shoulder_lift_joint": -1.560768004222896,
+        "shoulder_pan_joint": 0.026990096822655473,
+        "wrist_1_joint": -1.5969212221220812,
+        "wrist_2_joint": -1.5699543747163947,
+        "wrist_3_joint": 6.466564791928804e-05
+      }
+    },
+    {
+      "time": 1792484197.98763,
+      "joints": {
+        "elbow_joint": 1.5910351114028285,
+        "gripper_finger_joint": 0.04000000000000166,
+        "right_finger_joint": 0.039999999999998384,
+        "shoulder_lift_joint": -1.5590552084882665,
+        "shoulder_pan_joint": 0.031997521418114606,
+        "wrist_1_joint": -1.6019158685183919,
+        "wrist_2_joint": -1.5699459099387472,
+        "wrist_3_joint": 7.666295040448228e-05
+      }
+    },
+    {
+      "time": 1792484198.1390967,
+      "joints": {
+        "elbow_joint": 1.5946660533354862,
+        "gripper_finger_joint": 0.04000000000000458,
+        "right_finger_joint": 0.03999999999999547,
+        "shoulder_lift_joint": -1.5571659908992954,
+        "shoulder_pan_joint": 0.03752072213022319,
+        "wrist_1_joint": -1.6074249748478628,
+        "wrist_2_joint": -1.5699365732698185,
+        "wrist_3_joint": 8.989600233028169e-05
+      }
+    },
+    {
+      "time": 1792484198.2939005,
+      "joints": {
+        "elbow_joint": 1.5985647416966091,
+        "gripper_finger_joint": 0.040000000000003984,
+        "right_finger_joint": 0.03999999999999607,
+        "shoulder_lift_joint": -1.555137462004495,
+        "shoulder_pan_joint": 0.043451204834645624,
+        "wrist_1_joint": -1.6133403238468387,
+        "wrist_2_joint": -1.5699265481129063,
+        "wrist_3_joint": 0.0001041048623057902
+      }
+    },
+    {
+      "time": 1792484198.4475753,
+      "joints": {
+        "elbow_joint": 1.6016076595599724,
+        "gripper_finger_joint": 0.04000000000000481,
+        "right_finger_joint": 0.039999999999995255,
+        "shoulder_lift_joint": -1.5535541995740083,
+        "shoulder_pan_joint": 0.04807993380401691,
+        "wrist_1_joint": -1.6179572409917407,
+        "wrist_2_joint": -1.5699187234995553,
+        "wrist_3_joint": 0.00011519484689600695
+      }
+    },
+    {
+      "time": 1792484198.597888,
+      "joints": {
+        "elbow_joint": 1.605954216436635,
+        "gripper_finger_joint": 0.040000000000008244,
+        "right_finger_joint": 0.03999999999999183,
+        "shoulder_lift_joint": -1.5512926399415075,
+        "shoulder_pan_joint": 0.05469169088569114,
+        "wrist_1_joint": -1.6245521258576328,
+        "wrist_2_joint": -1.5699075466855794,
+        "wrist_3_joint": 0.00013103597405075292
+      }
+    },
+    {
+      "time": 1792484198.7485893,
+      "joints": {
+        "elbow_joint": 1.6106594402816565,
+        "gripper_finger_joint": 0.04000000000000425,
+        "right_finger_joint": 0.03999999999999584,
+        "shoulder_lift_joint": -1.5488444620821806,
+        "shoulder_pan_joint": 0.061849033573435505,
+        "wrist_1_joint": -1.631691204076591,
+        "wrist_2_joint": -1.5698954475888824,
+        "wrist_3_joint": 0.00014818427126035537
+      }
+    },
+    {
+      "time": 1792484198.905092,
+      "joints": {
+        "elbow_joint": 1.616158984044472,
+        "gripper_finger_joint": 0.04000000000000388,
+        "right_finger_joint": 0.03999999999999621,
+        "shoulder_lift_joint": -1.5459829911468954,
+        "shoulder_pan_joint": 0.07021465455838587,
+        "wrist_1_joint": -1.6400354772471835,
+        "wrist_2_joint": -1.5698813059637922,
+        "wrist_3_joint": 0.00016822748580344604
+      }
+    },
+    {
+      "time": 1792484199.0568733,
+      "joints": {
+        "elbow_joint": 1.6217154220314483,
+        "gripper_finger_joint": 0.04000000000000378,
+        "right_finger_joint": 0.03999999999999632,
+        "shoulder_lift_joint": -1.5430919175434887,
+        "shoulder_pan_joint": 0.07866682008886894,
+        "wrist_1_joint": -1.6484660741145662,
+        "wrist_2_joint": -1.5698670180398797,
+        "wrist_3_joint": 0.000188478052663921
+      }
+    },
+    {
+      "time": 1792484199.2123067,
+      "joints": {
+        "elbow_joint": 1.6275566628148708,
+        "gripper_finger_joint": 0.0400000000000065,
+        "right_finger_joint": 0.03999999999999362,
+        "shoulder_lift_joint": -1.5400526580251257,
+        "shoulder_pan_joint": 0.08755221287480085,
+        "wrist_1_joint": -1.6573287927062283,
+        "wrist_2_joint": -1.5698519977689944,
+        "wrist_3_joint": 0.00020976658991359148
+      }
+    },
+    {
+      "time": 1792484199.3655772,
+      "joints": {
+        "elbow_joint": 1.6347032035962608,
+        "gripper_finger_joint": 0.04000000000000536,
+        "right_finger_joint": 0.03999999999999477,
+        "shoulder_lift_joint": -1.5363342370768196,
+        "shoulder_pan_joint": 0.0984231603768149,
+        "wrist_1_joint": -1.6681719991750712,
+        "wrist_2_joint": -1.5698336210263377,
+        "wrist_3_joint": 0.00023581232321316008
+      }
+    },
+    {
+      "time": 1792484199.518798,
+      "joints": {
+        "elbow_joint": 1.6425808421531314,
+        "gripper_finger_joint": 0.039999999999998516,
+        "right_finger_joint": 0.040000000000001625,
+        "shoulder_lift_joint": -1.5322354182035978,
+        "shoulder_pan_joint": 0.1104062159292892,
+        "wrist_1_joint": -1.6801244757607896,
+        "wrist_2_joint": -1.5698133643257446,
+        "wrist_3_joint": 0.000264522559268251
+      }
+    },
+    {
+      "time": 1792484199.6714392,
+      "joints": {
+        "elbow_joint": 1.6516689415083248,
+        "gripper_finger_joint": 0.04000000000000497,
+        "right_finger_joint": 0.039999999999995185,
+        "shoulder_lift_joint": -1.5275067837416354,
+        "shoulder_pan_joint": 0.12423056172199894,
+        "wrist_1_joint": -1.69391354388942,
+        "wrist_2_joint": -1.569789995024755,
+        "wrist_3_joint": 0.0002976443477458082
+      }
+    },
+    {
+      "time": 1792484199.823834,
+      "joints": {
+        "elbow_joint": 1.6608849042480924,
+        "gripper_finger_joint": 0.04000000000000391,
+        "right_finger_joint": 0.03999999999999628,
+        "shoulder_lift_joint": -1.5227116206048623,
+        "shoulder_pan_joint": 0.13824940666939675,
+        "wrist_1_joint": -1.70789661483988,
+        "wrist_2_joint": -1.5697662969335027,
+        "wrist_3_joint": 0.00033123213727465555
+      }
+    },
+    {
+      "time": 1792484199.978083,
+      "joints": {
+        "elbow_joint": 1.6690186413583814,
+        "gripper_finger_joint": 0.04000000000000455,
+        "right_finger_joint": 0.03999999999999564,
+        "shoulder_lift_joint": -1.5184795509386972,
+        "shoulder_pan_joint": 0.1506220260703037,
+        "wrist_1_joint": -1.7202376611654047,
+        "wrist_2_joint": -1.5697453816965847,
+        "wrist_3_joint": 0.0003608757304492013
+      }
+    },
+    {
+      "time": 1792484200.130249,
+      "joints": {
+        "elbow_joint": 1.6774604298211346,
+        "gripper_finger_joint": 0.0400000000000092,
+        "right_finger_joint": 0.03999999999999101,
+        "shoulder_lift_joint": -1.5140871988873583,
+        "shoulder_pan_joint": 0.16346323722533668,
+        "wrist_1_joint": -1.7330461034689866,
+        "wrist_2_joint": -1.569723674330954,
+        "wrist_3_joint": 0.0003916420239155216
+      }
+    },
+    {
+      "time": 1792484200.2818186,
+      "joints": {
+        "elbow_joint": 1.687535998013553,
+        "gripper_finger_joint": 0.04000000000000218,
+        "right_finger_joint": 0.039999999999998044,
+        "shoulder_lift_joint": -1.5088447739185815,
+        "shoulder_pan_joint": 0.17878966944242206,
+        "wrist_1_joint": -1.7483334249217963,
+        "wrist_2_joint": -1.5696977658348263,
+        "wrist_3_joint": 0.0004283626654035982
+      }
+    },
+    {
+      "time": 1792484200.4410357,
+      "joints": {
+        "elbow_joint": 1.6966354885686614,
+        "gripper_finger_joint": 0.03999999999999769,
+        "right_finger_joint": 0.04000000000000253,
+        "shoulder_lift_joint": -1.504110212494525,
+        "shoulder_pan_joint": 0.19263134293810863,
+        "wrist_1_joint": -1.762139776535567,
+        "wrist_2_joint": -1.5696743672421989,
+        "wrist_3_joint": 0.00046152596935342593
+      }
+    },
+    {
+      "time": 1792484200.5962508,
+      "joints": {
+        "elbow_joint": 1.7057337660304384,
+        "gripper_finger_joint": 0.03999999999999735,
+        "right_finger_joint": 0.040000000000002846,
+        "shoulder_lift_joint": -1.4993762822557872,
+        "shoulder_pan_joint": 0.2064711711390988,
+        "wrist_1_joint": -1.7759442875636087,
+        "wrist_2_joint": -1.5696509717689795,
+        "wrist_3_joint": 0.0004946848521639293
+      }
+    },
+    {
+      "time": 1792484200.748416,
+      "joints": {
+        "elbow_joint": 1.7144261702228234,
+        "gripper_finger_joint": 0.039999999999997066,
+        "right_finger_joint": 0.04000000000000312,
+        "shoulder_lift_joint": -1.4948535321828729,
+        "shoulder_pan_joint": 0.21969360595509024,
+        "wrist_1_joint": -1.7891329807022862,
+        "wrist_2_joint": -1.5696286199655372,
+        "wrist_3_joint": 0.0005263645204492867
+      }
+    },
+    {
+      "time": 1792484200.9008677,
+      "joints": {
+        "elbow_joint": 1.723392366701207,
+        "gripper_finger_joint": 0.03999999999999763,
+        "right_finger_joint": 0.04000000000000254,
+        "shoulder_lift_joint": -1.4901883250803407,
+        "shoulder_pan_joint": 0.23333251940860011,
+        "wrist_1_joint": -1.802737089687261,
+        "wrist_2_joint": -1.569605564127727,
+        "wrist_3_joint": 0.0005590420310600671
+      }
+    },
+    {
+      "time": 1792484201.0512378,
+      "joints": {
+        "elbow_joint": 1.7295169259228984,
+        "gripper_finger_joint": 0.03999999999999894,
+        "right_finger_joint": 0.040000000000001215,
+        "shoulder_lift_joint": -1.4870016519743252,
+        "shoulder_pan_joint": 0.24264888152122313,
+        "wrist_1_joint": -1.8120296778362948,
+        "wrist_2_joint": -1.569589815326735,
+        "wrist_3_joint": 0.0005813631289135566
+      }
+    },
+    {
+      "time": 1792484201.2017877,
+      "joints": {
+        "elbow_joint": 1.7373028730300069,
+        "gripper_finger_joint": 0.03999999999999475,
+        "right_finger_joint": 0.04000000000000538,
+        "shoulder_lift_joint": -1.4829505411346795,
+        "shoulder_pan_joint": 0.2544924607917973,
+        "wrist_1_joint": -1.8238430340627654,
+        "wrist_2_joint": -1.5695697944032005,
+        "wrist_3_joint": 0.0006097391933626044
+      }
+    },
+    {
+      "time": 1792484201.3529277,
+      "joints": {
+        "elbow_joint": 1.7449905542293391,
+        "gripper_finger_joint": 0.03999999999999936,
+        "right_finger_joint": 0.04000000000000076,
+        "shoulder_lift_joint": -1.4789505590888221,
+        "shoulder_pan_joint": 0.26618656305564764,
+        "wrist_1_joint": -1.8355072947255984,
+        "wrist_2_joint": -1.5695500261624589,
+        "wrist_3_joint": 0.0006377571254516661
+      }
+    },
+    {
+      "time": 1792484201.5099077,
+      "joints": {
+        "elbow_joint": 1.7524494493098264,
+        "gripper_finger_joint": 0.03999999999999087,
+        "right_finger_joint": 0.04000000000000923,
+        "shoulder_lift_joint": -1.4750696168865913,
+        "shoulder_pan_joint": 0.27753264773118924,
+        "wrist_1_joint": -1.846824425888833,
+        "wrist_2_joint": -1.5695308462263082,
+        "wrist_3_joint": 0.0006649412412117225
+      }
+    },
+    {
+      "time": 1792484201.6623547,
+      "joints": {
+        "elbow_joint": 1.758049220401618,
+        "gripper_finger_joint": 0.03999999999999255,
+        "right_finger_joint": 0.04000000000000755,
+        "shoulder_lift_joint": -1.4721559966092561,
+        "shoulder_pan_joint": 0.28605072933519693,
+        "wrist_1_joint": -1.8553207706217956,
+        "wrist_2_joint": -1.5695164468748923,
+        "wrist_3_joint": 0.0006853497365789144
+      }
+    },
+    {
+      "time": 1792484201.8172925,
+      "joints": {
+        "elbow_joint": 1.762100924086102,
+        "gripper_finger_joint": 0.039999999999998245,
+        "right_finger_joint": 0.04000000000000184,
+        "shoulder_lift_joint": -1.4700478522191762,
+        "shoulder_pan_joint": 0.2922139710202671,
+        "wrist_1_joint": -1.8614682846353667,
+        "wrist_2_joint": -1.569506028251704,
+        "wrist_3_joint": 0.0007001162644534823
+      }
+    },
+    {
+      "time": 1792484201.9727905,
+      "joints": {
+        "elbow_joint": 1.7677755173414926,
+        "gripper_finger_joint": 0.03999999999999988,
+        "right_finger_joint": 0.040000000000000195,
+        "shoulder_lift_joint": -1.4670953011767291,
+        "shoulder_pan_joint": 0.300845868222248,
+        "wrist_1_joint": -1.8700781545259078,
+        "wrist_2_joint": -1.5694914365012382,
+        "wrist_3_joint": 0.000720797450927798
+      }
+    },
+    {
+      "time": 1792484202.1297126,
+      "joints": {
+        "elbow_joint": 1.7725962723933344,
+        "gripper_finger_joint": 0.03999999999999401,
+        "right_finger_joint": 0.04000000000000605,
+        "shoulder_lift_joint": -1.4645870112054364,
+        "shoulder_pan_joint": 0.30817895099496717,
+        "wrist_1_joint": -1.8773925243673883,
+        "wrist_2_joint": -1.5694790403255154,
+        "wrist_3_joint": 0.0007383668042919562
+      }
+    },
+    {
+      "time": 1792484202.2840734,
+      "joints": {
+        "elbow_joint": 1.7774437380973773,
+        "gripper_finger_joint": 0.03999999999999731,
+        "right_finger_joint": 0.04000000000000274,
+        "shoulder_lift_joint": -1.4620648233985627,
+        "shoulder_pan_joint": 0.3155526646276953,
+        "wrist_1_joint": -1.884747421385109,
+        "wrist_2_joint": -1.5694665754656312,
+        "wrist_3_joint": 0.0007560335052624311
+      }
+    },
+    {
+      "time": 1792484202.4376144,
+      "joints": {
+        "elbow_joint": 1.7814671001503444,
+        "gripper_finger_joint": 0.03999999999999691,
+        "right_finger_joint": 0.04000000000000312,
+        "shoulder_lift_joint": -1.4599714254598932,
+        "shoulder_pan_joint": 0.3216727944915495,
+        "wrist_1_joint": -1.890851933592313,
+        "wrist_2_joint": -1.5694562297205616,
+        "wrist_3_joint": 0.0007706967413941833
+      }
+    },
+    {
+      "time": 1792484202.5929155,
+      "joints": {
+        "elbow_joint": 1.7854207800415391,
+        "gripper_finger_joint": 0.03999999999999691,
+        "right_finger_joint": 0.040000000000003116,
+        "shoulder_lift_joint": -1.4579142838888837,
+        "shoulder_pan_joint": 0.32768692746185224,
+        "wrist_1_joint": -1.8968507193941988,
+        "wrist_2_joint": -1.5694460631574525,
+        "wrist_3_joint": 0.000785106019275085
+      }
+    },
+    {
+      "time": 1792484202.7486205,
+      "joints": {
+        "elbow_joint": 1.7891742155629862,
+        "gripper_finger_joint": 0.03999999999999756,
+        "right_finger_joint": 0.04000000000000247,
+        "shoulder_lift_joint": -1.4559613315867808,
+        "shoulder_pan_joint": 0.3333964590735884,
+        "wrist_1_joint": -1.9025456811346697,
+        "wrist_2_joint": -1.5694364115062993,
+        "wrist_3_joint": 0.000798785501916471
+      }
+    },
+    {
+      "time": 1792484202.9037952,
+      "joints": {
+        "elbow_joint": 1.7922899990763796,
+        "gripper_finger_joint": 0.03999999999999756,
+        "right_finger_joint": 0.040000000000002464,
+        "shoulder_lift_joint": -1.4543401563859364,
+        "shoulder_pan_joint": 0.3381360274938787,
+        "wrist_1_joint": -1.9072731548847726,
+        "wrist_2_joint": -1.569428399524906,
+        "wrist_3_joint": 0.0008101410470533612
+      }
+    },
+    {
+      "time": 1792484203.05803,
+      "joints": {
+        "elbow_joint": 1.794918131387085,
+        "gripper_finger_joint": 0.039999999999997336,
+        "right_finger_joint": 0.04000000000000267,
+        "shoulder_lift_joint": -1.45297271127676,
+        "shoulder_pan_joint": 0.34213380617477895,
+        "wrist_1_joint": -1.9112607318320185,
+        "wrist_2_joint": -1.5694216414985263,
+        "wrist_3_joint": 0.000819719336093816
+      }
+    },
+    {
+      "time": 1792484203.2081578,
+      "joints": {
+        "elbow_joint": 1.7969061810069717,
+        "gripper_finger_joint": 0.03999999999999688,
+        "right_finger_joint": 0.04000000000000313,
+        "shoulder_lift_joint": -1.4519383079788577,
+        "shoulder_pan_joint": 0.34515792423557307,
+        "wrist_1_joint": -1.9142771327955272,
+        "wrist_2_joint": -1.56941652939221,
+        "wrist_3_joint": 0.0008269648289508788
+      }
+    },
+    {
+      "time": 1792484203.359834,
+      "joints": {
+        "elbow_joint": 1.7984627750872664,
+        "gripper_finger_joint": 0.0399999999999972,
+        "right_finger_joint": 0.04000000000000281,
+        "shoulder_lift_joint": -1.4511283955732284,
+        "shoulder_pan_joint": 0.34752573448762,
+        "wrist_1_joint": -1.9166389007497286,
+        "wrist_2_joint": -1.5694125267383852,
+        "wrist_3_joint": 0.000832637872108178
+      }
+    },
+    {
+      "time": 1792484203.5159478,
+      "joints": {
+        "elbow_joint": 1.7996851813927153,
+        "gripper_finger_joint": 0.03999999999999576,
+        "right_finger_joint": 0.04000000000000424,
+        "shoulder_lift_joint": -1.45049236461048,
+        "shoulder_pan_joint": 0.3493851956142173,
+        "wrist_1_joint": -1.9184936168094437,
+        "wrist_2_joint": -1.5694093834209581,
+        "wrist_3_joint": 0.000837092960181413
+      }
+    },
+    {
+      "time": 1792484203.670143,
+      "joints": {
+        "elbow_joint": 1.8004210633089015,
+        "gripper_finger_joint": 0.03999999999999697,
+        "right_finger_joint": 0.04000000000000303,
+        "shoulder_lift_joint": -1.4501094774464176,
+        "shoulder_pan_joint": 0.35050458105163307,
+        "wrist_1_joint": -1.919610145742552,
+        "wrist_2_joint": -1.569407491161063,
+        "wrist_3_joint": 0.0008397748988608204
+      }
+    },
+    {
+      "time": 1792484204.2359004,
+      "joints": {
+        "elbow_joint": 1.8006944582783555,
+        "gripper_finger_joint": 0.04000000000000013,
+        "right_finger_joint": 0.03999999999999987,
+        "shoulder_lift_joint": -1.4499672271448092,
+        "shoulder_pan_joint": 0.35092045531181726,
+        "wrist_1_joint": -1.9200249587538238,
+        "wrist_2_joint": -1.569406788148384,
+        "wrist_3_joint": 0.0008407712931609481
+      }
+    },
+    {
+      "time": 1792484204.509953,
+      "joints": {
+        "elbow_joint": 1.8006955010276158,
+        "gripper_finger_joint": 0.04000000000000035,
+        "right_finger_joint": 0.039999999999999654,
+        "shoulder_lift_joint": -1.4499666845913124,
+        "shoulder_pan_joint": 0.3509220414879568,
+        "wrist_1_joint": -1.9200265408822823,
+        "wrist_2_joint": -1.5694067854670422,
+        "wrist_3_joint": 0.0008407750934852358
+      }
+    },
+    {
+      "time": 1792484204.6620114,
+      "joints": {
+        "elbow_joint": 1.8006955247408059,
+        "gripper_finger_joint": 0.03997699419518646,
+        "right_finger_joint": 0.03997663250083939,
+        "shoulder_lift_joint": -1.4499666722530882,
+        "shoulder_pan_joint": 0.35092207755923255,
+        "wrist_1_joint": -1.920026576861509,
+        "wrist_2_joint": -1.5694067854060656,
+        "wrist_3_joint": 0.0008407751799085243
+      }
+    },
+    {
+      "time": 1792484204.814834,
+      "joints": {
+        "elbow_joint": 1.800695525032175,
+        "gripper_finger_joint": 0.03985350781164446,
+        "right_finger_joint": 0.039851204680006136,
+        "shoulder_lift_joint": -1.449966672101485,
+        "shoulder_pan_joint": 0.3509220780024487,
+        "wrist_1_joint": -1.9200265773035945,
+        "wrist_2_joint": -1.5694067854053169,
+        "wrist_3_joint": 0.000840775180970427
+      }
+    },
+    {
+      "time": 1792484204.9659789,
+      "joints": {
+        "elbow_joint": 1.8006955250582501,
+        "gripper_finger_joint": 0.03959315837479371,
+        "right_finger_joint": 0.03958676206226274,
+        "shoulder_lift_joint": -1.4499666720879185,
+        "shoulder_pan_joint": 0.3509220780421126,
+        "wrist_1_joint": -1.920026577343157,
+        "wrist_2_joint": -1.5694067854052498,
+        "wrist_3_joint": 0.0008407751810654579
+      }
+    },
+    {
+      "time": 1792484205.1181326,
+      "joints": {
+        "elbow_joint": 1.8006955250603645,
+        "gripper_finger_joint": 0.03915912345801937,
+        "right_finger_joint": 0.03914590330346438,
+        "shoulder_lift_joint": -1.4499666720868185,
+        "shoulder_pan_joint": 0.3509220780453285,
+        "wrist_1_joint": -1.9200265773463647,
+        "wrist_2_joint": -1.5694067854052456,
+        "wrist_3_joint": 0.0008407751810731634
+      }
+    },
+    {
+      "time": 1792484205.269949,
+      "joints": {
+        "elbow_joint": 1.8006955250605,
+        "gripper_finger_joint": 0.038586426155021475,
+        "right_finger_joint": 0.03856420212595735,
+        "shoulder_lift_joint": -1.449966672086748,
+        "shoulder_pan_joint": 0.35092207804553477,
+        "wrist_1_joint": -1.9200265773465703,
+        "wrist_2_joint": -1.5694067854052456,
+        "wrist_3_joint": 0.0008407751810736572
+      }
+    },
+    {
+      "time": 1792484205.4232645,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.03793648209479139,
+        "right_finger_joint": 0.03790403972747835,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455493,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052456,
+        "wrist_3_joint": 0.0008407751810736919
+      }
+    },
+    {
+      "time": 1792484205.5753334,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.037154364724231836,
+        "right_finger_joint": 0.03710962600661456,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052456,
+        "wrist_3_joint": 0.0008407751810736941
+      }
+    },
+    {
+      "time": 1792484205.7262971,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.03633913645697113,
+        "right_finger_joint": 0.03628158082372268,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052456,
+        "wrist_3_joint": 0.0008407751810736941
+      }
+    },
+    {
+      "time": 1792484205.8817394,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.03531764550940599,
+        "right_finger_joint": 0.03524403012477404,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052456,
+        "wrist_3_joint": 0.0008407751810736941
+      }
+    },
+    {
+      "time": 1792484206.0378172,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.03433511426862351,
+        "right_finger_joint": 0.03424605165218693,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052456,
+        "wrist_3_joint": 0.0008407751810736941
+      }
+    },
+    {
+      "time": 1792484206.1939735,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.033255041182581505,
+        "right_finger_joint": 0.03314899779379534,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052454,
+        "wrist_3_joint": 0.0008407751810736941
+      }
+    },
+    {
+      "time": 1792484206.3462925,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.03208981664853998,
+        "right_finger_joint": 0.03196545374711669,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052454,
+        "wrist_3_joint": 0.0008407751810736941
+      }
+    },
+    {
+      "time": 1792484206.4972234,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.030854052083274193,
+        "right_finger_joint": 0.030710260647771437,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052451,
+        "wrist_3_joint": 0.0008407751810736941
+      }
+    },
+    {
+      "time": 1792484206.6530442,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.02961986490753523,
+        "right_finger_joint": 0.029456669737471484,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052451,
+        "wrist_3_joint": 0.0008407751810736941
+      }
+    },
+    {
+      "time": 1792484206.8095691,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.028132490931148287,
+        "right_finger_joint": 0.027945911455690618,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.569406785405245,
+        "wrist_3_joint": 0.0008407751810736941
+      }
+    },
+    {
+      "time": 1792484206.9635596,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.026833576651032257,
+        "right_finger_joint": 0.026626575809671343,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.569406785405245,
+        "wrist_3_joint": 0.0008407751810736941
+      }
+    },
+    {
+      "time": 1792484207.117095,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.02553187917446594,
+        "right_finger_joint": 0.02530441321013948,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.569406785405245,
+        "wrist_3_joint": 0.0008407751810736941
+      }
+    },
+    {
+      "time": 1792484207.268071,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.024292373201704014,
+        "right_finger_joint": 0.024045419881362984,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052447,
+        "wrist_3_joint": 0.000840775181073694
+      }
+    },
+    {
+      "time": 1792484207.4237988,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.023114759687358412,
+        "right_finger_joint": 0.02284929207640008,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052447,
+        "wrist_3_joint": 0.0008407751810736937
+      }
+    },
+    {
+      "time": 1792484207.5896895,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.02204653925668056,
+        "right_finger_joint": 0.02176427721932003,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052447,
+        "wrist_3_joint": 0.0008407751810736936
+      }
+    },
+    {
+      "time": 1792484207.7434552,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.020988744483333613,
+        "right_finger_joint": 0.02068985193043581,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052447,
+        "wrist_3_joint": 0.0008407751810736935
+      }
+    },
+    {
+      "time": 1792484207.9010234,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.019747875650679453,
+        "right_finger_joint": 0.01942947431505636,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052447,
+        "wrist_3_joint": 0.0008407751810736932
+      }
+    },
+    {
+      "time": 1792484208.052165,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.018562996183103198,
+        "right_finger_joint": 0.018225966322465786,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052447,
+        "wrist_3_joint": 0.000840775181073693
+      }
+    },
+    {
+      "time": 1792484208.2039795,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.017562451511889298,
+        "right_finger_joint": 0.017209691214573983,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052447,
+        "wrist_3_joint": 0.0008407751810736929
+      }
+    },
+    {
+      "time": 1792484208.3575428,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.016321483608521748,
+        "right_finger_joint": 0.015949212970903938,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052447,
+        "wrist_3_joint": 0.0008407751810736926
+      }
+    },
+    {
+      "time": 1792484208.507932,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.014903478232749687,
+        "right_finger_joint": 0.014508913894096573,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052447,
+        "wrist_3_joint": 0.0008407751810736924
+      }
+    },
+    {
+      "time": 1792484208.6597173,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.013364757217399503,
+        "right_finger_joint": 0.012946001301705095,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052447,
+        "wrist_3_joint": 0.0008407751810736919
+      }
+    },
+    {
+      "time": 1792484208.810225,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.011966251252666371,
+        "right_finger_joint": 0.01152550820320889,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052445,
+        "wrist_3_joint": 0.0008407751810736918
+      }
+    },
+    {
+      "time": 1792484208.9634633,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.010603494326673006,
+        "right_finger_joint": 0.010141326185314626,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052443,
+        "wrist_3_joint": 0.0008407751810736916
+      }
+    },
+    {
+      "time": 1792484209.1155384,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.009428984547344348,
+        "right_finger_joint": 0.008948350911897739,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052443,
+        "wrist_3_joint": 0.0008407751810736914
+      }
+    },
+    {
+      "time": 1792484209.2702458,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.008313412182302443,
+        "right_finger_joint": 0.00781523965933508,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052443,
+        "wrist_3_joint": 0.0008407751810736911
+      }
+    },
+    {
+      "time": 1792484209.424203,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.007455245309007304,
+        "right_finger_joint": 0.006943580795079588,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052443,
+        "wrist_3_joint": 0.000840775181073691
+      }
+    },
+    {
+      "time": 1792484209.576776,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.006726683899623301,
+        "right_finger_joint": 0.006203565035434172,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052443,
+        "wrist_3_joint": 0.0008407751810736909
+      }
+    },
+    {
+      "time": 1792484209.7299976,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.006124407899147154,
+        "right_finger_joint": 0.005591820127911009,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052443,
+        "wrist_3_joint": 0.0008407751810736907
+      }
+    },
+    {
+      "time": 1792484209.8846488,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.005663110546399311,
+        "right_finger_joint": 0.005123270316571505,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052443,
+        "wrist_3_joint": 0.0008407751810736906
+      }
+    },
+    {
+      "time": 1792484210.036963,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.005290542255218442,
+        "right_finger_joint": 0.00474484455387414,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052443,
+        "wrist_3_joint": 0.0008407751810736905
+      }
+    },
+    {
+      "time": 1792484210.1874073,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.005028615115124332,
+        "right_finger_joint": 0.004478799428436631,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052443,
+        "wrist_3_joint": 0.0008407751810736905
+      }
+    },
+    {
+      "time": 1792484210.8130867,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.004940637818724808,
+        "right_finger_joint": 0.00438943896411875,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052443,
+        "wrist_3_joint": 0.0008407751810736905
+      }
+    },
+    {
+      "time": 1792484211.053003,
+      "joints": {
+        "elbow_joint": 1.8006955250605083,
+        "gripper_finger_joint": 0.004940630000039187,
+        "right_finger_joint": 0.004389431022508746,
+        "shoulder_lift_joint": -1.4499666720867443,
+        "shoulder_pan_joint": 0.3509220780455502,
+        "wrist_1_joint": -1.9200265773465846,
+        "wrist_2_joint": -1.5694067854052443,
+        "wrist_3_joint": 0.0008407751810736904
+      }
+    },
+    {
+      "time": 1792484211.2064817,
+      "joints": {
+        "elbow_joint": 1.800562054852932,
+        "gripper_finger_joint": 0.0049406298842967706,
+        "right_finger_joint": 0.004389430904950591,
+        "shoulder_lift_joint": -1.4498832253833365,
+        "shoulder_pan_joint": 0.35080463767725606,
+        "wrist_1_joint": -1.919976294079958,
+        "wrist_2_joint": -1.5694069148146974,
+        "wrist_3_joint": 0.0008402079412971966
+      }
+    },
+    {
+      "time": 1792484211.3572261,
+      "joints": {
+        "elbow_joint": 1.79983302464167,
+        "gripper_finger_joint": 0.004940629882846868,
+        "right_finger_joint": 0.004389430903480909,
+        "shoulder_lift_joint": -1.4494274295298029,
+        "shoulder_pan_joint": 0.3501631643665794,
+        "wrist_1_joint": -1.9197016408881835,
+        "wrist_2_joint": -1.5694076216646566,
+        "wrist_3_joint": 0.0008371096099415362
+      }
+    },
+    {
+      "time": 1792484211.5078616,
+      "joints": {
+        "elbow_joint": 1.7988342440013174,
+        "gripper_finger_joint": 0.0049406298827518475,
+        "right_finger_joint": 0.004389430903384015,
+        "shoulder_lift_joint": -1.4488029834268394,
+        "shoulder_pan_joint": 0.34928433779118817,
+        "wrist_1_joint": -1.9193253625307054,
+        "wrist_2_joint": -1.5694085900580934,
+        "wrist_3_joint": 0.0008328648566728965
+      }
+    },
+    {
+      "time": 1792484211.6635096,
+      "joints": {
+        "elbow_joint": 1.797187905845393,
+        "gripper_finger_joint": 0.004940629882736585,
+        "right_finger_joint": 0.004389430903369092,
+        "shoulder_lift_joint": -1.4477736788888027,
+        "shoulder_pan_joint": 0.3478357256885482,
+        "wrist_1_joint": -1.9187051248207319,
+        "wrist_2_joint": -1.569410186307554,
+        "wrist_3_joint": 0.0008258680257499809
+      }
+    },
+    {
+      "time": 1792484211.819457,
+      "joints": {
+        "elbow_joint": 1.795117832190171,
+        "gripper_finger_joint": 0.004940629882735243,
+        "right_finger_joint": 0.004389430903367179,
+        "shoulder_lift_joint": -1.4464794513331074,
+        "shoulder_pan_joint": 0.34601426893647147,
+        "wrist_1_joint": -1.9179252499579913,
+        "wrist_2_joint": -1.569412193400662,
+        "wrist_3_joint": 0.0008170703463002008
+      }
+    },
+    {
+      "time": 1792484211.9714386,
+      "joints": {
+        "elbow_joint": 1.7924339201626498,
+        "gripper_finger_joint": 0.004940629882735121,
+        "right_finger_joint": 0.004389430903366898,
+        "shoulder_lift_joint": -1.4448014468358688,
+        "shoulder_pan_joint": 0.3436526961140856,
+        "wrist_1_joint": -1.9169141190164436,
+        "wrist_2_joint": -1.5694147956565347,
+        "wrist_3_joint": 0.0008056638933795717
+      }
+    },
+    {
+      "time": 1792484212.1277204,
+      "joints": {
+        "elbow_joint": 1.788728824582185,
+        "gripper_finger_joint": 0.004940629882734611,
+        "right_finger_joint": 0.004389430903367364,
+        "shoulder_lift_joint": -1.442484989745262,
+        "shoulder_pan_joint": 0.34039258440496845,
+        "wrist_1_joint": -1.9155182696948583,
+        "wrist_2_joint": -1.5694183880271555,
+        "wrist_3_joint": 0.0007899174762562212
+      }
+    },
+    {
+      "time": 1792484212.2798424,
+      "joints": {
+        "elbow_joint": 1.784121330237479,
+        "gripper_finger_joint": 0.004940629882734738,
+        "right_finger_joint": 0.004389430903367236,
+        "shoulder_lift_joint": -1.4396043453157328,
+        "shoulder_pan_joint": 0.3363384524840335,
+        "wrist_1_joint": -1.9137824527056426,
+        "wrist_2_joint": -1.5694228553416927,
+        "wrist_3_joint": 0.0007703359226188156
+      }
+    },
+    {
+      "time": 1792484212.4329376,
+      "joints": {
+        "elbow_joint": 1.7792229952502738,
+        "gripper_finger_joint": 0.004940629882734473,
+        "right_finger_joint": 0.004389430903367501,
+        "shoulder_lift_joint": -1.4365418648568966,
+        "shoulder_pan_joint": 0.33202841003029143,
+        "wrist_1_joint": -1.9119370650711587,
+        "wrist_2_joint": -1.5694276046482452,
+        "wrist_3_joint": 0.0007495183150184329
+      }
+    },
+    {
+      "time": 1792484212.5838952,
+      "joints": {
+        "elbow_joint": 1.7736775464329848,
+        "gripper_finger_joint": 0.00494062988273505,
+        "right_finger_joint": 0.004389430903366926,
+        "shoulder_lift_joint": -1.4330748033589051,
+        "shoulder_pan_joint": 0.3271489724479305,
+        "wrist_1_joint": -1.9098478852372374,
+        "wrist_2_joint": -1.5694329813806465,
+        "wrist_3_joint": 0.0007259505154006937
+      }
+    },
+    {
+      "time": 1792484212.7362719,
+      "joints": {
+        "elbow_joint": 1.7675198168592483,
+        "gripper_finger_joint": 0.004940629882734506,
+        "right_finger_joint": 0.004389430903367471,
+        "shoulder_lift_joint": -1.4292249387539706,
+        "shoulder_pan_joint": 0.32173078934065275,
+        "wrist_1_joint": -1.907528036137174,
+        "wrist_2_joint": -1.5694389517655787,
+        "wrist_3_joint": 0.0006997805620773912
+      }
+    },
+    {
+      "time": 1792484212.8941574,
+      "joints": {
+        "elbow_joint": 1.7610317420497483,
+        "gripper_finger_joint": 0.004940629882734432,
+        "right_finger_joint": 0.004389430903367548,
+        "shoulder_lift_joint": -1.4251685395139333,
+        "shoulder_pan_joint": 0.3160219356291296,
+        "wrist_1_joint": -1.9050837335208097,
+        "wrist_2_joint": -1.5694452424452265,
+        "wrist_3_joint": 0.0006722066628204903
+      }
+    },
+    {
+      "time": 1792484213.0446236,
+      "joints": {
+        "elbow_joint": 1.7539610374712986,
+        "gripper_finger_joint": 0.004940629882734402,
+        "right_finger_joint": 0.004389430903367578,
+        "shoulder_lift_joint": -1.4207478752150942,
+        "shoulder_pan_joint": 0.3098004262814468,
+        "wrist_1_joint": -1.9024199322842186,
+        "wrist_2_joint": -1.5694520980285382,
+        "wrist_3_joint": 0.0006421566246434566
+      }
+    },
+    {
+      "time": 1792484213.203691,
+      "joints": {
+        "elbow_joint": 1.7466702422481997,
+        "gripper_finger_joint": 0.004940629882733773,
+        "right_finger_joint": 0.00438943090336821,
+        "shoulder_lift_joint": -1.4161896083839314,
+        "shoulder_pan_joint": 0.3033852592879338,
+        "wrist_1_joint": -1.8996732145963882,
+        "wrist_2_joint": -1.5694591670063842,
+        "wrist_3_joint": 0.0006111712154283741
+      }
+    },
+    {
+      "time": 1792484213.3607144,
+      "joints": {
+        "elbow_joint": 1.7385386065807784,
+        "gripper_finger_joint": 0.00494062988272981,
+        "right_finger_joint": 0.004389430903372175,
+        "shoulder_lift_joint": -1.4111056409960554,
+        "shoulder_pan_joint": 0.2962302372168663,
+        "wrist_1_joint": -1.8966097205829906,
+        "wrist_2_joint": -1.5694670512426574,
+        "wrist_3_joint": 0.0005766122885798718
+      }
+    },
+    {
+      "time": 1792484213.510733,
+      "joints": {
+        "elbow_joint": 1.7300815963536011,
+        "gripper_finger_joint": 0.004940629882734269,
+        "right_finger_joint": 0.004389430903367719,
+        "shoulder_lift_joint": -1.4058182466817541,
+        "shoulder_pan_joint": 0.2887889182368292,
+        "wrist_1_joint": -1.8934236456945792,
+        "wrist_2_joint": -1.5694752509542782,
+        "wrist_3_joint": 0.0005406705408632559
+      }
+    },
+    {
+      "time": 1792484213.661657,
+      "joints": {
+        "elbow_joint": 1.7229375095926354,
+        "gripper_finger_joint": 0.004940629882732524,
+        "right_finger_joint": 0.004389430903369466,
+        "shoulder_lift_joint": -1.4013517032218183,
+        "shoulder_pan_joint": 0.2825028399442259,
+        "wrist_1_joint": -1.890732198620654,
+        "wrist_2_joint": -1.5694821776871541,
+        "wrist_3_joint": 0.0005103086331431294
+      }
+    },
+    {
+      "time": 1792484213.8156989,
+      "joints": {
+        "elbow_joint": 1.714981142303846,
+        "gripper_finger_joint": 0.0049406298827317455,
+        "right_finger_joint": 0.004389430903370248,
+        "shoulder_lift_joint": -1.3963773151064947,
+        "shoulder_pan_joint": 0.27550203643000887,
+        "wrist_1_joint": -1.887734734819482,
+        "wrist_2_joint": -1.569489891987497,
+        "wrist_3_joint": 0.000476494585598849
+      }
+    },
+    {
+      "time": 1792484213.9679742,
+      "joints": {
+        "elbow_joint": 1.7061469357569885,
+        "gripper_finger_joint": 0.004940629882732117,
+        "right_finger_joint": 0.0043894309033698795,
+        "shoulder_lift_joint": -1.3908540944632097,
+        "shoulder_pan_joint": 0.26772882260091524,
+        "wrist_1_joint": -1.8844065558434406,
+        "wrist_2_joint": -1.569498457419461,
+        "wrist_3_joint": 0.00043894977785774165
+      }
+    },
+    {
+      "time": 1792484214.131146,
+      "joints": {
+        "elbow_joint": 1.6963379570213921,
+        "gripper_finger_joint": 0.004940629882734182,
+        "right_finger_joint": 0.004389430903367817,
+        "shoulder_lift_joint": -1.3847214380039528,
+        "shoulder_pan_joint": 0.2590979072207484,
+        "wrist_1_joint": -1.8807111433996646,
+        "wrist_2_joint": -1.5695079679668658,
+        "wrist_3_joint": 0.0003972622512205005
+      }
+    },
+    {
+      "time": 1792484214.2829533,
+      "joints": {
+        "elbow_joint": 1.6834370418860982,
+        "gripper_finger_joint": 0.004940629882734072,
+        "right_finger_joint": 0.0043894309033679305,
+        "shoulder_lift_joint": -1.3766556767593416,
+        "shoulder_pan_joint": 0.24774639858148959,
+        "wrist_1_joint": -1.875850881836016,
+        "wrist_2_joint": -1.569520476380637,
+        "wrist_3_joint": 0.0003424341944074955
+      }
+    },
+    {
+      "time": 1792484214.4348767,
+      "joints": {
+        "elbow_joint": 1.6731555626033228,
+        "gripper_finger_joint": 0.004940629882733872,
+        "right_finger_joint": 0.004389430903368133,
+        "shoulder_lift_joint": -1.370227608962088,
+        "shoulder_pan_joint": 0.23869973021116178,
+        "wrist_1_joint": -1.8719774606057018,
+        "wrist_2_joint": -1.5695304450530647,
+        "wrist_3_joint": 0.0002987385709321085
+      }
+    },
+    {
+      "time": 1792484214.586891,
+      "joints": {
+        "elbow_joint": 1.6612876846037583,
+        "gripper_finger_joint": 0.00494062988273209,
+        "right_finger_joint": 0.004389430903369919,
+        "shoulder_lift_joint": -1.3628077112710486,
+        "shoulder_pan_joint": 0.22825719042007936,
+        "wrist_1_joint": -1.8675063831140217,
+        "wrist_2_joint": -1.5695419518591176,
+        "wrist_3_joint": 0.0002483008552801167
+      }
+    },
+    {
+      "time": 1792484214.7376416,
+      "joints": {
+        "elbow_joint": 1.6483005177598393,
+        "gripper_finger_joint": 0.0049406298827304315,
+        "right_finger_joint": 0.004389430903371582,
+        "shoulder_lift_joint": -1.3546880247287811,
+        "shoulder_pan_joint": 0.21682978894645075,
+        "wrist_1_joint": -1.8626136272769083,
+        "wrist_2_joint": -1.569554543900433,
+        "wrist_3_joint": 0.00019310623426896015
+      }
+    },
+    {
+      "time": 1792484214.8891919,
+      "joints": {
+        "elbow_joint": 1.633448435862197,
+        "gripper_finger_joint": 0.004940629882742504,
+        "right_finger_joint": 0.004389430903359513,
+        "shoulder_lift_joint": -1.345402377523485,
+        "shoulder_pan_joint": 0.2037614496694235,
+        "wrist_1_joint": -1.8570182875642418,
+        "wrist_2_joint": -1.5695689441181924,
+        "wrist_3_joint": 0.00012998584464634635
+      }
+    },
+    {
+      "time": 1792484215.039582,
+      "joints": {
+        "elbow_joint": 1.619839074060727,
+        "gripper_finger_joint": 0.004940629882732783,
+        "right_finger_joint": 0.004389430903369239,
+        "shoulder_lift_joint": -1.3368936894319023,
+        "shoulder_pan_joint": 0.19178657917039593,
+        "wrist_1_joint": -1.851891127407261,
+        "wrist_2_joint": -1.5695821394245384,
+        "wrist_3_joint": 7.214693520401937e-05
+      }
+    },
+    {
+      "time": 1792484215.1966681,
+      "joints": {
+        "elbow_joint": 1.6050264950905577,
+        "gripper_finger_joint": 0.004940629882733609,
+        "right_finger_joint": 0.004389430903368419,
+        "shoulder_lift_joint": -1.3276327397909355,
+        "shoulder_pan_joint": 0.17875299849908724,
+        "wrist_1_joint": -1.8463106699379925,
+        "wrist_2_joint": -1.56959650134111,
+        "wrist_3_joint": 9.194430456306915e-06
+      }
+    },
+    {
+      "time": 1792484215.3493948,
+      "joints": {
+        "elbow_joint": 1.5894033208810132,
+        "gripper_finger_joint": 0.004940629882737163,
+        "right_finger_joint": 0.004389430903364862,
+        "shoulder_lift_joint": -1.3178649991511706,
+        "shoulder_pan_joint": 0.1650061754906072,
+        "wrist_1_joint": -1.8404248306532405,
+        "wrist_2_joint": -1.5696116491911498,
+        "wrist_3_joint": -5.720305174604122e-05
+      }
+    },
+    {
+      "time": 1792484215.5040953,
+      "joints": {
+        "elbow_joint": 1.5743102901654062,
+        "gripper_finger_joint": 0.004940629882736517,
+        "right_finger_joint": 0.0043894309033655045,
+        "shoulder_lift_joint": -1.308428708707196,
+        "shoulder_pan_joint": 0.15172582547170751,
+        "wrist_1_joint": -1.834738716428255,
+        "wrist_2_joint": -1.5696262830269048,
+        "wrist_3_joint": -0.00012134745831660658
+      }
+    },
+    {
+      "time": 1792484215.6593187,
+      "joints": {
+        "elbow_joint": 1.5604615061197769,
+        "gripper_finger_joint": 0.0049406298827463085,
+        "right_finger_joint": 0.004389430903355712,
+        "shoulder_lift_joint": -1.2997703318037863,
+        "shoulder_pan_joint": 0.13954028746229738,
+        "wrist_1_joint": -1.8295213568771151,
+        "wrist_2_joint": -1.5696397104714281,
+        "wrist_3_joint": -0.00018020389681681965
+      }
+    },
+    {
+      "time": 1792484215.816886,
+      "joints": {
+        "elbow_joint": 1.5459095056785,
+        "gripper_finger_joint": 0.004940629882738844,
+        "right_finger_joint": 0.0043894309033631704,
+        "shoulder_lift_joint": -1.2906722980627743,
+        "shoulder_pan_joint": 0.1267359897054911,
+        "wrist_1_joint": -1.8240390691728858,
+        "wrist_2_joint": -1.5696538197373116,
+        "wrist_3_joint": -0.0002420489596451188
+      }
+    },
+    {
+      "time": 1792484215.9707406,
+      "joints": {
+        "elbow_joint": 1.529857668098938,
+        "gripper_finger_joint": 0.00494062988274881,
+        "right_finger_joint": 0.0043894309033532,
+        "shoulder_lift_joint": -1.2806365534588984,
+        "shoulder_pan_joint": 0.11261198601663787,
+        "wrist_1_joint": -1.8179917362205313,
+        "wrist_2_joint": -1.569669383209001,
+        "wrist_3_joint": -0.00031026823349880633
+      }
+    },
+    {
+      "time": 1792484216.121875,
+      "joints": {
+        "elbow_joint": 1.5168371316201854,
+        "gripper_finger_joint": 0.004940629882739538,
+        "right_finger_joint": 0.004389430903362467,
+        "shoulder_lift_joint": -1.2724960039387267,
+        "shoulder_pan_joint": 0.10115522261836216,
+        "wrist_1_joint": -1.813086408782683,
+        "wrist_2_joint": -1.5696820076046292,
+        "wrist_3_joint": -0.0003656046733161595
+      }
+    },
+    {
+      "time": 1792484216.273767,
+      "joints": {
+        "elbow_joint": 1.5030206276337184,
+        "gripper_finger_joint": 0.004940629882740642,
+        "right_finger_joint": 0.0043894309033613585,
+        "shoulder_lift_joint": -1.2638578088012962,
+        "shoulder_pan_joint": 0.08899808781652921,
+        "wrist_1_joint": -1.8078812103479083,
+        "wrist_2_joint": -1.5696954037511082,
+        "wrist_3_joint": -0.0004243239236611632
+      }
+    },
+    {
+      "time": 1792484216.4242036,
+      "joints": {
+        "elbow_joint": 1.491010023930117,
+        "gripper_finger_joint": 0.004940629882741099,
+        "right_finger_joint": 0.0043894309033609,
+        "shoulder_lift_joint": -1.256348677793069,
+        "shoulder_pan_joint": 0.0784299637513475,
+        "wrist_1_joint": -1.8033563626975926,
+        "wrist_2_joint": -1.5697070489405567,
+        "wrist_3_joint": -0.00047536821434189665
+      }
+    },
+    {
+      "time": 1792484216.580192,
+      "joints": {
+        "elbow_joint": 1.4797841441079849,
+        "gripper_finger_joint": 0.004940629882739818,
+        "right_finger_joint": 0.004389430903362176,
+        "shoulder_lift_joint": -1.2493301627918865,
+        "shoulder_pan_joint": 0.06855231782872642,
+        "wrist_1_joint": -1.7991271501459563,
+        "wrist_2_joint": -1.5697179332807847,
+        "wrist_3_joint": -0.0005230774791680997
+      }
+    },
+    {
+      "time": 1792484216.7312768,
+      "joints": {
+        "elbow_joint": 1.4696974227416812,
+        "gripper_finger_joint": 0.0049406298827399395,
+        "right_finger_joint": 0.004389430903362051,
+        "shoulder_lift_joint": -1.2430238592910596,
+        "shoulder_pan_joint": 0.05967701684963711,
+        "wrist_1_joint": -1.7953271015722085,
+        "wrist_2_joint": -1.569727713120675,
+        "wrist_3_joint": -0.0005659453940662757
+      }
+    },
+    {
+      "time": 1792484216.8863516,
+      "joints": {
+        "elbow_joint": 1.4603046614784483,
+        "gripper_finger_joint": 0.004940629882752272,
+        "right_finger_joint": 0.004389430903349716,
+        "shoulder_lift_joint": -1.237151425515436,
+        "shoulder_pan_joint": 0.05141233101083723,
+        "wrist_1_joint": -1.7917884939568032,
+        "wrist_2_joint": -1.5697368201138329,
+        "wrist_3_joint": -0.0006058640232909885
+      }
+    },
+    {
+      "time": 1792484217.0376258,
+      "joints": {
+        "elbow_joint": 1.4512729728129292,
+        "gripper_finger_joint": 0.004940629882737898,
+        "right_finger_joint": 0.004389430903364087,
+        "shoulder_lift_joint": -1.2315047373814731,
+        "shoulder_pan_joint": 0.043465352766391456,
+        "wrist_1_joint": -1.7883859160143474,
+        "wrist_2_joint": -1.569745577019518,
+        "wrist_3_joint": -0.0006442481173141515
+      }
+    },
+    {
+      "time": 1792484217.1893504,
+      "joints": {
+        "elbow_joint": 1.4438557351141523,
+        "gripper_finger_joint": 0.004940629882741843,
+        "right_finger_joint": 0.00438943090336014,
+        "shoulder_lift_joint": -1.2268674176451984,
+        "shoulder_pan_joint": 0.03693892910309415,
+        "wrist_1_joint": -1.785591562674484,
+        "wrist_2_joint": -1.5697527685929595,
+        "wrist_3_joint": -0.0006757708988849134
+      }
+    },
+    {
+      "time": 1792484217.3398225,
+      "joints": {
+        "elbow_joint": 1.4371071220064333,
+        "gripper_finger_joint": 0.0049406298827406915,
+        "right_finger_joint": 0.00438943090336129,
+        "shoulder_lift_joint": -1.2226481276577592,
+        "shoulder_pan_joint": 0.031000827876018357,
+        "wrist_1_joint": -1.7830491054494344,
+        "wrist_2_joint": -1.5697593118841986,
+        "wrist_3_joint": -0.0007044520690981244
+      }
+    },
+    {
+      "time": 1792484217.498095,
+      "joints": {
+        "elbow_joint": 1.4309129448587699,
+        "gripper_finger_joint": 0.004940629882740727,
+        "right_finger_joint": 0.004389430903361251,
+        "shoulder_lift_joint": -1.2187754757213685,
+        "shoulder_pan_joint": 0.025550574567053203,
+        "wrist_1_joint": -1.7807155251728797,
+        "wrist_2_joint": -1.5697653176078177,
+        "wrist_3_joint": -0.0007307769222578303
+      }
+    },
+    {
+      "time": 1792484217.6542492,
+      "joints": {
+        "elbow_joint": 1.4250879904194738,
+        "gripper_finger_joint": 0.004940629882743565,
+        "right_finger_joint": 0.00438943090335841,
+        "shoulder_lift_joint": -1.215133664944735,
+        "shoulder_pan_joint": 0.020425200130621414,
+        "wrist_1_joint": -1.7785210450236597,
+        "wrist_2_joint": -1.5697709653420993,
+        "wrist_3_joint": -0.0007555326027294238
+      }
+    },
+    {
+      "time": 1792484217.808459,
+      "joints": {
+        "elbow_joint": 1.4196301447320192,
+        "gripper_finger_joint": 0.004940629882740968,
+        "right_finger_joint": 0.004389430903361007,
+        "shoulder_lift_joint": -1.2117213736643655,
+        "shoulder_pan_joint": 0.015622844497463817,
+        "wrist_1_joint": -1.7764648685945406,
+        "wrist_2_joint": -1.5697762571366054,
+        "wrist_3_joint": -0.0007787280947033209
+      }
+    },
+    {
+      "time": 1792484217.962696,
+      "joints": {
+        "elbow_joint": 1.4147161206369188,
+        "gripper_finger_joint": 0.004940629882740973,
+        "right_finger_joint": 0.004389430903361,
+        "shoulder_lift_joint": -1.208649084242591,
+        "shoulder_pan_joint": 0.0112989972056952,
+        "wrist_1_joint": -1.774613570281063,
+        "wrist_2_joint": -1.5697810216549375,
+        "wrist_3_joint": -0.0007996123799995213
+      }
+    },
+    {
+      "time": 1792484218.1153355,
+      "joints": {
+        "elbow_joint": 1.410685601486024,
+        "gripper_finger_joint": 0.004940629882741681,
+        "right_finger_joint": 0.004389430903360291,
+        "shoulder_lift_joint": -1.2061291695836658,
+        "shoulder_pan_joint": 0.007752545463140779,
+        "wrist_1_joint": -1.773095121620237,
+        "wrist_2_joint": -1.569784929548355,
+        "wrist_3_joint": -0.0008167418262955143
+      }
+    },
+    {
+      "time": 1792484218.2710605,
+      "joints": {
+        "elbow_joint": 1.4076016703875687,
+        "gripper_finger_joint": 0.00494062988274202,
+        "right_finger_joint": 0.004389430903359952,
+        "shoulder_lift_joint": -1.2042010697803467,
+        "shoulder_pan_joint": 0.005038996064521836,
+        "wrist_1_joint": -1.7719332883994487,
+        "wrist_2_joint": -1.5697879196529994,
+        "wrist_3_joint": -0.0008298483344536443
+      }
+    },
+    {
+      "time": 1792484218.4260695,
+      "joints": {
+        "elbow_joint": 1.4050076680205767,
+        "gripper_finger_joint": 0.004940629882741853,
+        "right_finger_joint": 0.004389430903360117,
+        "shoulder_lift_joint": -1.2025792775632276,
+        "shoulder_pan_joint": 0.002756534706519234,
+        "wrist_1_joint": -1.7709560298198739,
+        "wrist_2_joint": -1.5697904347346479,
+        "wrist_3_joint": -0.0008408726771194595
+      }
+    },
+    {
+      "time": 1792484218.5804136,
+      "joints": {
+        "elbow_joint": 1.4029801964008708,
+        "gripper_finger_joint": 0.004940629882741928,
+        "right_finger_joint": 0.004389430903360042,
+        "shoulder_lift_joint": -1.201311685160418,
+        "shoulder_pan_joint": 0.0009725634637358454,
+        "wrist_1_joint": -1.7701922047515501,
+        "wrist_2_joint": -1.5697924005218549,
+        "wrist_3_joint": -0.0008494893006678916
+      }
+    },
+    {
+      "time": 1792484218.732162,
+      "joints": {
+        "elbow_joint": 1.4018212565296873,
+        "gripper_finger_joint": 0.004940629882742339,
+        "right_finger_joint": 0.00438943090335963,
+        "shoulder_lift_joint": -1.2005871061518898,
+        "shoulder_pan_joint": -4.718713706755088e-05,
+        "wrist_1_joint": -1.76975558836803,
+        "wrist_2_joint": -1.5697935242017913,
+        "wrist_3_joint": -0.0008544147203320465
+      }
+    },
+    {
+      "time": 1792484218.887734,
+      "joints": {
+        "elbow_joint": 1.4011551840360719,
+        "gripper_finger_joint": 0.004940629882741903,
+        "right_finger_joint": 0.004389430903360065,
+        "shoulder_lift_joint": -1.2001706719959586,
+        "shoulder_pan_joint": -0.0006332639840472568,
+        "wrist_1_joint": -1.7695046537246035,
+        "wrist_2_joint": -1.5697941700094886,
+        "wrist_3_joint": -0.0008572454854480483
+      }
+    },
+    {
+      "time": 1792484219.6790404,
+      "joints": {
+        "elbow_joint": 1.400873021292547,
+        "gripper_finger_joint": 0.004940629882738252,
+        "right_finger_joint": 0.004389430903363717,
+        "shoulder_lift_joint": -1.1999942614624801,
+        "shoulder_pan_joint": -0.0008815388379763378,
+        "wrist_1_joint": -1.7693983523713357,
+        "wrist_2_joint": -1.5697944435875923,
+        "wrist_3_joint": -0.0008584446589048251
+      }
+    },
+    {
+      "time": 1792484220.0175405,
+      "joints": {
+        "elbow_joint": 1.4008728957160979,
+        "gripper_finger_joint": 0.004940629882738224,
+        "right_finger_joint": 0.004389430903363745,
+        "shoulder_lift_joint": -1.199994182951022,
+        "shoulder_pan_joint": -0.0008816493326298876,
+        "wrist_1_joint": -1.7693983050619482,
+        "wrist_2_joint": -1.5697944437093478,
+        "wrist_3_joint": -0.0008584451925966796
+      }
+    },
+    {
+      "time": 1792484220.1720462,
+      "joints": {
+        "elbow_joint": 1.4009905507438838,
+        "gripper_finger_joint": 0.004940629882735621,
+        "right_finger_joint": 0.004389430903366348,
+        "shoulder_lift_joint": -1.2000676963939352,
+        "shoulder_pan_joint": -0.0009014548060682004,
+        "wrist_1_joint": -1.7694426120732316,
+        "wrist_2_joint": -1.569794377721714,
+        "wrist_3_joint": -0.0008582202151194264
+      }
+    },
+    {
+      "time": 1792484220.32946,
+      "joints": {
+        "elbow_joint": 1.4013595097324694,
+        "gripper_finger_joint": 0.004940629882734134,
+        "right_finger_joint": 0.004389430903367834,
+        "shoulder_lift_joint": -1.2002981240658879,
+        "shoulder_pan_joint": -0.0012510517613838004,
+        "wrist_1_joint": -1.76958151403132,
+        "wrist_2_joint": -1.5697942828834621,
+        "wrist_3_joint": -0.0008581558511520802
+      }
+    },
+    {
+      "time": 1792484220.4846323,
+      "joints": {
+        "elbow_joint": 1.4021936507506338,
+        "gripper_finger_joint": 0.004940629882734656,
+        "right_finger_joint": 0.004389430903367313,
+        "shoulder_lift_joint": -1.200819059369652,
+        "shoulder_pan_joint": -0.0020811879820657247,
+        "wrist_1_joint": -1.7698955371999263,
+        "wrist_2_joint": -1.569794083979863,
+        "wrist_3_joint": -0.0008580990291236156
+      }
+    },
+    {
+      "time": 1792484220.6485891,
+      "joints": {
+        "elbow_joint": 1.4032768121673502,
+        "gripper_finger_joint": 0.004940629882734731,
+        "right_finger_joint": 0.004389430903367238,
+        "shoulder_lift_joint": -1.2014955108846304,
+        "shoulder_pan_joint": -0.003162615718027595,
+        "wrist_1_joint": -1.77030330680849,
+        "wrist_2_joint": -1.5697938270482479,
+        "wrist_3_joint": -0.0008580329750808855
+      }
+    },
+    {
+      "time": 1792484220.800267,
+      "joints": {
+        "elbow_joint": 1.4047216462467265,
+        "gripper_finger_joint": 0.0049406298827357085,
+        "right_finger_joint": 0.004389430903366262,
+        "shoulder_lift_joint": -1.2023978325786175,
+        "shoulder_pan_joint": -0.004605531582989227,
+        "wrist_1_joint": -1.770847232538583,
+        "wrist_2_joint": -1.5697934844797343,
+        "wrist_3_joint": -0.0008579457447573416
+      }
+    },
+    {
+      "time": 1792484220.9577234,
+      "joints": {
+        "elbow_joint": 1.4066093286959442,
+        "gripper_finger_joint": 0.004940629882735418,
+        "right_finger_joint": 0.004389430903366552,
+        "shoulder_lift_joint": -1.2035767200477654,
+        "shoulder_pan_joint": -0.006490771910638115,
+        "wrist_1_joint": -1.7715578740270954,
+        "wrist_2_joint": -1.5697930369373294,
+        "wrist_3_joint": -0.0008578319207445886
+      }
+    },
+    {
+      "time": 1792484221.1126516,
+      "joints": {
+        "elbow_joint": 1.4084535510462681,
+        "gripper_finger_joint": 0.004940629882733646,
+        "right_finger_joint": 0.004389430903368325,
+        "shoulder_lift_joint": -1.2047284659965816,
+        "shoulder_pan_joint": -0.008332616384858613,
+        "wrist_1_joint": -1.772252154420766,
+        "wrist_2_joint": -1.569792599701803,
+        "wrist_3_joint": -0.0008577207351905768
+      }
+    },
+    {
+      "time": 1792484221.2675736,
+      "joints": {
+        "elbow_joint": 1.4112604476597836,
+        "gripper_finger_joint": 0.0049406298827334855,
+        "right_finger_joint": 0.0043894309033684865,
+        "shoulder_lift_joint": -1.2064814172074845,
+        "shoulder_pan_joint": -0.011135895628115882,
+        "wrist_1_joint": -1.773308845488956,
+        "wrist_2_joint": -1.569791934232361,
+        "wrist_3_joint": -0.0008575515152554521
+      }
+    },
+    {
+      "time": 1792484221.4200716,
+      "joints": {
+        "elbow_joint": 1.4142740921915942,
+        "gripper_finger_joint": 0.004940629882736781,
+        "right_finger_joint": 0.004389430903365192,
+        "shoulder_lift_joint": -1.2083634857544834,
+        "shoulder_pan_joint": -0.014145656628240464,
+        "wrist_1_joint": -1.774443369377007,
+        "wrist_2_joint": -1.569791219746501,
+        "wrist_3_joint": -0.0008573698316950405
+      }
+    },
+    {
+      "time": 1792484221.5714233,
+      "joints": {
+        "elbow_joint": 1.4178800697645269,
+        "gripper_finger_joint": 0.004940629882732141,
+        "right_finger_joint": 0.0043894309033698335,
+        "shoulder_lift_joint": -1.2106154756290428,
+        "shoulder_pan_joint": -0.017746987401539654,
+        "wrist_1_joint": -1.7758008843901867,
+        "wrist_2_joint": -1.5697903648280918,
+        "wrist_3_joint": -0.0008571524382633473
+      }
+    },
+    {
+      "time": 1792484221.7272434,
+      "joints": {
+        "elbow_joint": 1.4223903678105572,
+        "gripper_finger_joint": 0.004940629882732853,
+        "right_finger_joint": 0.004389430903369124,
+        "shoulder_lift_joint": -1.2134322279036918,
+        "shoulder_pan_joint": -0.022251473313032646,
+        "wrist_1_joint": -1.7774988420694844,
+        "wrist_2_joint": -1.5697892955101287,
+        "wrist_3_joint": -0.0008568805261038431
+      }
+    },
+    {
+      "time": 1792484221.8825037,
+      "joints": {
+        "elbow_joint": 1.4274281011081904,
+        "gripper_finger_joint": 0.004940629882733826,
+        "right_finger_joint": 0.004389430903368153,
+        "shoulder_lift_joint": -1.2165783718126666,
+        "shoulder_pan_joint": -0.027282714804687042,
+        "wrist_1_joint": -1.7793953592955447,
+        "wrist_2_joint": -1.5697881011458878,
+        "wrist_3_joint": -0.0008565768164778855
+      }
+    },
+    {
+      "time": 1792484222.0384028,
+      "joints": {
+        "elbow_joint": 1.4321117316741452,
+        "gripper_finger_joint": 0.004940629882736708,
+        "right_finger_joint": 0.004389430903365272,
+        "shoulder_lift_joint": -1.2195033729801343,
+        "shoulder_pan_joint": -0.03196030987437361,
+        "wrist_1_joint": -1.7811585701532882,
+        "wrist_2_joint": -1.5697869907336375,
+        "wrist_3_joint": -0.0008562944546264857
+      }
+    },
+    {
+      "time": 1792484222.1979582,
+      "joints": {
+        "elbow_joint": 1.4372710038561194,
+        "gripper_finger_joint": 0.0049406298827339625,
+        "right_finger_joint": 0.004389430903368019,
+        "shoulder_lift_joint": -1.2227254198395205,
+        "shoulder_pan_joint": -0.03711293363104184,
+        "wrist_1_joint": -1.783100842200856,
+        "wrist_2_joint": -1.569785767554477,
+        "wrist_3_joint": -0.0008559834177962455
+      }
+    },
+    {
+      "time": 1792484222.3535829,
+      "joints": {
+        "elbow_joint": 1.4418272394849603,
+        "gripper_finger_joint": 0.004940629882733281,
+        "right_finger_joint": 0.004389430903368703,
+        "shoulder_lift_joint": -1.225570860859249,
+        "shoulder_pan_joint": -0.041663297929359445,
+        "wrist_1_joint": -1.7848160936533644,
+        "wrist_2_joint": -1.5697846873454508,
+        "wrist_3_joint": -0.0008557087362034233
+      }
+    },
+    {
+      "time": 1792484222.5113142,
+      "joints": {
+        "elbow_joint": 1.447680929061253,
+        "gripper_finger_joint": 0.004940629882734089,
+        "right_finger_joint": 0.004389430903367896,
+        "shoulder_lift_joint": -1.2292265823350443,
+        "shoulder_pan_joint": -0.04750944422890394,
+        "wrist_1_joint": -1.7870197877478238,
+        "wrist_2_joint": -1.5697832995313072,
+        "wrist_3_joint": -0.0008553558350545998
+      }
+    },
+    {
+      "time": 1792484222.6673794,
+      "joints": {
+        "elbow_joint": 1.4531619394941702,
+        "gripper_finger_joint": 0.004940629882732322,
+        "right_finger_joint": 0.004389430903369666,
+        "shoulder_lift_joint": -1.2326495598072058,
+        "shoulder_pan_joint": -0.052983391632935264,
+        "wrist_1_joint": -1.7890831821532336,
+        "wrist_2_joint": -1.5697820000732754,
+        "wrist_3_joint": -0.000855025401602001
+      }
+    },
+    {
+      "time": 1792484222.8208313,
+      "joints": {
+        "elbow_joint": 1.4597178430728772,
+        "gripper_finger_joint": 0.004940629882732158,
+        "right_finger_joint": 0.004389430903369832,
+        "shoulder_lift_joint": -1.2367438250041485,
+        "shoulder_pan_joint": -0.05953084703645521,
+        "wrist_1_joint": -1.7915512334244807,
+        "wrist_2_joint": -1.569780445775657,
+        "wrist_3_joint": -0.0008546301661073181
+      }
+    },
+    {
+      "time": 1792484222.972209,
+      "joints": {
+        "elbow_joint": 1.4678359834824055,
+        "gripper_finger_joint": 0.004940629882730071,
+        "right_finger_joint": 0.004389430903371921,
+        "shoulder_lift_joint": -1.2418137317444762,
+        "shoulder_pan_joint": -0.06763852611574009,
+        "wrist_1_joint": -1.794607408140505,
+        "wrist_2_joint": -1.569778521097194,
+        "wrist_3_joint": -0.000854140748106558
+      }
+    },
+    {
+      "time": 1792484223.1312487,
+      "joints": {
+        "elbow_joint": 1.4761576405658876,
+        "gripper_finger_joint": 0.004940629882734506,
+        "right_finger_joint": 0.00438943090336749,
+        "shoulder_lift_joint": -1.247010737857935,
+        "shoulder_pan_joint": -0.0759494596100121,
+        "wrist_1_joint": -1.7977401992343818,
+        "wrist_2_joint": -1.5697765481683155,
+        "wrist_3_joint": -0.0008536390606947692
+      }
+    },
+    {
+      "time": 1792484223.2872863,
+      "joints": {
+        "elbow_joint": 1.4835344782124875,
+        "gripper_finger_joint": 0.004940629882733035,
+        "right_finger_joint": 0.0043894309033689636,
+        "shoulder_lift_joint": -1.2516176893295927,
+        "shoulder_pan_joint": -0.08331679119600185,
+        "wrist_1_joint": -1.8005173013245694,
+        "wrist_2_joint": -1.5697747992406308,
+        "wrist_3_joint": -0.0008531943335829181
+      }
+    },
+    {
+      "time": 1792484223.4401774,
+      "joints": {
+        "elbow_joint": 1.4926507027495617,
+        "gripper_finger_joint": 0.004940629882731513,
+        "right_finger_joint": 0.00438943090337049,
+        "shoulder_lift_joint": -1.2573109153512336,
+        "shoulder_pan_joint": -0.09242126823541652,
+        "wrist_1_joint": -1.803949217198196,
+        "wrist_2_joint": -1.569772637932734,
+        "wrist_3_joint": -0.0008526447441237758
+      }
+    },
+    {
+      "time": 1792484223.595533,
+      "joints": {
+        "elbow_joint": 1.5032566296972796,
+        "gripper_finger_joint": 0.004940629882741783,
+        "right_finger_joint": 0.004389430903360225,
+        "shoulder_lift_joint": -1.2639344840267046,
+        "shoulder_pan_joint": -0.10301352800091171,
+        "wrist_1_joint": -1.8079419500338152,
+        "wrist_2_joint": -1.5697701234408525,
+        "wrist_3_joint": -0.0008520053450179699
+      }
+    },
+    {
+      "time": 1792484223.7487922,
+      "joints": {
+        "elbow_joint": 1.5144922782755301,
+        "gripper_finger_joint": 0.004940629882734507,
+        "right_finger_joint": 0.004389430903367505,
+        "shoulder_lift_joint": -1.2709513237936005,
+        "shoulder_pan_joint": -0.11423469791479147,
+        "wrist_1_joint": -1.812171749393135,
+        "wrist_2_joint": -1.5697674596520912,
+        "wrist_3_joint": -0.0008513279819355924
+      }
+    },
+    {
+      "time": 1792484223.9011903,
+      "joints": {
+        "elbow_joint": 1.525183564598881,
+        "gripper_finger_joint": 0.0049406298827341395,
+        "right_finger_joint": 0.004389430903367876,
+        "shoulder_lift_joint": -1.2776282007456066,
+        "shoulder_pan_joint": -0.12491220705872545,
+        "wrist_1_joint": -1.8161966168251873,
+        "wrist_2_joint": -1.5697649249227932,
+        "wrist_3_joint": -0.0008506834367882959
+      }
+    },
+    {
+      "time": 1792484224.0591805,
+      "joints": {
+        "elbow_joint": 1.5374137418775708,
+        "gripper_finger_joint": 0.004940629882741095,
+        "right_finger_joint": 0.004389430903360923,
+        "shoulder_lift_joint": -1.2852661393735016,
+        "shoulder_pan_joint": -0.137126624087288,
+        "wrist_1_joint": -1.8208008188574034,
+        "wrist_2_joint": -1.5697620253476656,
+        "wrist_3_joint": -0.0008499461165729345
+      }
+    },
+    {
+      "time": 1792484224.2133605,
+      "joints": {
+        "elbow_joint": 1.54855490235633,
+        "gripper_finger_joint": 0.0049406298827344266,
+        "right_finger_joint": 0.0043894309033675975,
+        "shoulder_lift_joint": -1.292223969831823,
+        "shoulder_pan_joint": -0.14825342766247013,
+        "wrist_1_joint": -1.824995046998924,
+        "wrist_2_joint": -1.5697593839604949,
+        "wrist_3_joint": -0.000849274449890095
+      }
+    },
+    {
+      "time": 1792484224.366832,
+      "joints": {
+        "elbow_joint": 1.5612833859389168,
+        "gripper_finger_joint": 0.004940629882732727,
+        "right_finger_joint": 0.004389430903369303,
+        "shoulder_lift_joint": -1.3001731086067267,
+        "shoulder_pan_joint": -0.1609655088593445,
+        "wrist_1_joint": -1.8297868426240318,
+        "wrist_2_joint": -1.5697563662450005,
+        "wrist_3_joint": -0.0008485070883157616
+      }
+    },
+    {
+      "time": 1792484224.5236773,
+      "joints": {
+        "elbow_joint": 1.5752544758600278,
+        "gripper_finger_joint": 0.004940629882734149,
+        "right_finger_joint": 0.0043894309033678846,
+        "shoulder_lift_joint": -1.308898274640762,
+        "shoulder_pan_joint": -0.17491859512713717,
+        "wrist_1_joint": -1.8350464328279585,
+        "wrist_2_joint": -1.5697530539278781,
+        "wrist_3_joint": -0.0008476648137784147
+      }
+    },
+    {
+      "time": 1792484224.679066,
+      "joints": {
+        "elbow_joint": 1.587678376452742,
+        "gripper_finger_joint": 0.0049406298827282475,
+        "right_finger_joint": 0.004389430903373791,
+        "shoulder_lift_joint": -1.3166571965340363,
+        "shoulder_pan_joint": -0.18732648583082753,
+        "wrist_1_joint": -1.839723564406193,
+        "wrist_2_joint": -1.5697501084239929,
+        "wrist_3_joint": -0.0008469158145930452
+      }
+    },
+    {
+      "time": 1792484224.8318694,
+      "joints": {
+        "elbow_joint": 1.602044010122633,
+        "gripper_finger_joint": 0.004940629882737322,
+        "right_finger_joint": 0.004389430903364725,
+        "shoulder_lift_joint": -1.3256287613626676,
+        "shoulder_pan_joint": -0.20167360742401522,
+        "wrist_1_joint": -1.845131685501228,
+        "wrist_2_joint": -1.569746702567068,
+        "wrist_3_joint": -0.0008460497542007388
+      }
+    },
+    {
+      "time": 1792484224.984188,
+      "joints": {
+        "elbow_joint": 1.6162116892238902,
+        "gripper_finger_joint": 0.004940629882741122,
+        "right_finger_joint": 0.004389430903360923,
+        "shoulder_lift_joint": -1.3344767004406768,
+        "shoulder_pan_joint": -0.21582302954000404,
+        "wrist_1_joint": -1.8504652841419906,
+        "wrist_2_joint": -1.5697433436418857,
+        "wrist_3_joint": -0.0008451956278954176
+      }
+    },
+    {
+      "time": 1792484225.1417658,
+      "joints": {
+        "elbow_joint": 1.6298865469440318,
+        "gripper_finger_joint": 0.004940629882738774,
+        "right_finger_joint": 0.004389430903363266,
+        "shoulder_lift_joint": -1.343016864792476,
+        "shoulder_pan_joint": -0.22948026534238467,
+        "wrist_1_joint": -1.855613354057168,
+        "wrist_2_joint": -1.5697401015565406,
+        "wrist_3_joint": -0.0008443712123023578
+      }
+    },
+    {
+      "time": 1792484225.292581,
+      "joints": {
+        "elbow_joint": 1.643096697944265,
+        "gripper_finger_joint": 0.004940629882742285,
+        "right_finger_joint": 0.004389430903359748,
+        "shoulder_lift_joint": -1.3512668124674616,
+        "shoulder_pan_joint": -0.24267339326279716,
+        "wrist_1_joint": -1.8605864793598756,
+        "wrist_2_joint": -1.5697369696456225,
+        "wrist_3_joint": -0.000843574812455356
+      }
+    },
+    {
+      "time": 1792484225.444294,
+      "joints": {
+        "elbow_joint": 1.656302041754996,
+        "gripper_finger_joint": 0.004940629882740423,
+        "right_finger_joint": 0.004389430903361604,
+        "shoulder_lift_joint": -1.3595137579767773,
+        "shoulder_pan_joint": -0.255861720188425,
+        "wrist_1_joint": -1.8655577949364481,
+        "wrist_2_joint": -1.5697338388743585,
+        "wrist_3_joint": -0.0008427787024276878
+      }
+    },
+    {
+      "time": 1792484225.5972645,
+      "joints": {
+        "elbow_joint": 1.6695453881513806,
+        "gripper_finger_joint": 0.004940629882741653,
+        "right_finger_joint": 0.004389430903360369,
+        "shoulder_lift_joint": -1.3677844367002807,
+        "shoulder_pan_joint": -0.2690880007281957,
+        "wrist_1_joint": -1.8705434170580484,
+        "wrist_2_joint": -1.5697306990933335,
+        "wrist_3_joint": -0.0008419803013347285
+      }
+    },
+    {
+      "time": 1792484225.7480824,
+      "joints": {
+        "elbow_joint": 1.6815687382143782,
+        "gripper_finger_joint": 0.004940629882749512,
+        "right_finger_joint": 0.004389430903352506,
+        "shoulder_lift_joint": -1.3752932084695038,
+        "shoulder_pan_joint": -0.28109585706611667,
+        "wrist_1_joint": -1.8750697564178556,
+        "wrist_2_joint": -1.5697278485535673,
+        "wrist_3_joint": -0.0008412554501007769
+      }
+    },
+    {
+      "time": 1792484225.9022958,
+      "joints": {
+        "elbow_joint": 1.6935865628697357,
+        "gripper_finger_joint": 0.004940629882741911,
+        "right_finger_joint": 0.004389430903360103,
+        "shoulder_lift_joint": -1.3827985295345064,
+        "shoulder_pan_joint": -0.29309819511663404,
+        "wrist_1_joint": -1.8795940156694404,
+        "wrist_2_joint": -1.5697249993236349,
+        "wrist_3_joint": -0.0008405309320019963
+      }
+    },
+    {
+      "time": 1792484226.0548081,
+      "joints": {
+        "elbow_joint": 1.704417142854118,
+        "gripper_finger_joint": 0.0049406298827401945,
+        "right_finger_joint": 0.004389430903361813,
+        "shoulder_lift_joint": -1.3895623975750258,
+        "shoulder_pan_joint": -0.30391481842273077,
+        "wrist_1_joint": -1.8836713219290426,
+        "wrist_2_joint": -1.5697224315700729,
+        "wrist_3_joint": -0.0008398779892653415
+      }
+    },
+    {
+      "time": 1792484226.214837,
+      "joints": {
+        "elbow_joint": 1.7151837752172048,
+        "gripper_finger_joint": 0.004940629882742125,
+        "right_finger_joint": 0.004389430903359879,
+        "shoulder_lift_joint": -1.3962863293173418,
+        "shoulder_pan_joint": -0.31466757651275706,
+        "wrist_1_joint": -1.887724554312902,
+        "wrist_2_joint": -1.5697198789774827,
+        "wrist_3_joint": -0.0008392289017303687
+      }
+    },
+    {
+      "time": 1792484226.368031,
+      "joints": {
+        "elbow_joint": 1.7252943049865925,
+        "gripper_finger_joint": 0.004940629882742589,
+        "right_finger_joint": 0.0043894309033594104,
+        "shoulder_lift_joint": -1.4026005146406102,
+        "shoulder_pan_joint": -0.32476507748668937,
+        "wrist_1_joint": -1.891530788732109,
+        "wrist_2_joint": -1.5697174819360813,
+        "wrist_3_joint": -0.0008386193686284406
+      }
+    },
+    {
+      "time": 1792484226.5285475,
+      "joints": {
+        "elbow_joint": 1.7343641652521373,
+        "gripper_finger_joint": 0.0049406298827423785,
+        "right_finger_joint": 0.004389430903359619,
+        "shoulder_lift_joint": -1.4082647854433339,
+        "shoulder_pan_joint": -0.33382325000125573,
+        "wrist_1_joint": -1.8949452502002575,
+        "wrist_2_joint": -1.5697153316204098,
+        "wrist_3_joint": -0.0008380725743281128
+      }
+    },
+    {
+      "time": 1792484226.6825452,
+      "joints": {
+        "elbow_joint": 1.7428178380681538,
+        "gripper_finger_joint": 0.00494062988274122,
+        "right_finger_joint": 0.004389430903360773,
+        "shoulder_lift_joint": -1.4135442374641591,
+        "shoulder_pan_joint": -0.3422660291077946,
+        "wrist_1_joint": -1.8981277402551822,
+        "wrist_2_joint": -1.5697133273927042,
+        "wrist_3_joint": -0.0008375629280973382
+      }
+    },
+    {
+      "time": 1792484226.837878,
+      "joints": {
+        "elbow_joint": 1.7507186383182172,
+        "gripper_finger_joint": 0.004940629882740691,
+        "right_finger_joint": 0.0043894309033612995,
+        "shoulder_lift_joint": -1.418478411846601,
+        "shoulder_pan_joint": -0.3501566481000265,
+        "wrist_1_joint": -1.9011020945706376,
+        "wrist_2_joint": -1.5697114542420572,
+        "wrist_3_joint": -0.0008370866128716448
+      }
+    },
+    {
+      "time": 1792484226.9909172,
+      "joints": {
+        "elbow_joint": 1.7577280171477085,
+        "gripper_finger_joint": 0.0049406298827410116,
+        "right_finger_joint": 0.004389430903360975,
+        "shoulder_lift_joint": -1.4228558794907216,
+        "shoulder_pan_joint": -0.3571569943896691,
+        "wrist_1_joint": -1.9037408622283771,
+        "wrist_2_joint": -1.569709792432872,
+        "wrist_3_joint": -0.0008366640387318079
+      }
+    },
+    {
+      "time": 1792484227.1447237,
+      "joints": {
+        "elbow_joint": 1.7639051355296191,
+        "gripper_finger_joint": 0.0049406298827413065,
+        "right_finger_joint": 0.004389430903360678,
+        "shoulder_lift_joint": -1.4267135873573493,
+        "shoulder_pan_joint": -0.3633261527127357,
+        "wrist_1_joint": -1.9060663151109676,
+        "wrist_2_joint": -1.5697083279390378,
+        "wrist_3_joint": -0.0008362916390441088
+      }
+    },
+    {
+      "time": 1792484227.297883,
+      "joints": {
+        "elbow_joint": 1.7696118761513522,
+        "gripper_finger_joint": 0.004940629882741593,
+        "right_finger_joint": 0.004389430903360389,
+        "shoulder_lift_joint": -1.4302775368930647,
+        "shoulder_pan_joint": -0.3690255394214713,
+        "wrist_1_joint": -1.9082146884476139,
+        "wrist_2_joint": -1.5697069749640855,
+        "wrist_3_joint": -0.0008359475970015078
+      }
+    },
+    {
+      "time": 1792484227.4516559,
+      "joints": {
+        "elbow_joint": 1.7753251970806576,
+        "gripper_finger_joint": 0.004940629882741734,
+        "right_finger_joint": 0.004389430903360245,
+        "shoulder_lift_joint": -1.4338455959346552,
+        "shoulder_pan_joint": -0.37473149795815636,
+        "wrist_1_joint": -1.9103655390227183,
+        "wrist_2_joint": -1.5697056204290483,
+        "wrist_3_joint": -0.0008356031582524126
+      }
+    },
+    {
+      "time": 1792484227.6023495,
+      "joints": {
+        "elbow_joint": 1.780660039771123,
+        "gripper_finger_joint": 0.004940629882740272,
+        "right_finger_joint": 0.0043894309033617055,
+        "shoulder_lift_joint": -1.4371772893460222,
+        "shoulder_pan_joint": -0.38005946597679086,
+        "wrist_1_joint": -1.9123739067673107,
+        "wrist_2_joint": -1.5697043556250023,
+        "wrist_3_joint": -0.0008352815368084233
+      }
+    },
+    {
+      "time": 1792484227.7540047,
+      "joints": {
+        "elbow_joint": 1.7855803908229309,
+        "gripper_finger_joint": 0.004940629882741453,
+        "right_finger_joint": 0.0043894309033605215,
+        "shoulder_lift_joint": -1.440250126190904,
+        "shoulder_pan_joint": -0.3849734764857308,
+        "wrist_1_joint": -1.9142262339900276,
+        "wrist_2_joint": -1.5697031890901765,
+        "wrist_3_joint": -0.0008349849038006163
+      }
+    },
+    {
+      "time": 1792484227.9116178,
+      "joints": {
+        "elbow_joint": 1.7896447446758195,
+        "gripper_finger_joint": 0.004940629882741787,
+        "right_finger_joint": 0.004389430903360187,
+        "shoulder_lift_joint": -1.4427883792826632,
+        "shoulder_pan_joint": -0.38903259286479575,
+        "wrist_1_joint": -1.9157563104429483,
+        "wrist_2_joint": -1.5697022254982913,
+        "wrist_3_joint": -0.000834739876262934
+      }
+    },
+    {
+      "time": 1792484228.0623803,
+      "joints": {
+        "elbow_joint": 1.7933283363178367,
+        "gripper_finger_joint": 0.00494062988274172,
+        "right_finger_joint": 0.004389430903360253,
+        "shoulder_lift_joint": -1.4450888403676363,
+        "shoulder_pan_joint": -0.3927114376969885,
+        "wrist_1_joint": -1.9171430442357342,
+        "wrist_2_joint": -1.569701352178901,
+        "wrist_3_joint": -0.0008345178037220208
+      }
+    },
+    {
+      "time": 1792484228.2172613,
+      "joints": {
+        "elbow_joint": 1.7959499688860214,
+        "gripper_finger_joint": 0.004940629882743111,
+        "right_finger_joint": 0.0043894309033588605,
+        "shoulder_lift_joint": -1.4467260912597857,
+        "shoulder_pan_joint": -0.3953296919343364,
+        "wrist_1_joint": -1.9181299903545876,
+        "wrist_2_joint": -1.5697007306326696,
+        "wrist_3_joint": -0.0008343597534625066
+      }
+    },
+    {
+      "time": 1792484228.3725839,
+      "joints": {
+        "elbow_joint": 1.7979974900566758,
+        "gripper_finger_joint": 0.004940629882741613,
+        "right_finger_joint": 0.004389430903360358,
+        "shoulder_lift_joint": -1.4480048005282153,
+        "shoulder_pan_joint": -0.39737457459492975,
+        "wrist_1_joint": -1.9189008051122343,
+        "wrist_2_joint": -1.5697002451988422,
+        "wrist_3_joint": -0.0008342363146387212
+      }
+    },
+    {
+      "time": 1792484228.528,
+      "joints": {
+        "elbow_joint": 1.7992936629816094,
+        "gripper_finger_joint": 0.004940629882741708,
+        "right_finger_joint": 0.004389430903360261,
+        "shoulder_lift_joint": -1.4488142809655116,
+        "shoulder_pan_joint": -0.3986690772244083,
+        "wrist_1_joint": -1.9193887654973631,
+        "wrist_2_joint": -1.5696999378974217,
+        "wrist_3_joint": -0.0008341581723136065
+      }
+    },
+    {
+      "time": 1792484228.6852734,
+      "joints": {
+        "elbow_joint": 1.8002262794301225,
+        "gripper_finger_joint": 0.00494062988274201,
+        "right_finger_joint": 0.004389430903359959,
+        "shoulder_lift_joint": -1.4493967146485869,
+        "shoulder_pan_joint": -0.3996004918695314,
+        "wrist_1_joint": -1.9197398605346372,
+        "wrist_2_joint": -1.5696997167893028,
+        "wrist_3_joint": -0.000834101947702793
+      }
+    },
+    {
+      "time": 1792484228.8498063,
+      "joints": {
+        "elbow_joint": 1.8006406567908217,
+        "gripper_finger_joint": 0.004940629882741286,
+        "right_finger_joint": 0.004389430903360683,
+        "shoulder_lift_joint": -1.4496554998466833,
+        "shoulder_pan_joint": -0.40001433524853114,
+        "wrist_1_joint": -1.9198958580351486,
+        "wrist_2_joint": -1.5696996185471943,
+        "wrist_3_joint": -0.0008340769661527894
+      }
+    },
+    {
+      "time": 1792484229.2569861,
+      "joints": {
+        "elbow_joint": 1.800695474309266,
+        "gripper_finger_joint": 0.004940629882738512,
+        "right_finger_joint": 0.004389430903363457,
+        "shoulder_lift_joint": -1.4496897342516393,
+        "shoulder_pan_joint": -0.4000690821271323,
+        "wrist_1_joint": -1.9199164947703522,
+        "wrist_2_joint": -1.5696996055508294,
+        "wrist_3_joint": -0.0008340736613760962
+      }
+    },
+    {
+      "time": 1792484229.5023022,
+      "joints": {
+        "elbow_joint": 1.80069700722739,
+        "gripper_finger_joint": 0.004940629882738246,
+        "right_finger_joint": 0.004389430903363722,
+        "shoulder_lift_joint": -1.449690691583188,
+        "shoulder_pan_joint": -0.40007061306988273,
+        "wrist_1_joint": -1.9199170718564074,
+        "wrist_2_joint": -1.569699605187397,
+        "wrist_3_joint": -0.0008340735689615828
+      }
+    },
+    {
+      "time": 1792484229.6545281,
+      "joints": {
+        "elbow_joint": 1.800697042279989,
+        "gripper_finger_joint": 0.004983490414091081,
+        "right_finger_joint": 0.004431152449857538,
+        "shoulder_lift_joint": -1.4496907134740886,
+        "shoulder_pan_joint": -0.4000706480773117,
+        "wrist_1_joint": -1.9199170850523934,
+        "wrist_2_joint": -1.5696996051790868,
+        "wrist_3_joint": -0.0008340735668483864
+      }
+    },
+    {
+      "time": 1792484229.8073773,
+      "joints": {
+        "elbow_joint": 1.8006970425301836,
+        "gripper_finger_joint": 0.005128624901912857,
+        "right_finger_joint": 0.00457243010300932,
+        "shoulder_lift_joint": -1.4496907136303392,
+        "shoulder_pan_joint": -0.4000706483271836,
+        "wrist_1_joint": -1.9199170851465817,
+        "wrist_2_joint": -1.5696996051790273,
+        "wrist_3_joint": -0.0008340735668333037
+      }
+    },
+    {
+      "time": 1792484229.9576304,
+      "joints": {
+        "elbow_joint": 1.8006970425550903,
+        "gripper_finger_joint": 0.005404015815367898,
+        "right_finger_joint": 0.0048405027199061425,
+        "shoulder_lift_joint": -1.4496907136458943,
+        "shoulder_pan_joint": -0.400070648352059,
+        "wrist_1_joint": -1.9199170851559586,
+        "wrist_2_joint": -1.5696996051790226,
+        "wrist_3_joint": -0.0008340735668318019
+      }
+    },
+    {
+      "time": 1792484230.111483,
+      "joints": {
+        "elbow_joint": 1.8006970425572988,
+        "gripper_finger_joint": 0.005805725744343083,
+        "right_finger_joint": 0.005231537524006205,
+        "shoulder_lift_joint": -1.4496907136472732,
+        "shoulder_pan_joint": -0.4000706483542637,
+        "wrist_1_joint": -1.9199170851567895,
+        "wrist_2_joint": -1.5696996051790224,
+        "wrist_3_joint": -0.0008340735668316692
+      }
+    },
+    {
+      "time": 1792484230.269751,
+      "joints": {
+        "elbow_joint": 1.800697042557487,
+        "gripper_finger_joint": 0.006259349716549148,
+        "right_finger_joint": 0.005673106796538799,
+        "shoulder_lift_joint": -1.4496907136473909,
+        "shoulder_pan_joint": -0.4000706483544521,
+        "wrist_1_joint": -1.9199170851568605,
+        "wrist_2_joint": -1.5696996051790222,
+        "wrist_3_joint": -0.0008340735668316578
+      }
+    },
+    {
+      "time": 1792484230.4212396,
+      "joints": {
+        "elbow_joint": 1.8006970425575102,
+        "gripper_finger_joint": 0.006835182048223135,
+        "right_finger_joint": 0.006233636837668381,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.4000706483544752,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790222,
+        "wrist_3_joint": -0.0008340735668316573
+      }
+    },
+    {
+      "time": 1792484230.5845993,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.00754551272641471,
+        "right_finger_joint": 0.006925091037721444,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790217,
+        "wrist_3_joint": -0.0008340735668316573
+      }
+    },
+    {
+      "time": 1792484230.7380464,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.008352277331569602,
+        "right_finger_joint": 0.007710416509104305,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790217,
+        "wrist_3_joint": -0.0008340735668316573
+      }
+    },
+    {
+      "time": 1792484230.8938076,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.009296113107720782,
+        "right_finger_joint": 0.008629170593105811,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790215,
+        "wrist_3_joint": -0.0008340735668316573
+      }
+    },
+    {
+      "time": 1792484231.0447657,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.010104448443762817,
+        "right_finger_joint": 0.009416025054439996,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790215,
+        "wrist_3_joint": -0.0008340735668316573
+      }
+    },
+    {
+      "time": 1792484231.2054918,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.011031737915305088,
+        "right_finger_joint": 0.01031867253884158,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790215,
+        "wrist_3_joint": -0.0008340735668316573
+      }
+    },
+    {
+      "time": 1792484231.355544,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.012049903575990298,
+        "right_finger_joint": 0.011309781249256478,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790213,
+        "wrist_3_joint": -0.0008340735668316573
+      }
+    },
+    {
+      "time": 1792484231.5063038,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.013122222940796466,
+        "right_finger_joint": 0.012353604571770328,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790213,
+        "wrist_3_joint": -0.0008340735668316575
+      }
+    },
+    {
+      "time": 1792484231.665385,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.014325199717620106,
+        "right_finger_joint": 0.013524613188515812,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.569699605179021,
+        "wrist_3_joint": -0.000834073566831658
+      }
+    },
+    {
+      "time": 1792484231.8183649,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.015520269872505613,
+        "right_finger_joint": 0.014687925295571941,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790209,
+        "wrist_3_joint": -0.0008340735668316583
+      }
+    },
+    {
+      "time": 1792484231.9705195,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.016842938546512608,
+        "right_finger_joint": 0.015975445091632477,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790209,
+        "wrist_3_joint": -0.0008340735668316587
+      }
+    },
+    {
+      "time": 1792484232.1245353,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.01798349695917007,
+        "right_finger_joint": 0.01708569406306319,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790209,
+        "wrist_3_joint": -0.0008340735668316591
+      }
+    },
+    {
+      "time": 1792484232.275047,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.01918130343393168,
+        "right_finger_joint": 0.018251669774450502,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790209,
+        "wrist_3_joint": -0.0008340735668316596
+      }
+    },
+    {
+      "time": 1792484232.4362154,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.020321848007822493,
+        "right_finger_joint": 0.019361905274868856,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790209,
+        "wrist_3_joint": -0.0008340735668316598
+      }
+    },
+    {
+      "time": 1792484232.5902865,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.021578688809452764,
+        "right_finger_joint": 0.020585346522398542,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790206,
+        "wrist_3_joint": -0.0008340735668316601
+      }
+    },
+    {
+      "time": 1792484232.7472806,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.022360429396495185,
+        "right_finger_joint": 0.02134631296923508,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790206,
+        "wrist_3_joint": -0.0008340735668316604
+      }
+    },
+    {
+      "time": 1792484232.9217162,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.02361531767099703,
+        "right_finger_joint": 0.022567853576506463,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790202,
+        "wrist_3_joint": -0.0008340735668316608
+      }
+    },
+    {
+      "time": 1792484233.0756469,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.02481940743695764,
+        "right_finger_joint": 0.02373994560557948,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790202,
+        "wrist_3_joint": -0.0008340735668316611
+      }
+    },
+    {
+      "time": 1792484233.2342901,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.025899267620767368,
+        "right_finger_joint": 0.024791109355772938,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790202,
+        "wrist_3_joint": -0.0008340735668316613
+      }
+    },
+    {
+      "time": 1792484233.3878655,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.02739581245408396,
+        "right_finger_joint": 0.026247884689197844,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.56969960517902,
+        "wrist_3_joint": -0.0008340735668316617
+      }
+    },
+    {
+      "time": 1792484233.5379016,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.028844127376887675,
+        "right_finger_joint": 0.027657711783983782,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.56969960517902,
+        "wrist_3_joint": -0.0008340735668316622
+      }
+    },
+    {
+      "time": 1792484233.6911314,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.030287569378383235,
+        "right_finger_joint": 0.029062795451506196,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.56969960517902,
+        "wrist_3_joint": -0.0008340735668316625
+      }
+    },
+    {
+      "time": 1792484233.8436558,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.03178562682199746,
+        "right_finger_joint": 0.030521043198801782,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.56969960517902,
+        "wrist_3_joint": -0.0008340735668316628
+      }
+    },
+    {
+      "time": 1792484233.9942212,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.03304468212284747,
+        "right_finger_joint": 0.031746640096979105,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.56969960517902,
+        "wrist_3_joint": -0.0008340735668316632
+      }
+    },
+    {
+      "time": 1792484234.1443043,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.034296183627589794,
+        "right_finger_joint": 0.03296488393522913,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.56969960517902,
+        "wrist_3_joint": -0.0008340735668316635
+      }
+    },
+    {
+      "time": 1792484234.2964456,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.03540015256277418,
+        "right_finger_joint": 0.034039515765723546,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790197,
+        "wrist_3_joint": -0.0008340735668316638
+      }
+    },
+    {
+      "time": 1792484234.456568,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.03612489093833264,
+        "right_finger_joint": 0.034744994789937075,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790197,
+        "wrist_3_joint": -0.0008340735668316639
+      }
+    },
+    {
+      "time": 1792484234.6120226,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.036884013507067735,
+        "right_finger_joint": 0.03548394427448318,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790197,
+        "wrist_3_joint": -0.0008340735668316641
+      }
+    },
+    {
+      "time": 1792484234.7624822,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.037685415339004234,
+        "right_finger_joint": 0.036264049484120896,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790197,
+        "wrist_3_joint": -0.0008340735668316642
+      }
+    },
+    {
+      "time": 1792484234.91806,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.03838653192287256,
+        "right_finger_joint": 0.036946534447147995,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790197,
+        "wrist_3_joint": -0.0008340735668316644
+      }
+    },
+    {
+      "time": 1792484235.0744178,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.03899627516111502,
+        "right_finger_joint": 0.03754007423922071,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790197,
+        "wrist_3_joint": -0.0008340735668316646
+      }
+    },
+    {
+      "time": 1792484235.2261708,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.0395060239622312,
+        "right_finger_joint": 0.03803627686755312,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790197,
+        "wrist_3_joint": -0.0008340735668316647
+      }
+    },
+    {
+      "time": 1792484235.3767116,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.03994102321445313,
+        "right_finger_joint": 0.03845971635736165,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790197,
+        "wrist_3_joint": -0.0008340735668316647
+      }
+    },
+    {
+      "time": 1792484235.5283666,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.04028131504375232,
+        "right_finger_joint": 0.03879096519939634,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790197,
+        "wrist_3_joint": -0.0008340735668316648
+      }
+    },
+    {
+      "time": 1792484235.683736,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.04052048463804998,
+        "right_finger_joint": 0.03902377905015545,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790197,
+        "wrist_3_joint": -0.000834073566831665
+      }
+    },
+    {
+      "time": 1792484235.8348114,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.04062231769255747,
+        "right_finger_joint": 0.0391229059714686,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790197,
+        "wrist_3_joint": -0.000834073566831665
+      }
+    },
+    {
+      "time": 1792484236.3608565,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.040636579037861685,
+        "right_finger_joint": 0.03913678833275718,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790197,
+        "wrist_3_joint": -0.000834073566831665
+      }
+    },
+    {
+      "time": 1792484236.5152845,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.040636599519350426,
+        "right_finger_joint": 0.039136808269966496,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790197,
+        "wrist_3_joint": -0.000834073566831665
+      }
+    },
+    {
+      "time": 1792484236.6666782,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.04063659979939301,
+        "right_finger_joint": 0.03913680854256719,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790197,
+        "wrist_3_joint": -0.000834073566831665
+      }
+    },
+    {
+      "time": 1792484236.817133,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.040636599824213006,
+        "right_finger_joint": 0.03913680856672761,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790197,
+        "wrist_3_joint": -0.000834073566831665
+      }
+    },
+    {
+      "time": 1792484236.9694223,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.04063659982636262,
+        "right_finger_joint": 0.039136808568820076,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790197,
+        "wrist_3_joint": -0.000834073566831665
+      }
+    },
+    {
+      "time": 1792484237.1265619,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.040636599826594615,
+        "right_finger_joint": 0.039136808569045896,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790197,
+        "wrist_3_joint": -0.000834073566831665
+      }
+    },
+    {
+      "time": 1792484237.2812848,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.04063659982662388,
+        "right_finger_joint": 0.0391368085690744,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790197,
+        "wrist_3_joint": -0.000834073566831665
+      }
+    },
+    {
+      "time": 1792484237.4333413,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.04063659982662649,
+        "right_finger_joint": 0.039136808569076954,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790197,
+        "wrist_3_joint": -0.000834073566831665
+      }
+    },
+    {
+      "time": 1792484237.5855632,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.04063659982662666,
+        "right_finger_joint": 0.03913680856907711,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790197,
+        "wrist_3_joint": -0.000834073566831665
+      }
+    },
+    {
+      "time": 1792484237.7356465,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.04063659982662666,
+        "right_finger_joint": 0.03913680856907711,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790197,
+        "wrist_3_joint": -0.000834073566831665
+      }
+    },
+    {
+      "time": 1792484238.0734892,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.04063659982662666,
+        "right_finger_joint": 0.03913680856907711,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790197,
+        "wrist_3_joint": -0.000834073566831665
+      }
+    },
+    {
+      "time": 1792484238.3884077,
+      "joints": {
+        "elbow_joint": 1.800697042557511,
+        "gripper_finger_joint": 0.04063659982662666,
+        "right_finger_joint": 0.03913680856907711,
+        "shoulder_lift_joint": -1.449690713647405,
+        "shoulder_pan_joint": -0.40007064835447764,
+        "wrist_1_joint": -1.9199170851568685,
+        "wrist_2_joint": -1.5696996051790197,
+        "wrist_3_joint": -0.000834073566831665
+      }
+    },
+    {
+      "time": 1792484238.5391617,
+      "joints": {
+        "elbow_joint": 1.800658566369283,
+        "gripper_finger_joint": 0.040636599826628525,
+        "right_finger_joint": 0.03913680856907534,
+        "shoulder_lift_joint": -1.44971086151634,
+        "shoulder_pan_joint": -0.4000039625955006,
+        "wrist_1_joint": -1.9198586627848908,
+        "wrist_2_joint": -1.5696996905178915,
+        "wrist_3_joint": -0.0008338210883000711
+      }
+    },
+    {
+      "time": 1792484238.6898773,
+      "joints": {
+        "elbow_joint": 1.800449634706465,
+        "gripper_finger_joint": 0.040636599826629705,
+        "right_finger_joint": 0.03913680856907418,
+        "shoulder_lift_joint": -1.4498202675651344,
+        "shoulder_pan_joint": -0.3996418486009504,
+        "wrist_1_joint": -1.9195414202725585,
+        "wrist_2_joint": -1.5697001539210946,
+        "wrist_3_joint": -0.0008324500908035885
+      }
+    },
+    {
+      "time": 1792484238.843248,
+      "joints": {
+        "elbow_joint": 1.8000641707733507,
+        "gripper_finger_joint": 0.04063659982662989,
+        "right_finger_joint": 0.03913680856907399,
+        "shoulder_lift_joint": -1.4500221138783984,
+        "shoulder_pan_joint": -0.39897377425266173,
+        "wrist_1_joint": -1.918956130591414,
+        "wrist_2_joint": -1.5697010088667493,
+        "wrist_3_joint": -0.0008299206987570581
+      }
+    },
+    {
+      "time": 1792484239.0018203,
+      "joints": {
+        "elbow_joint": 1.7993830985056678,
+        "gripper_finger_joint": 0.04063659982663045,
+        "right_finger_joint": 0.03913680856907344,
+        "shoulder_lift_joint": -1.4503787540578972,
+        "shoulder_pan_joint": -0.39779336054269643,
+        "wrist_1_joint": -1.9179219882603569,
+        "wrist_2_joint": -1.5697025194614542,
+        "wrist_3_joint": -0.0008254515419072678
+      }
+    },
+    {
+      "time": 1792484239.1602829,
+      "joints": {
+        "elbow_joint": 1.798566493494531,
+        "gripper_finger_joint": 0.040636599826630586,
+        "right_finger_joint": 0.0391368085690733,
+        "shoulder_lift_joint": -1.4508063652991265,
+        "shoulder_pan_joint": -0.3963780456098996,
+        "wrist_1_joint": -1.916682052573905,
+        "wrist_2_joint": -1.569704330663086,
+        "wrist_3_joint": -0.0008200930270306009
+      }
+    },
+    {
+      "time": 1792484239.3156173,
+      "joints": {
+        "elbow_joint": 1.79741542089389,
+        "gripper_finger_joint": 0.04063659982663061,
+        "right_finger_joint": 0.03913680856907328,
+        "shoulder_lift_joint": -1.4514091188663851,
+        "shoulder_pan_joint": -0.39438304163833227,
+        "wrist_1_joint": -1.914934260219261,
+        "wrist_2_joint": -1.569706883702245,
+        "wrist_3_joint": -0.0008125397551668544
+      }
+    },
+    {
+      "time": 1792484239.4661143,
+      "joints": {
+        "elbow_joint": 1.7959283251007707,
+        "gripper_finger_joint": 0.040636599826630114,
+        "right_finger_joint": 0.039136808569073776,
+        "shoulder_lift_joint": -1.4521878293436046,
+        "shoulder_pan_joint": -0.39180565250429933,
+        "wrist_1_joint": -1.9126762491638463,
+        "wrist_2_joint": -1.569710182029202,
+        "wrist_3_joint": -0.000802781518539947
+      }
+    },
+    {
+      "time": 1792484239.619854,
+      "joints": {
+        "elbow_joint": 1.7940758843945936,
+        "gripper_finger_joint": 0.04063659982663019,
+        "right_finger_joint": 0.03913680856907371,
+        "shoulder_lift_joint": -1.4531578509071124,
+        "shoulder_pan_joint": -0.3885950586947878,
+        "wrist_1_joint": -1.9098634972124189,
+        "wrist_2_joint": -1.569714290678528,
+        "wrist_3_joint": -0.0007906259097125929
+      }
+    },
+    {
+      "time": 1792484239.7731736,
+      "joints": {
+        "elbow_joint": 1.791586757752201,
+        "gripper_finger_joint": 0.04063659982663045,
+        "right_finger_joint": 0.03913680856907345,
+        "shoulder_lift_joint": -1.4544612699635877,
+        "shoulder_pan_joint": -0.38428098021307844,
+        "wrist_1_joint": -1.9060839992790168,
+        "wrist_2_joint": -1.5697198114752084,
+        "wrist_3_joint": -0.0007742924045772661
+      }
+    },
+    {
+      "time": 1792484239.9260366,
+      "joints": {
+        "elbow_joint": 1.7893293276887274,
+        "gripper_finger_joint": 0.040636599826630315,
+        "right_finger_joint": 0.039136808569073596,
+        "shoulder_lift_joint": -1.4556433622337361,
+        "shoulder_pan_joint": -0.3803684711848389,
+        "wrist_1_joint": -1.9026563101794032,
+        "wrist_2_joint": -1.5697248183769,
+        "wrist_3_joint": -0.0007594792789994684
+      }
+    },
+    {
+      "time": 1792484240.0837045,
+      "joints": {
+        "elbow_joint": 1.7862718668294564,
+        "gripper_finger_joint": 0.040636599826626596,
+        "right_finger_joint": 0.039136808569077315,
+        "shoulder_lift_joint": -1.4572443867378866,
+        "shoulder_pan_joint": -0.375069373149013,
+        "wrist_1_joint": -1.898013851735484,
+        "wrist_2_joint": -1.5697315997191508,
+        "wrist_3_joint": -0.0007394163975944463
+      }
+    },
+    {
+      "time": 1792484240.2436821,
+      "joints": {
+        "elbow_joint": 1.7831477505514812,
+        "gripper_finger_joint": 0.040636599826630204,
+        "right_finger_joint": 0.039136808569073714,
+        "shoulder_lift_joint": -1.4588803150277554,
+        "shoulder_pan_joint": -0.36965474997169345,
+        "wrist_1_joint": -1.893270183488436,
+        "wrist_2_joint": -1.569738528900881,
+        "wrist_3_joint": -0.0007189161271723635
+      }
+    },
+    {
+      "time": 1792484240.3987374,
+      "joints": {
+        "elbow_joint": 1.77989560754818,
+        "gripper_finger_joint": 0.04063659982663064,
+        "right_finger_joint": 0.03913680856907328,
+        "shoulder_lift_joint": -1.460583283889481,
+        "shoulder_pan_joint": -0.3640182347735379,
+        "wrist_1_joint": -1.888332119048176,
+        "wrist_2_joint": -1.5697457420414234,
+        "wrist_3_joint": -0.000697575752785231
+      }
+    },
+    {
+      "time": 1792484240.5524354,
+      "joints": {
+        "elbow_joint": 1.7767455279109627,
+        "gripper_finger_joint": 0.04063659982663155,
+        "right_finger_joint": 0.03913680856907238,
+        "shoulder_lift_joint": -1.462232807766104,
+        "shoulder_pan_joint": -0.358558612692786,
+        "wrist_1_joint": -1.883549027952623,
+        "wrist_2_joint": -1.569752728808961,
+        "wrist_3_joint": -0.0006769051123053914
+      }
+    },
+    {
+      "time": 1792484240.7171266,
+      "joints": {
+        "elbow_joint": 1.7731666623148825,
+        "gripper_finger_joint": 0.04063659982663228,
+        "right_finger_joint": 0.03913680856907167,
+        "shoulder_lift_joint": -1.4641068633240053,
+        "shoulder_pan_joint": -0.35235583184827973,
+        "wrist_1_joint": -1.8781148668722054,
+        "wrist_2_joint": -1.569760666608902,
+        "wrist_3_joint": -0.000653420803151252
+      }
+    },
+    {
+      "time": 1792484240.8796132,
+      "joints": {
+        "elbow_joint": 1.7693119477974137,
+        "gripper_finger_joint": 0.04063659982663009,
+        "right_finger_joint": 0.039136808569073867,
+        "shoulder_lift_joint": -1.4661253658275635,
+        "shoulder_pan_joint": -0.3456749580551565,
+        "wrist_1_joint": -1.8722618558986261,
+        "wrist_2_joint": -1.5697692162321675,
+        "wrist_3_joint": -0.0006281263893264409
+      }
+    },
+    {
+      "time": 1792484241.0359688,
+      "joints": {
+        "elbow_joint": 1.765489460945435,
+        "gripper_finger_joint": 0.04063659982663388,
+        "right_finger_joint": 0.03913680856907008,
+        "shoulder_lift_joint": -1.4681269924708769,
+        "shoulder_pan_joint": -0.33904994027024365,
+        "wrist_1_joint": -1.8664577795163535,
+        "wrist_2_joint": -1.5697776943756432,
+        "wrist_3_joint": -0.0006030434515691095
+      }
+    },
+    {
+      "time": 1792484241.1883507,
+      "joints": {
+        "elbow_joint": 1.7604430405259084,
+        "gripper_finger_joint": 0.04063659982663208,
+        "right_finger_joint": 0.03913680856907189,
+        "shoulder_lift_joint": -1.470769525972296,
+        "shoulder_pan_joint": -0.33030363810516306,
+        "wrist_1_joint": -1.858795278452015,
+        "wrist_2_joint": -1.569788887161327,
+        "wrist_3_joint": -0.0005699291325049755
+      }
+    },
+    {
+      "time": 1792484241.341247,
+      "joints": {
+        "elbow_joint": 1.755058522714196,
+        "gripper_finger_joint": 0.0406365998266299,
+        "right_finger_joint": 0.03913680856907409,
+        "shoulder_lift_joint": -1.4735891025282621,
+        "shoulder_pan_joint": -0.32097135583786013,
+        "wrist_1_joint": -1.8506194092153683,
+        "wrist_2_joint": -1.5698008298353137,
+        "wrist_3_joint": -0.0005345962378988579
+      }
+    },
+    {
+      "time": 1792484241.493227,
+      "joints": {
+        "elbow_joint": 1.7496196174064775,
+        "gripper_finger_joint": 0.04063659982662986,
+        "right_finger_joint": 0.039136808569074144,
+        "shoulder_lift_joint": -1.4764371588319114,
+        "shoulder_pan_joint": -0.3115448108190344,
+        "wrist_1_joint": -1.8423609578291,
+        "wrist_2_joint": -1.5698128931389015,
+        "wrist_3_joint": -0.0004989064556842695
+      }
+    },
+    {
+      "time": 1792484241.6470068,
+      "joints": {
+        "elbow_joint": 1.7439130877756608,
+        "gripper_finger_joint": 0.04063659982663182,
+        "right_finger_joint": 0.03913680856907218,
+        "shoulder_lift_joint": -1.479425355310335,
+        "shoulder_pan_joint": -0.3016544274748244,
+        "wrist_1_joint": -1.8336961448062188,
+        "wrist_2_joint": -1.569825550023988,
+        "wrist_3_joint": -0.0004614605381289151
+      }
+    },
+    {
+      "time": 1792484241.8038692,
+      "joints": {
+        "elbow_joint": 1.7370261715048059,
+        "gripper_finger_joint": 0.04063659982662717,
+        "right_finger_joint": 0.03913680856907684,
+        "shoulder_lift_joint": -1.4830316555101337,
+        "shoulder_pan_joint": -0.2897182339588401,
+        "wrist_1_joint": -1.823239028896667,
+        "wrist_2_joint": -1.5698408249656957,
+        "wrist_3_joint": -0.0004162689916895158
+      }
+    },
+    {
+      "time": 1792484241.959673,
+      "joints": {
+        "elbow_joint": 1.729420203644278,
+        "gripper_finger_joint": 0.040636599826639516,
+        "right_finger_joint": 0.03913680856906451,
+        "shoulder_lift_joint": -1.4870144835766148,
+        "shoulder_pan_joint": -0.2765358021287741,
+        "wrist_1_joint": -1.8116901027307142,
+        "wrist_2_joint": -1.5698576947390843,
+        "wrist_3_joint": -0.00036635907025616527
+      }
+    },
+    {
+      "time": 1792484242.1162453,
+      "joints": {
+        "elbow_joint": 1.7222712618908103,
+        "gripper_finger_joint": 0.0406365998266316,
+        "right_finger_joint": 0.03913680856907246,
+        "shoulder_lift_joint": -1.4907579921456084,
+        "shoulder_pan_joint": -0.26414547402721933,
+        "wrist_1_joint": -1.8008351264820892,
+        "wrist_2_joint": -1.569873550844206,
+        "wrist_3_joint": -0.0003194481277528679
+      }
+    },
+    {
+      "time": 1792484242.2672338,
+      "joints": {
+        "elbow_joint": 1.7144961525080364,
+        "gripper_finger_joint": 0.04063659982663124,
+        "right_finger_joint": 0.03913680856907284,
+        "shoulder_lift_joint": -1.494829390347328,
+        "shoulder_pan_joint": -0.2506698912626137,
+        "wrist_1_joint": -1.7890293752825925,
+        "wrist_2_joint": -1.5698907957675121,
+        "wrist_3_joint": -0.0002684283094505934
+      }
+    },
+    {
+      "time": 1792484242.418279,
+      "joints": {
+        "elbow_joint": 1.70671045481339,
+        "gripper_finger_joint": 0.04063659982663001,
+        "right_finger_joint": 0.03913680856907408,
+        "shoulder_lift_joint": -1.4989063330670465,
+        "shoulder_pan_joint": -0.23717595715837503,
+        "wrist_1_joint": -1.777207546756159,
+        "wrist_2_joint": -1.569908064175319,
+        "wrist_3_joint": -0.0002173390112593758
+      }
+    },
+    {
+      "time": 1792484242.5714564,
+      "joints": {
+        "elbow_joint": 1.6986299518623869,
+        "gripper_finger_joint": 0.04063659982663171,
+        "right_finger_joint": 0.0391368085690724,
+        "shoulder_lift_joint": -1.5031376491250035,
+        "shoulder_pan_joint": -0.22317107556311785,
+        "wrist_1_joint": -1.7649380849762566,
+        "wrist_2_joint": -1.569925986451,
+        "wrist_3_joint": -0.0001643152180130904
+      }
+    },
+    {
+      "time": 1792484242.7258272,
+      "joints": {
+        "elbow_joint": 1.6913557286807976,
+        "gripper_finger_joint": 0.04063659982662076,
+        "right_finger_joint": 0.039136808569083366,
+        "shoulder_lift_joint": -1.5069467607043274,
+        "shoulder_pan_joint": -0.21056361350622865,
+        "wrist_1_joint": -1.7538928810025625,
+        "wrist_2_joint": -1.5699421204259618,
+        "wrist_3_joint": -0.00011658218602619779
+      }
+    },
+    {
+      "time": 1792484242.880265,
+      "joints": {
+        "elbow_joint": 1.683487790934938,
+        "gripper_finger_joint": 0.040636599826617256,
+        "right_finger_joint": 0.039136808569086884,
+        "shoulder_lift_joint": -1.5110667680267584,
+        "shoulder_pan_joint": -0.19692714345013848,
+        "wrist_1_joint": -1.7419461789167676,
+        "wrist_2_joint": -1.569959571239333,
+        "wrist_3_joint": -6.495323337719393e-05
+      }
+    },
+    {
+      "time": 1792484243.0328257,
+      "joints": {
+        "elbow_joint": 1.6757180441256803,
+        "gripper_finger_joint": 0.04063659982662512,
+        "right_finger_joint": 0.03913680856907902,
+        "shoulder_lift_joint": -1.515135358142945,
+        "shoulder_pan_joint": -0.18346085493459213,
+        "wrist_1_joint": -1.7301485702661261,
+        "wrist_2_joint": -1.569976804268715,
+        "wrist_3_joint": -1.3968603957832492e-05
+      }
+    },
+    {
+      "time": 1792484243.1830802,
+      "joints": {
+        "elbow_joint": 1.666721848311368,
+        "gripper_finger_joint": 0.04063659982662427,
+        "right_finger_joint": 0.03913680856907985,
+        "shoulder_lift_joint": -1.51984617231385,
+        "shoulder_pan_joint": -0.16786892235922238,
+        "wrist_1_joint": -1.7164887174850239,
+        "wrist_2_joint": -1.5699967575194278,
+        "wrist_3_joint": 4.506391291812342e-05
+      }
+    },
+    {
+      "time": 1792484243.3412516,
+      "joints": {
+        "elbow_joint": 1.658455814351782,
+        "gripper_finger_joint": 0.040636599826622766,
+        "right_finger_joint": 0.039136808569081326,
+        "shoulder_lift_joint": -1.5241746407818273,
+        "shoulder_pan_joint": -0.15354248407088206,
+        "wrist_1_joint": -1.7039375448224818,
+        "wrist_2_joint": -1.570015091296431,
+        "wrist_3_joint": 9.930514991169424e-05
+      }
+    },
+    {
+      "time": 1792484243.4974625,
+      "joints": {
+        "elbow_joint": 1.6499202420406662,
+        "gripper_finger_joint": 0.04063659982662414,
+        "right_finger_joint": 0.03913680856907994,
+        "shoulder_lift_joint": -1.5286442516962557,
+        "shoulder_pan_joint": -0.13874889012137648,
+        "wrist_1_joint": -1.6909771042563657,
+        "wrist_2_joint": -1.570034022900189,
+        "wrist_3_joint": 0.00015531508199152034
+      }
+    },
+    {
+      "time": 1792484243.651759,
+      "joints": {
+        "elbow_joint": 1.642121395961664,
+        "gripper_finger_joint": 0.04063659982662335,
+        "right_finger_joint": 0.03913680856908071,
+        "shoulder_lift_joint": -1.5327280795034743,
+        "shoulder_pan_joint": -0.12523216763785386,
+        "wrist_1_joint": -1.6791353111806566,
+        "wrist_2_joint": -1.5700513204706614,
+        "wrist_3_joint": 0.00020649065912138002
+      }
+    },
+    {
+      "time": 1792484243.8078644,
+      "joints": {
+        "elbow_joint": 1.6353217491279703,
+        "gripper_finger_joint": 0.040636599826623584,
+        "right_finger_joint": 0.03913680856908045,
+        "shoulder_lift_joint": -1.536288681487076,
+        "shoulder_pan_joint": -0.11344722685225722,
+        "wrist_1_joint": -1.6688107054663097,
+        "wrist_2_joint": -1.570066401851826,
+        "wrist_3_joint": 0.0002511095485674687
+      }
+    },
+    {
+      "time": 1792484243.9617176,
+      "joints": {
+        "elbow_joint": 1.6288733629416743,
+        "gripper_finger_joint": 0.040636599826624785,
+        "right_finger_joint": 0.03913680856907924,
+        "shoulder_lift_joint": -1.539665347541581,
+        "shoulder_pan_joint": -0.10227108032187979,
+        "wrist_1_joint": -1.65901945505349,
+        "wrist_2_joint": -1.57008070414905,
+        "wrist_3_joint": 0.0002934234859529178
+      }
+    },
+    {
+      "time": 1792484244.1193347,
+      "joints": {
+        "elbow_joint": 1.623289629390433,
+        "gripper_finger_joint": 0.040636599826624854,
+        "right_finger_joint": 0.03913680856907916,
+        "shoulder_lift_joint": -1.542589242450348,
+        "shoulder_pan_joint": -0.09259352340262156,
+        "wrist_1_joint": -1.6505410959944793,
+        "wrist_2_joint": -1.5700930886766677,
+        "wrist_3_joint": 0.0003300636227293196
+      }
+    },
+    {
+      "time": 1792484244.2701821,
+      "joints": {
+        "elbow_joint": 1.6187539982533503,
+        "gripper_finger_joint": 0.0406365998266239,
+        "right_finger_joint": 0.03913680856908011,
+        "shoulder_lift_joint": -1.5449643036290484,
+        "shoulder_pan_joint": -0.08473250566403515,
+        "wrist_1_joint": -1.6436541790263883,
+        "wrist_2_joint": -1.5701031485494232,
+        "wrist_3_joint": 0.00035982617205132034
+      }
+    },
+    {
+      "time": 1792484244.4207776,
+      "joints": {
+        "elbow_joint": 1.613671244636307,
+        "gripper_finger_joint": 0.04063659982662295,
+        "right_finger_joint": 0.039136808569081034,
+        "shoulder_lift_joint": -1.5476258628325834,
+        "shoulder_pan_joint": -0.0759232319076705,
+        "wrist_1_joint": -1.6359365095175817,
+        "wrist_2_joint": -1.570114421920889,
+        "wrist_3_joint": 0.0003931789074585752
+      }
+    },
+    {
+      "time": 1792484244.5761638,
+      "joints": {
+        "elbow_joint": 1.6081859797929157,
+        "gripper_finger_joint": 0.04063659982662356,
+        "right_finger_joint": 0.039136808569080424,
+        "shoulder_lift_joint": -1.5504981950815442,
+        "shoulder_pan_joint": -0.06641633795365322,
+        "wrist_1_joint": -1.6276076656626046,
+        "wrist_2_joint": -1.5701265880483284,
+        "wrist_3_joint": 0.0004291728982673371
+      }
+    },
+    {
+      "time": 1792484244.730173,
+      "joints": {
+        "elbow_joint": 1.604387256115483,
+        "gripper_finger_joint": 0.040636599826625645,
+        "right_finger_joint": 0.03913680856907832,
+        "shoulder_lift_joint": -1.5524873782541186,
+        "shoulder_pan_joint": -0.059832505779073494,
+        "wrist_1_joint": -1.6218396713613312,
+        "wrist_2_joint": -1.570135013485892,
+        "wrist_3_joint": 0.00045409990344411386
+      }
+    },
+    {
+      "time": 1792484244.8844707,
+      "joints": {
+        "elbow_joint": 1.6001521897571602,
+        "gripper_finger_joint": 0.040636599826614286,
+        "right_finger_joint": 0.03913680856908967,
+        "shoulder_lift_joint": -1.5547050501486948,
+        "shoulder_pan_joint": -0.05249241776034086,
+        "wrist_1_joint": -1.6154091329242206,
+        "wrist_2_joint": -1.5701444067162793,
+        "wrist_3_joint": 0.0004818901640442041
+      }
+    },
+    {
+      "time": 1792484245.0375779,
+      "joints": {
+        "elbow_joint": 1.5956107873218415,
+        "gripper_finger_joint": 0.040636599826620046,
+        "right_finger_joint": 0.0391368085690839,
+        "shoulder_lift_joint": -1.5570831334396376,
+        "shoulder_pan_joint": -0.04462139738341278,
+        "wrist_1_joint": -1.6085134527981697,
+        "wrist_2_joint": -1.5701544793896371,
+        "wrist_3_joint": 0.0005116905843037718
+      }
+    },
+    {
+      "time": 1792484245.1929774,
+      "joints": {
+        "elbow_joint": 1.5914332870345669,
+        "gripper_finger_joint": 0.04063659982662406,
+        "right_finger_joint": 0.03913680856907986,
+        "shoulder_lift_joint": -1.5592706611411735,
+        "shoulder_pan_joint": -0.037381081125591374,
+        "wrist_1_joint": -1.6021703228690884,
+        "wrist_2_joint": -1.5701637449406192,
+        "wrist_3_joint": 0.000539103099701344
+      }
+    },
+    {
+      "time": 1792484245.3463888,
+      "joints": {
+        "elbow_joint": 1.5877716946612503,
+        "gripper_finger_joint": 0.04063659982662304,
+        "right_finger_joint": 0.03913680856908088,
+        "shoulder_lift_joint": -1.5611880361735018,
+        "shoulder_pan_joint": -0.031034920750515966,
+        "wrist_1_joint": -1.5966105491829417,
+        "wrist_2_joint": -1.5701718662256696,
+        "wrist_3_joint": 0.0005631302571821947
+      }
+    },
+    {
+      "time": 1792484245.500658,
+      "joints": {
+        "elbow_joint": 1.584473530611377,
+        "gripper_finger_joint": 0.040636599826623876,
+        "right_finger_joint": 0.03913680856908005,
+        "shoulder_lift_joint": -1.562915103732368,
+        "shoulder_pan_joint": -0.025318643276170772,
+        "wrist_1_joint": -1.5916026062369222,
+        "wrist_2_joint": -1.5701791814393042,
+        "wrist_3_joint": 0.0005847726190171948
+      }
+    },
+    {
+      "time": 1792484245.654088,
+      "joints": {
+        "elbow_joint": 1.5812474531746306,
+        "gripper_finger_joint": 0.040636599826623876,
+        "right_finger_joint": 0.03913680856908004,
+        "shoulder_lift_joint": -1.5646044234869783,
+        "shoulder_pan_joint": -0.019727304124052953,
+        "wrist_1_joint": -1.5867041198371141,
+        "wrist_2_joint": -1.5701863367673186,
+        "wrist_3_joint": 0.0006059419526626062
+      }
+    },
+    {
+      "time": 1792484245.8044019,
+      "joints": {
+        "elbow_joint": 1.5788624056027538,
+        "gripper_finger_joint": 0.040636599826623945,
+        "right_finger_joint": 0.03913680856907996,
+        "shoulder_lift_joint": -1.5658533420445335,
+        "shoulder_pan_joint": -0.015593612317277567,
+        "wrist_1_joint": -1.5830826559005498,
+        "wrist_2_joint": -1.5701916267202238,
+        "wrist_3_joint": 0.0006215924969534896
+      }
+    },
+    {
+      "time": 1792484245.9655402,
+      "joints": {
+        "elbow_joint": 1.5763581529953603,
+        "gripper_finger_joint": 0.04063659982662342,
+        "right_finger_joint": 0.039136808569080486,
+        "shoulder_lift_joint": -1.5671646817389904,
+        "shoulder_pan_joint": -0.011253317973747977,
+        "wrist_1_joint": -1.5792801906530491,
+        "wrist_2_joint": -1.570197181065765,
+        "wrist_3_joint": 0.0006380252577952689
+      }
+    },
+    {
+      "time": 1792484246.1170428,
+      "joints": {
+        "elbow_joint": 1.5745935553087929,
+        "gripper_finger_joint": 0.04063659982662215,
+        "right_finger_joint": 0.03913680856908175,
+        "shoulder_lift_joint": -1.568088704732642,
+        "shoulder_pan_joint": -0.008194971010268181,
+        "wrist_1_joint": -1.5766008198263368,
+        "wrist_2_joint": -1.5702010948823033,
+        "wrist_3_joint": 0.0006496044458035427
+      }
+    },
+    {
+      "time": 1792484246.2709384,
+      "joints": {
+        "elbow_joint": 1.5730177695419008,
+        "gripper_finger_joint": 0.040636599826623356,
+        "right_finger_joint": 0.03913680856908054,
+        "shoulder_lift_joint": -1.5689138572831431,
+        "shoulder_pan_joint": -0.0054638671150463915,
+        "wrist_1_joint": -1.5742081416282712,
+        "wrist_2_joint": -1.5702045899205657,
+        "wrist_3_joint": 0.0006599446609143255
+      }
+    },
+    {
+      "time": 1792484246.4258206,
+      "joints": {
+        "elbow_joint": 1.5717592040057424,
+        "gripper_finger_joint": 0.04063659982662376,
+        "right_finger_joint": 0.039136808569080125,
+        "shoulder_lift_joint": -1.5695728990031244,
+        "shoulder_pan_joint": -0.003282559661704646,
+        "wrist_1_joint": -1.5722971316531449,
+        "wrist_2_joint": -1.5702073813753368,
+        "wrist_3_joint": 0.0006682032952076166
+      }
+    },
+    {
+      "time": 1792484246.5841098,
+      "joints": {
+        "elbow_joint": 1.570802424575644,
+        "gripper_finger_joint": 0.040636599826623564,
+        "right_finger_joint": 0.03913680856908033,
+        "shoulder_lift_joint": -1.5700739118968823,
+        "shoulder_pan_joint": -0.0016242986954569162,
+        "wrist_1_joint": -1.5708443546762,
+        "wrist_2_joint": -1.5702095034789716,
+        "wrist_3_joint": 0.0006744816265176204
+      }
+    },
+    {
+      "time": 1792484246.7359164,
+      "joints": {
+        "elbow_joint": 1.5701518720783072,
+        "gripper_finger_joint": 0.04063659982662354,
+        "right_finger_joint": 0.03913680856908034,
+        "shoulder_lift_joint": -1.570414570547119,
+        "shoulder_pan_joint": -0.0004967809218809397,
+        "wrist_1_joint": -1.5698565536630364,
+        "wrist_2_joint": -1.5702109463818779,
+        "wrist_3_joint": 0.000678750514397681
+      }
+    },
+    {
+      "time": 1792484246.8905058,
+      "joints": {
+        "elbow_joint": 1.5697949437845238,
+        "gripper_finger_joint": 0.04063659982662329,
+        "right_finger_joint": 0.03913680856908059,
+        "shoulder_lift_joint": -1.5706014743116719,
+        "shoulder_pan_joint": 0.00012183632542703093,
+        "wrist_1_joint": -1.5693145925889227,
+        "wrist_2_joint": -1.570211738036468,
+        "wrist_3_joint": 0.0006810926572275357
+      }
+    }
+  ],
+  "scope": "Simulacion de brazo y dedos; pieza logica sin agarre fisico por contacto"
+}
