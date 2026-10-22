@@ -1,5 +1,11 @@
-codigo/build/
-codigo/install/
-codigo/log/
+build/
+install/
+log/
+evidencias/
 __pycache__/
 *.egg-info/
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
