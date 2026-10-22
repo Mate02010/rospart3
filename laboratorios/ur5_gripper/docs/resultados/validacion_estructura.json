@@ -1,0 +1,16 @@
+{
+  "success": true,
+  "compiled_packages": 4,
+  "layout": "Paquetes en la raiz de la practica; documentacion en docs/",
+  "workspace": "/mnt/c/Users/BRAYAN MATEO BRAVO L/Documents/ChatGPT/Universidad/Robotica/Corte 2/Practica_2_UR5_Gripper/revision_IEEE",
+  "launches_parsed": [
+    "gazebo_moveit.launch.py",
+    "demo.launch.py"
+  ],
+  "robot_description_and_semantic_loaded": true,
+  "groups": [
+    "arm",
+    "gripper"
+  ],
+  "scope": "Verificacion de la reorganizacion; las rutinas se acreditan con las grabaciones y JSON originales."
+}
