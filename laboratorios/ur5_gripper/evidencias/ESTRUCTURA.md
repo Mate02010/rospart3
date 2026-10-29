@@ -1,21 +1,18 @@
 # Organización de la práctica
 
-Se conserva esta práctica dentro de `rospart3/laboratorios/ur5_gripper`, por elección del autor. La disposición sigue la de las otras prácticas: README de entrada, paquetes ROS accesibles desde la raíz de la práctica y recursos de documentación en `evidencias/`.
+La práctica está en `rospart3/laboratorios/ur5_gripper`. Los cuatro paquetes separan la aplicación, el modelo del robot, la simulación/controladores y la configuración de MoveIt.
 
-| Organización anterior | Organización actual |
-|---|---|
-| `codigo/src/<paquete>` | `<paquete>` |
-| `output/pdf/Reporte_Laboratorio_UR5_Gripper.pdf` | `evidencias/Informe_UR5_Gripper.pdf` |
-| Generador del reporte en Python | `evidencias/informe/main.tex`, plantilla IEEE/LaTeX |
-| `evidencias/videos` | `evidencias/videos` e índice `evidencias/VIDEO.md` |
-| JSON de pruebas publicados | `evidencias/resultados` |
-| Capturas del reporte | `evidencias/informe/figuras` |
-| Scripts auxiliares en la raíz | `herramientas` |
+| Carpeta | Contenido |
+| --- | --- |
+| `lab_manipulador/` | Nodos Pick and Place y señales digitales |
+| `ur5_robotiq_description/` | Modelo del brazo y la pinza |
+| `ur5_robotiq_bringup/` | Simulación y controladores |
+| `ur5_gripper_moveit/` | Configuración generada con Setup Assistant |
+| `evidencias/videos/` | Cuatro grabaciones de las actividades |
+| `evidencias/capturas/` | Capturas de las interfaces y de Gazebo |
+| `evidencias/resultados/` | Registros y comprobaciones de las ejecuciones |
+| `herramientas/` | Ajustes y grabación |
 
-El informe usa `IEEEtran` a dos columnas, como los anteriores de Robótica. La versión previa queda conservada en la rama `codex/ur5-gripper-moveit`. Los programas ROS y las grabaciones de la ejecución original se conservan; se actualizan las rutas del lanzador y de las herramientas auxiliares.
+El informe académico, su PDF y sus fuentes LaTeX/Overleaf se conservan fuera de la publicación de GitHub, por petición expresa del autor. No deben incorporarse a futuros commits.
 
-Para compilar la nueva estructura, ejecutar `bash ejecutar.sh build` desde esta carpeta. El overlay está ahora en `install/setup.bash`, no en `codigo/install/setup.bash`. Los resultados de futuras ejecuciones se guardan en `ejecuciones_locales/`, que Git ignora, para conservar intactos los JSON históricos.
-
-## Nombre de evidencias (28-oct-2026)
-
-Por solicitud del autor, la carpeta de recursos se llama `evidencias/`. Contiene el informe, sus fuentes, videos y mediciones históricas. Las nuevas ejecuciones se guardan en `ejecuciones_locales/`, excluida de Git, para no reemplazar las evidencias conservadas. Los cuatro paquetes son necesarios para aplicación, descripción del robot, simulación/controladores y configuración MoveIt. No se han eliminado paquetes ni prácticas anteriores.
+Para compilar, ejecutar `bash ejecutar.sh build` desde la carpeta de la práctica. Los archivos nuevos de ejecución se guardan en `ejecuciones_locales/`, excluida de Git, para proteger los videos y registros históricos. Se mantienen las dos prácticas del repositorio y sus paquetes.

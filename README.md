@@ -4,14 +4,14 @@ Este repositorio conserva dos prácticas. Entra directamente a la que quieras re
 
 | Práctica | Código | Evidencias |
 | --- | --- | --- |
-| UR5 con gripper y MoveIt | [Abrir laboratorio UR5](laboratorios/ur5_gripper/) | [Informe, cuatro videos y resultados](laboratorios/ur5_gripper/evidencias/) |
+| UR5 con gripper y MoveIt | [Abrir laboratorio UR5](laboratorios/ur5_gripper/) | [Cuatro videos, capturas y resultados](laboratorios/ur5_gripper/evidencias/) |
 | Robot diferencial (ROS 2 Parte 3) | [Abrir paquete robotica_part3](robotica_part3/) | [Video de demostración](evidencias/VIDEO.md) |
 
 El UR5 utiliza cuatro paquetes: aplicación, modelo del robot, simulación/controladores y configuración MoveIt. Los archivos del robot diferencial pertenecen a la práctica anterior y se conservan para consulta.
 
 ## Laboratorio UR5 con gripper y MoveIt
 
-[Ver código, configuración, reporte y cuatro videos](laboratorios/ur5_gripper/README.md).
+[Ver código, configuración y cuatro videos](laboratorios/ur5_gripper/README.md).
 
 Esta carpeta contiene la nueva práctica del UR5; los archivos del robot diferencial siguen disponibles en las secciones siguientes.
 

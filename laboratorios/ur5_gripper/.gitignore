@@ -9,3 +9,5 @@ __pycache__/
 *.out
 *.toc
 *.synctex.gz
+/evidencias/Informe_UR5_Gripper.pdf
+/evidencias/informe/
