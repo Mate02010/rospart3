@@ -1,7 +1,7 @@
 build/
 install/
 log/
-evidencias/
+ejecuciones_locales/
 __pycache__/
 *.egg-info/
 *.aux

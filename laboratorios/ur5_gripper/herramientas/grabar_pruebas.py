@@ -12,9 +12,9 @@ from rclpy.qos import QoSProfile, DurabilityPolicy
 from std_msgs.msg import String
 
 ROOT = Path(__file__).resolve().parents[1]
-EVIDENCE = ROOT / 'evidencias'
+EVIDENCE = ROOT / 'ejecuciones_locales'
 VIDEOS = EVIDENCE / 'videos'
-VIDEOS.mkdir(exist_ok=True)
+VIDEOS.mkdir(parents=True, exist_ok=True)
 (EVIDENCE / 'logs').mkdir(parents=True, exist_ok=True)
 status_file = EVIDENCE / 'video_status.txt'
 status_file.write_text('Preparando prueba')

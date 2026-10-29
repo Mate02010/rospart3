@@ -17,7 +17,7 @@ ur5_gripper/
 ├── ur5_robotiq_bringup/         Gazebo, mundo y controladores
 ├── ur5_gripper_moveit/          Configuración generada en Setup Assistant
 ├── herramientas/               Ajustes de configuración y grabación
-└── docs/
+└── evidencias/
     ├── Informe_UR5_Gripper.pdf  Informe académico IEEE
     ├── informe/                main.tex, IEEEtran.cls y figuras para Overleaf
     ├── VIDEO.md                Índice de los cuatro videos
@@ -31,7 +31,7 @@ ur5_gripper/
 
 ## Informe de laboratorio
 
-[Abrir el informe IEEE](docs/Informe_UR5_Gripper.pdf) · [Fuentes para Overleaf](docs/informe/README.md)
+[Abrir el informe IEEE](evidencias/Informe_UR5_Gripper.pdf) · [Fuentes para Overleaf](evidencias/informe/README.md)
 
 El informe sigue la estructura de las prácticas anteriores: introducción, arquitectura del sistema, metodología, implementación, configuración MoveIt, validación y resultados, análisis, conclusiones y referencias. Incluye fragmentos del código, figuras y los resultados medidos.
 
@@ -40,12 +40,12 @@ El informe sigue la estructura de las prácticas anteriores: introducción, arqu
 <details>
 <summary><b>▶ Ver videos: UR5 con gripper</b></summary>
 
-- [01 - Generación con Setup Assistant, x8](docs/videos/01_setup_assistant_resumen.mp4).
-- [02 - Plan y Execute de brazo y pinza en RViz, x4](docs/videos/02_rviz_grupos_resumen.mp4).
-- [03 - Rutina por tópicos ROS, tiempo real](docs/videos/03_topics_gazebo.mp4).
-- [04 - Rutina mediante MoveIt, tiempo real](docs/videos/04_moveit_gazebo.mp4).
+- [01 - Generación con Setup Assistant, x8](evidencias/videos/01_setup_assistant_resumen.mp4).
+- [02 - Plan y Execute de brazo y pinza en RViz, x4](evidencias/videos/02_rviz_grupos_resumen.mp4).
+- [03 - Rutina por tópicos ROS, tiempo real](evidencias/videos/03_topics_gazebo.mp4).
+- [04 - Rutina mediante MoveIt, tiempo real](evidencias/videos/04_moveit_gazebo.mp4).
 
-[Índice con enlaces directos y duraciones](docs/VIDEO.md)
+[Índice con enlaces directos y duraciones](evidencias/VIDEO.md)
 
 </details>
 
@@ -84,7 +84,7 @@ bash ejecutar.sh topics
 bash ejecutar.sh moveit
 ```
 
-Se usa `ROS_DOMAIN_ID=74`. No iniciar otra simulación en ese dominio mientras esta esté en uso. Finalizar cada proceso con Ctrl+C. Los JSON de una nueva ejecución se guardan en `evidencias/`, sin sobrescribir los resultados históricos de `docs/resultados/`.
+Se usa `ROS_DOMAIN_ID=74`. No iniciar otra simulación en ese dominio mientras esta esté en uso. Finalizar cada proceso con Ctrl+C. Los JSON de una nueva ejecución se guardan en `ejecuciones_locales/`, sin sobrescribir los resultados históricos de `evidencias/resultados/`.
 
 ## Actividades realizadas
 
@@ -94,11 +94,11 @@ Se usa `ROS_DOMAIN_ID=74`. No iniciar otra simulación en ese dominio mientras e
 4. Configuración generada desde Setup Assistant para los grupos `arm` y `gripper`.
 5. Plan y Execute de ambos grupos desde RViz y ocho movimientos desde el nodo MoveIt.
 
-Para controlar el robot por comandos, demostrar la espera manual y revisar los grupos, consultar [COMANDOS_ROS.md](docs/COMANDOS_ROS.md) y [CONFIGURACION_MOVEIT.md](docs/CONFIGURACION_MOVEIT.md).
+Para controlar el robot por comandos, demostrar la espera manual y revisar los grupos, consultar [COMANDOS_ROS.md](evidencias/COMANDOS_ROS.md) y [CONFIGURACION_MOVEIT.md](evidencias/CONFIGURACION_MOVEIT.md).
 
 ## Resultados y alcance
 
-Las dos rutinas registradas completaron **8/8 movimientos**, recorrieron **cuatro objetivos distintos** y recibieron la confirmación digital. Las mediciones están en [RESULTADOS.md](docs/RESULTADOS.md) y los JSON originales en [docs/resultados](docs/resultados).
+Las dos rutinas registradas completaron **8/8 movimientos**, recorrieron **cuatro objetivos distintos** y recibieron la confirmación digital. Las mediciones están en [RESULTADOS.md](evidencias/RESULTADOS.md) y los JSON originales en [evidencias/resultados](evidencias/resultados).
 
 El brazo y los dedos son articulaciones simuladas en Gazebo. La pieza recogida es un estado lógico: no se acredita agarre por contacto, fuerza de sujeción, protocolo propietario de Robotiq ni ejecución sobre un robot físico.
 

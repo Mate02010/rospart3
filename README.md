@@ -1,4 +1,13 @@
-# ROS 2 Parte 3: robot diferencial con Launch, TF2, URDF/Xacro, RViz y Gazebo Sim
+# Robótica: prácticas con ROS 2
+
+Este repositorio conserva dos prácticas. Entra directamente a la que quieras revisar:
+
+| Práctica | Código | Evidencias |
+| --- | --- | --- |
+| UR5 con gripper y MoveIt | [Abrir laboratorio UR5](laboratorios/ur5_gripper/) | [Informe, cuatro videos y resultados](laboratorios/ur5_gripper/evidencias/) |
+| Robot diferencial (ROS 2 Parte 3) | [Abrir paquete robotica_part3](robotica_part3/) | [Video de demostración](evidencias/VIDEO.md) |
+
+El UR5 utiliza cuatro paquetes: aplicación, modelo del robot, simulación/controladores y configuración MoveIt. Los archivos del robot diferencial pertenecen a la práctica anterior y se conservan para consulta.
 
 ## Laboratorio UR5 con gripper y MoveIt
 
@@ -23,7 +32,7 @@ visualización en RViz y simulación en Gazebo Sim con puente de tópicos a ROS 
 <summary><b>▶ Ver video: el robot diferencial en Gazebo Sim</b> (clic para abrir o cerrar)</summary>
 <br>
 
-[Enlace del video](docs/VIDEO.md)
+[Enlace del video](evidencias/VIDEO.md)
 
 </details>
 
@@ -34,7 +43,7 @@ visualización en RViz y simulación en Gazebo Sim con puente de tópicos a ROS 
 ```
 rospart3/
 ├── README.md
-├── docs/
+├── evidencias/
 │   ├── VIDEO.md                     Enlace al video de demostración
 │   └── video_demostracion_ros2.mp4
 └── robotica_part3/                  Paquete ROS 2 (ament_cmake)
