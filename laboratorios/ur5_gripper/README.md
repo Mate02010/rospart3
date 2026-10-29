@@ -18,8 +18,7 @@ ur5_gripper/
 ├── ur5_gripper_moveit/          Configuración generada en Setup Assistant
 ├── herramientas/               Ajustes de configuración y grabación
 └── evidencias/
-    ├── Informe_UR5_Gripper.pdf  Informe académico IEEE
-    ├── informe/                main.tex, IEEEtran.cls y figuras para Overleaf
+    ├── capturas/               Capturas de Setup Assistant, RViz y Gazebo
     ├── VIDEO.md                Índice de los cuatro videos
     ├── videos/                 Grabaciones MP4
     ├── resultados/             Mediciones JSON de las pruebas
@@ -29,11 +28,9 @@ ur5_gripper/
     └── ESTRUCTURA.md
 ```
 
-## Informe de laboratorio
+## Documentación
 
-[Abrir el informe IEEE](evidencias/Informe_UR5_Gripper.pdf) · [Fuentes para Overleaf](evidencias/informe/README.md)
-
-El informe sigue la estructura de las prácticas anteriores: introducción, arquitectura del sistema, metodología, implementación, configuración MoveIt, validación y resultados, análisis, conclusiones y referencias. Incluye fragmentos del código, figuras y los resultados medidos.
+El informe académico se entrega por separado y se conserva localmente. Este repositorio no incluye el PDF, el proyecto LaTeX ni los archivos de Overleaf. Las evidencias públicas son videos, capturas, resultados y documentación técnica.
 
 ## Videos de demostración
 
