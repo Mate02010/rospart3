@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<!--
+  Bodega pequeña de 12 x 8 m con muros, estanterías, cajas y columnas.
+  Sirve para probar el control (Práctica 1) y luego para hacer el mapa (Práctica 3).
+-->
+<sdf version="1.9">
+  <world name="bodega">
+
+    <physics name="4ms" type="ignored">
+      <max_step_size>0.004</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"/>
+
+    <light type="directional" name="sol">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <model name="piso">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal><size>40 40</size></plane></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>40 40</size></plane></geometry>
+          <material>
+            <ambient>0.75 0.75 0.72 1</ambient>
+            <diffuse>0.75 0.75 0.72 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="estructura">
+      <static>true</static>
+
+      <!-- Muros exteriores (alto 1 m, grosor 0,15 m). -->
+      <link name="muro_norte">
+        <pose>0 4.0 0.5 0 0 0</pose>
+        <collision name="c"><geometry><box><size>12.15 0.15 1.0</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>12.15 0.15 1.0</size></box></geometry>
+          <material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse></material></visual>
+      </link>
+      <link name="muro_sur">
+        <pose>0 -4.0 0.5 0 0 0</pose>
+        <collision name="c"><geometry><box><size>12.15 0.15 1.0</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>12.15 0.15 1.0</size></box></geometry>
+          <material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse></material></visual>
+      </link>
+      <link name="muro_este">
+        <pose>6.0 0 0.5 0 0 0</pose>
+        <collision name="c"><geometry><box><size>0.15 8.0 1.0</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>0.15 8.0 1.0</size></box></geometry>
+          <material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse></material></visual>
+      </link>
+      <link name="muro_oeste">
+        <pose>-6.0 0 0.5 0 0 0</pose>
+        <collision name="c"><geometry><box><size>0.15 8.0 1.0</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>0.15 8.0 1.0</size></box></geometry>
+          <material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse></material></visual>
+      </link>
+
+      <!-- Muros interiores que forman dos zonas. -->
+      <link name="muro_interior_1">
+        <pose>-1.5 2.5 0.5 0 0 0</pose>
+        <collision name="c"><geometry><box><size>0.15 3.0 1.0</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>0.15 3.0 1.0</size></box></geometry>
+          <material><ambient>0.7 0.7 0.75 1</ambient><diffuse>0.7 0.7 0.75 1</diffuse></material></visual>
+      </link>
+      <link name="muro_interior_2">
+        <pose>2.5 -2.5 0.5 0 0 0</pose>
+        <collision name="c"><geometry><box><size>0.15 3.0 1.0</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>0.15 3.0 1.0</size></box></geometry>
+          <material><ambient>0.7 0.7 0.75 1</ambient><diffuse>0.7 0.7 0.75 1</diffuse></material></visual>
+      </link>
+
+      <!-- Estanterías. -->
+      <link name="estante_1">
+        <pose>-4.0 2.0 0.6 0 0 0</pose>
+        <collision name="c"><geometry><box><size>2.0 0.5 1.2</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>2.0 0.5 1.2</size></box></geometry>
+          <material><ambient>0.55 0.35 0.15 1</ambient><diffuse>0.55 0.35 0.15 1</diffuse></material></visual>
+      </link>
+      <link name="estante_2">
+        <pose>-4.0 -1.5 0.6 0 0 0</pose>
+        <collision name="c"><geometry><box><size>2.0 0.5 1.2</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>2.0 0.5 1.2</size></box></geometry>
+          <material><ambient>0.55 0.35 0.15 1</ambient><diffuse>0.55 0.35 0.15 1</diffuse></material></visual>
+      </link>
+      <link name="estante_3">
+        <pose>4.5 2.0 0.6 0 0 0</pose>
+        <collision name="c"><geometry><box><size>0.5 2.0 1.2</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>0.5 2.0 1.2</size></box></geometry>
+          <material><ambient>0.55 0.35 0.15 1</ambient><diffuse>0.55 0.35 0.15 1</diffuse></material></visual>
+      </link>
+
+      <!-- Cajas. -->
+      <link name="caja_1">
+        <pose>0.8 2.6 0.3 0 0 0.3</pose>
+        <collision name="c"><geometry><box><size>0.6 0.6 0.6</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>0.6 0.6 0.6</size></box></geometry>
+          <material><ambient>0.80 0.60 0.30 1</ambient><diffuse>0.80 0.60 0.30 1</diffuse></material></visual>
+      </link>
+      <link name="caja_2">
+        <pose>-0.5 -2.6 0.3 0 0 0</pose>
+        <collision name="c"><geometry><box><size>0.6 0.6 0.6</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>0.6 0.6 0.6</size></box></geometry>
+          <material><ambient>0.80 0.60 0.30 1</ambient><diffuse>0.80 0.60 0.30 1</diffuse></material></visual>
+      </link>
+      <link name="caja_3">
+        <pose>4.6 -2.4 0.3 0 0 0.5</pose>
+        <collision name="c"><geometry><box><size>0.6 0.6 0.6</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>0.6 0.6 0.6</size></box></geometry>
+          <material><ambient>0.80 0.60 0.30 1</ambient><diffuse>0.80 0.60 0.30 1</diffuse></material></visual>
+      </link>
+
+      <!-- Columnas. -->
+      <link name="columna_1">
+        <pose>1.5 1.2 0.5 0 0 0</pose>
+        <collision name="c"><geometry><cylinder><radius>0.15</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="v"><geometry><cylinder><radius>0.15</radius><length>1.0</length></cylinder></geometry>
+          <material><ambient>0.4 0.4 0.4 1</ambient><diffuse>0.4 0.4 0.4 1</diffuse></material></visual>
+      </link>
+      <link name="columna_2">
+        <pose>-2.5 -0.8 0.5 0 0 0</pose>
+        <collision name="c"><geometry><cylinder><radius>0.15</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="v"><geometry><cylinder><radius>0.15</radius><length>1.0</length></cylinder></geometry>
+          <material><ambient>0.4 0.4 0.4 1</ambient><diffuse>0.4 0.4 0.4 1</diffuse></material></visual>
+      </link>
+    </model>
+
+  </world>
+</sdf>

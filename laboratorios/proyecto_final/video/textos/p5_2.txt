@@ -1,0 +1,1 @@
+NavFn + Regulated Pure Pursuit: tres metas y replanificación cuando aparece una caja en el camino

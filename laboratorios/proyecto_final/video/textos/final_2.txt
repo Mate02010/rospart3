@@ -1,0 +1,1 @@
+Nodo con nav2_simple_commander: 6 waypoints desde config/waypoints.yaml, iniciada con el servicio /iniciar_mision

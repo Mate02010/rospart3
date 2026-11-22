@@ -1,0 +1,12 @@
+{
+  "etiqueta": "lento",
+  "v_max": 0.15,
+  "w_max": 0.4,
+  "puntos": 15,
+  "puntos_saltados": [],
+  "distancia_m": 53.49,
+  "tiempo_s": 436.2,
+  "tiempo_real_s": 462.3,
+  "velocidad_media_m_s": 0.123,
+  "factor_tiempo_real": 0.94
+}

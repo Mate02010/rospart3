@@ -1,0 +1,63 @@
+### ros2 node list
+/controller_manager
+/diff_drive_controller
+/ekf_filter_node
+/gazebosimsystem
+/gz_ros_control
+/joint_state_broadcaster
+/robot_state_publisher
+/ros_gz_bridge
+/transform_listener_impl_5c7b42c79f70
+
+### ros2 topic info -v /odom_filtered
+Type: nav_msgs/msg/Odometry
+Publisher count: 1
+Node name: ekf_filter_node
+Node namespace: /
+Topic type: nav_msgs/msg/Odometry
+Topic type hash: RIHS01_3cc97dc7fb7502f8714462c526d369e35b603cfc34d946e3f2eda2766dfec6e0
+Subscription count: 0
+
+### ros2 topic info -v /diff_drive_controller/odom
+Type: nav_msgs/msg/Odometry
+Publisher count: 1
+Node name: diff_drive_controller
+Node namespace: /
+Topic type: nav_msgs/msg/Odometry
+Topic type hash: RIHS01_3cc97dc7fb7502f8714462c526d369e35b603cfc34d946e3f2eda2766dfec6e0
+Subscription count: 1
+Node name: ekf_filter_node
+Node namespace: /
+Topic type: nav_msgs/msg/Odometry
+Topic type hash: RIHS01_3cc97dc7fb7502f8714462c526d369e35b603cfc34d946e3f2eda2766dfec6e0
+
+### ros2 topic info -v /imu
+Type: sensor_msgs/msg/Imu
+Publisher count: 1
+Node name: ros_gz_bridge
+Node namespace: /
+Topic type: sensor_msgs/msg/Imu
+Topic type hash: RIHS01_7d9a00ff131080897a5ec7e26e315954b8eae3353c3f995c55faf71574000b5b
+Subscription count: 0
+
+### ros2 topic info -v /tf
+Type: tf2_msgs/msg/TFMessage
+Publisher count: 3
+Node name: robot_state_publisher
+Node namespace: /
+Topic type: tf2_msgs/msg/TFMessage
+Topic type hash: RIHS01_e369d0f05a23ae52508854b66f6aa0437f3449d652e8cbf22d5abe85d020f087
+Node name: diff_drive_controller
+Node namespace: /
+Topic type: tf2_msgs/msg/TFMessage
+Topic type hash: RIHS01_e369d0f05a23ae52508854b66f6aa0437f3449d652e8cbf22d5abe85d020f087
+Node name: ekf_filter_node
+Node namespace: /
+Topic type: tf2_msgs/msg/TFMessage
+Topic type hash: RIHS01_e369d0f05a23ae52508854b66f6aa0437f3449d652e8cbf22d5abe85d020f087
+Subscription count: 1
+Node name: transform_listener_impl_5c7b42c79f70
+Node namespace: /
+Topic type: tf2_msgs/msg/TFMessage
+Topic type hash: RIHS01_e369d0f05a23ae52508854b66f6aa0437f3449d652e8cbf22d5abe85d020f087
+

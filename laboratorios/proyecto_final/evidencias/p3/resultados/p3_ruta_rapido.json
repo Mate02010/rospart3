@@ -1,0 +1,12 @@
+{
+  "etiqueta": "rapido",
+  "v_max": 0.45,
+  "w_max": 1.2,
+  "puntos": 15,
+  "puntos_saltados": [],
+  "distancia_m": 53.47,
+  "tiempo_s": 192.9,
+  "tiempo_real_s": 201.4,
+  "velocidad_media_m_s": 0.277,
+  "factor_tiempo_real": 0.96
+}

@@ -1,0 +1,45 @@
+{
+  "etiqueta": "ruido_alto",
+  "pose_inicial_dada": {
+    "x": 0.0,
+    "y": 0.0,
+    "yaw_deg": 0.0,
+    "cov_xy": 0.25,
+    "cov_yaw": 0.0685
+  },
+  "pose_real_inicial": {
+    "x": -0.0,
+    "y": -0.0,
+    "yaw_deg": -0.0
+  },
+  "ruta": "5 puntos x 1 vuelta(s), v=0.25 m/s",
+  "ruta_completa": true,
+  "inicio_movimiento_s": 2.04,
+  "duracion_s": 42.14,
+  "muestras": 421,
+  "mensajes_amcl_pose": 103,
+  "umbral_convergencia": {
+    "pos_m": 0.15,
+    "yaw_deg": 5.0,
+    "permanencia_s": 2.0
+  },
+  "convergio": true,
+  "tiempo_convergencia_s": 0.1,
+  "recorrido_al_converger_m": 0.0,
+  "error_inicial_m": 0.005,
+  "error_inicial_yaw_deg": 0.11,
+  "error_final_m": 0.037,
+  "error_final_yaw_deg": 1.62,
+  "error_max_m": 0.092,
+  "error_max_yaw_deg": 2.33,
+  "error_rms_post_convergencia_m": 0.043,
+  "error_rms_post_convergencia_yaw_deg": 1.13,
+  "error_max_post_convergencia_m": 0.092,
+  "amcl_pose_final": {
+    "error_m": 0.035,
+    "error_yaw_deg": 1.62,
+    "var_xy": 0.03031,
+    "var_yaw": 0.00979
+  },
+  "particulas_final": 501
+}

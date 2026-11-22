@@ -1,0 +1,20 @@
+{
+  "modo": "ros2_control",
+  "topico_odom": "/diff_drive_controller/odom",
+  "comando": {
+    "v": 0.0,
+    "w": 0.8,
+    "duracion_s": 4.0
+  },
+  "frecuencia_odom_hz": 50.0,
+  "jitter_odom_ms": 2.75,
+  "latencia_50_s": 0.33999999999999986,
+  "latencia_90_s": 0.5,
+  "ruido_vx_estable": 0.0,
+  "vx_media_estable": -0.0,
+  "distancia_odom_m": 0.0,
+  "distancia_real_m": 0.001,
+  "error_distancia_m": -0.001,
+  "giro_odom_deg": 184.4,
+  "giro_real_deg": 192.23
+}

@@ -1,0 +1,1 @@
+Ruedas + IMU: error final de 1.2 cm y 0° contra 5.8 cm y 3.5° de la odometría sola

@@ -1,0 +1,79 @@
+# Práctica 4: localización con AMCL sobre el mapa de la Práctica 3 (maps/bodega.yaml).
+# Parte de la sección amcl de nav2_bringup/params/nav2_params.yaml (Kilted); los valores
+# que cambian respecto a ese archivo llevan el valor original en el comentario.
+#
+# Árbol TF: map -> odom (AMCL) -> base_footprint (EKF de la P2) -> base_link -> laser_frame.
+amcl:
+  ros__parameters:
+    use_sim_time: true
+
+    # Marcos y tópicos.
+    global_frame_id: map
+    odom_frame_id: odom
+    base_frame_id: base_footprint
+    scan_topic: scan
+    map_topic: map
+    tf_broadcast: true              # publica map -> odom
+    transform_tolerance: 1.0
+
+    # Modelo de movimiento del robot diferencial. Ruido esperado de la odometría:
+    robot_model_type: "nav2_amcl::DifferentialMotionModel"
+    alpha1: 0.2                     # en el giro, por girar
+    alpha2: 0.2                     # en el giro, por avanzar
+    alpha3: 0.2                     # en el avance, por avanzar
+    alpha4: 0.2                     # en el avance, por girar
+    alpha5: 0.2                     # solo lo usa el modelo omnidireccional
+
+    # Partículas (KLD ajusta la cantidad entre min y max según la dispersión).
+    min_particles: 500
+    max_particles: 3000             # nav2: 2000; más partículas para la prueba de localización global
+    pf_err: 0.05
+    pf_z: 0.99
+    resample_interval: 1
+
+    # El filtro se actualiza cuando el robot avanza o gira lo suficiente.
+    update_min_d: 0.1               # nav2: 0.25 m; actualiza más seguido para ver la convergencia
+    update_min_a: 0.1               # nav2: 0.2 rad
+
+    # Partículas aleatorias para recuperarse si se pierde. En 0 (como nav2) están apagadas:
+    # con una pose inicial mala el filtro no se corrige solo (pregunta 1 de la guía).
+    # Para probar la recuperación: recovery_alpha_slow 0.001 y recovery_alpha_fast 0.1.
+    recovery_alpha_slow: 0.0
+    recovery_alpha_fast: 0.0
+
+    # Modelo del láser (likelihood field: distancia de cada punto al obstáculo más cercano del mapa).
+    laser_model_type: "likelihood_field"
+    laser_min_range: -1.0           # usa el range_min del /scan (0,12 m)
+    laser_max_range: 12.0           # nav2: 100.0; alcance del lidar simulado
+    max_beams: 60                   # haces usados de los 360 del /scan
+    laser_likelihood_max_dist: 2.0
+    sigma_hit: 0.2                  # desviación esperada del láser contra el mapa
+    z_hit: 0.5
+    z_rand: 0.5
+    z_max: 0.05
+    z_short: 0.05
+    lambda_short: 0.1
+    do_beamskip: false
+    beam_skip_distance: 0.5
+    beam_skip_error_threshold: 0.9
+    beam_skip_threshold: 0.3
+
+    # Pose inicial: la da RViz (2D Pose Estimate) o evaluar_amcl.py por /initialpose.
+    set_initial_pose: false
+    always_reset_initial_pose: false
+    initial_pose:                   # solo se usa con set_initial_pose: true
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      yaw: 0.0
+    save_pose_rate: 0.5
+    service_introspection_mode: "disabled"
+
+# Servidor del mapa. La ruta del mapa (yaml_filename) la pone localizacion.launch.py
+# con el argumento map (por defecto maps/bodega.yaml del paquete).
+map_server:
+  ros__parameters:
+    use_sim_time: true
+    topic_name: map
+    frame_id: map
+    service_introspection_mode: "disabled"

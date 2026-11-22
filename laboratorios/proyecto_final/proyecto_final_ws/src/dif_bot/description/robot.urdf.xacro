@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<!--
+  Robot diferencial del proyecto final (basado en el robot de la guía ROS 2 Parte 3).
+  Con el argumento use_ros2_control se escoge el sistema de control:
+    false -> plugin DiffDrive de Gazebo (gz_control.xacro)
+    true  -> ros2_control con diff_drive_controller (ros2_control.xacro)
+-->
+<robot name="dif_bot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:arg name="use_ros2_control" default="false"/>
+  <xacro:arg name="camara" default="false"/>
+  <xacro:arg name="ruido_laser" default="0.01"/>
+  <xacro:arg name="controllers_file" default="$(find dif_bot)/config/controllers.yaml"/>
+
+  <xacro:include filename="$(find dif_bot)/description/inertials.xacro"/>
+  <xacro:include filename="$(find dif_bot)/description/sensors.xacro"/>
+
+  <!-- Medidas en metros y masas en kilogramos (las usan también los controladores). -->
+  <xacro:property name="base_length" value="0.45"/>
+  <xacro:property name="base_width" value="0.30"/>
+  <xacro:property name="base_height" value="0.12"/>
+  <xacro:property name="wheel_radius" value="0.06"/>
+  <xacro:property name="wheel_width" value="0.04"/>
+  <xacro:property name="wheel_separation" value="0.34"/>
+
+  <material name="blue"><color rgba="0.10 0.35 0.80 1.0"/></material>
+  <material name="black"><color rgba="0.08 0.08 0.08 1.0"/></material>
+  <material name="gray"><color rgba="0.45 0.45 0.45 1.0"/></material>
+
+  <!-- Marco en el piso, debajo del centro del eje de las ruedas. -->
+  <link name="base_footprint"/>
+
+  <link name="base_link">
+    <visual>
+      <geometry><box size="${base_length} ${base_width} ${base_height}"/></geometry>
+      <material name="blue"/>
+    </visual>
+    <collision>
+      <geometry><box size="${base_length} ${base_width} ${base_height}"/></geometry>
+    </collision>
+    <!-- Centro de masa 5 cm detrás del eje: el robot se apoya en ruedas + rueda loca y no se va de nariz. -->
+    <xacro:box_inertial mass="2.0" x="${base_length}" y="${base_width}" z="${base_height}" xyz="-0.05 0 0"/>
+  </link>
+
+  <joint name="base_footprint_to_base_link" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0.12" rpy="0 0 0"/>
+  </joint>
+
+  <xacro:macro name="wheel" params="side y_position">
+    <link name="${side}_wheel_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        <geometry><cylinder radius="${wheel_radius}" length="${wheel_width}"/></geometry>
+        <material name="black"/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        <geometry><cylinder radius="${wheel_radius}" length="${wheel_width}"/></geometry>
+      </collision>
+      <xacro:cylinder_inertial mass="0.15" radius="${wheel_radius}" length="${wheel_width}" rpy="1.5708 0 0"/>
+    </link>
+
+    <joint name="${side}_wheel_joint" type="continuous">
+      <parent link="base_link"/>
+      <child link="${side}_wheel_link"/>
+      <origin xyz="0 ${y_position} -0.06" rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+    </joint>
+
+    <!-- Ruedas con buen agarre. -->
+    <gazebo reference="${side}_wheel_link">
+      <mu1>1.0</mu1>
+      <mu2>1.0</mu2>
+    </gazebo>
+  </xacro:macro>
+
+  <xacro:wheel side="left" y_position="${wheel_separation / 2}"/>
+  <xacro:wheel side="right" y_position="${-wheel_separation / 2}"/>
+
+  <!-- Rueda loca trasera: toca el piso justo y no tiene fricción. -->
+  <link name="caster_link">
+    <visual>
+      <geometry><sphere radius="0.03"/></geometry>
+      <material name="gray"/>
+    </visual>
+    <collision>
+      <geometry><sphere radius="0.03"/></geometry>
+    </collision>
+    <xacro:sphere_inertial mass="0.05" radius="0.03"/>
+  </link>
+
+  <joint name="caster_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="caster_link"/>
+    <origin xyz="-0.16 0 -0.09" rpy="0 0 0"/>
+  </joint>
+
+  <gazebo reference="caster_link">
+    <mu1>0.0</mu1>
+    <mu2>0.0</mu2>
+  </gazebo>
+
+  <!-- LiDAR, IMU y cámara. -->
+  <xacro:dif_bot_sensors camara="$(arg camara)" ruido_laser="$(arg ruido_laser)"/>
+
+  <!-- Pose real del robot en Gazebo (solo para comparar contra la odometría). -->
+  <gazebo>
+    <plugin filename="gz-sim-odometry-publisher-system" name="gz::sim::systems::OdometryPublisher">
+      <odom_frame>world</odom_frame>
+      <robot_base_frame>base_footprint</robot_base_frame>
+      <odom_topic>ground_truth/odom</odom_topic>
+      <tf_topic>ground_truth/tf</tf_topic>
+      <odom_publish_frequency>50</odom_publish_frequency>
+      <dimensions>2</dimensions>
+    </plugin>
+  </gazebo>
+
+  <!-- Sistema de control: uno u otro, nunca los dos. -->
+  <xacro:if value="$(arg use_ros2_control)">
+    <xacro:include filename="$(find dif_bot)/description/ros2_control.xacro"/>
+    <xacro:ros2_control_block/>
+  </xacro:if>
+
+  <xacro:unless value="$(arg use_ros2_control)">
+    <xacro:include filename="$(find dif_bot)/description/gz_control.xacro"/>
+  </xacro:unless>
+
+</robot>

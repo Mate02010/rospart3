@@ -1,0 +1,22 @@
+### ros2 service list | grep mision
+/cancelar_mision [std_srvs/srv/Trigger]
+/iniciar_mision [std_srvs/srv/Trigger]
+/mision/describe_parameters [rcl_interfaces/srv/DescribeParameters]
+/mision/get_parameter_types [rcl_interfaces/srv/GetParameterTypes]
+/mision/get_parameters [rcl_interfaces/srv/GetParameters]
+/mision/get_type_description [type_description_interfaces/srv/GetTypeDescription]
+/mision/list_parameters [rcl_interfaces/srv/ListParameters]
+/mision/set_parameters [rcl_interfaces/srv/SetParameters]
+/mision/set_parameters_atomically [rcl_interfaces/srv/SetParametersAtomically]
+/mision_navegador/describe_parameters [rcl_interfaces/srv/DescribeParameters]
+/mision_navegador/get_parameter_types [rcl_interfaces/srv/GetParameterTypes]
+/mision_navegador/get_parameters [rcl_interfaces/srv/GetParameters]
+/mision_navegador/get_type_description [type_description_interfaces/srv/GetTypeDescription]
+/mision_navegador/list_parameters [rcl_interfaces/srv/ListParameters]
+/mision_navegador/set_parameters [rcl_interfaces/srv/SetParameters]
+/mision_navegador/set_parameters_atomically [rcl_interfaces/srv/SetParametersAtomically]
+
+### ros2 interface show std_srvs/srv/Trigger
+---
+bool success   # indicate successful run of triggered service
+string message # informational, e.g. for error messages

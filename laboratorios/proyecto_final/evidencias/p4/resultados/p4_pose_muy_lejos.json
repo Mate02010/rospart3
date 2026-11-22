@@ -1,0 +1,45 @@
+{
+  "etiqueta": "pose_muy_lejos",
+  "pose_inicial_dada": {
+    "x": -3.0,
+    "y": 2.8,
+    "yaw_deg": 143.24,
+    "cov_xy": 0.25,
+    "cov_yaw": 0.0685
+  },
+  "pose_real_inicial": {
+    "x": -0.0,
+    "y": -0.0,
+    "yaw_deg": -0.0
+  },
+  "ruta": "5 puntos x 1 vuelta(s), v=0.25 m/s",
+  "ruta_completa": true,
+  "inicio_movimiento_s": 2.01,
+  "duracion_s": 42.16,
+  "muestras": 419,
+  "mensajes_amcl_pose": 102,
+  "umbral_convergencia": {
+    "pos_m": 0.15,
+    "yaw_deg": 5.0,
+    "permanencia_s": 2.0
+  },
+  "convergio": false,
+  "tiempo_convergencia_s": null,
+  "recorrido_al_converger_m": null,
+  "error_inicial_m": 4.067,
+  "error_inicial_yaw_deg": 143.24,
+  "error_final_m": 3.531,
+  "error_final_yaw_deg": 133.53,
+  "error_max_m": 6.552,
+  "error_max_yaw_deg": 160.1,
+  "error_rms_post_convergencia_m": null,
+  "error_rms_post_convergencia_yaw_deg": null,
+  "error_max_post_convergencia_m": null,
+  "amcl_pose_final": {
+    "error_m": 3.531,
+    "error_yaw_deg": 133.53,
+    "var_xy": 1.24645,
+    "var_yaw": 0.59734
+  },
+  "particulas_final": 1290
+}

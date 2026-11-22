@@ -1,0 +1,109 @@
+### ros2 node list
+/amcl
+/controller_manager
+/diff_drive_controller
+/ekf_filter_node
+/gazebosimsystem
+/gz_ros_control
+/joint_state_broadcaster
+/lifecycle_manager_localization
+/map_server
+/robot_state_publisher
+/ros_gz_bridge
+/rviz
+/transform_listener_impl_59c4cc605180
+/transform_listener_impl_63e30d3a01a0
+
+### ros2 topic info -v /amcl_pose
+Type: geometry_msgs/msg/PoseWithCovarianceStamped
+Publisher count: 1
+Node name: amcl
+Node namespace: /
+Topic type: geometry_msgs/msg/PoseWithCovarianceStamped
+Topic type hash: RIHS01_26432f9803e43727d3c8f668d1fdb3c630f548af631e2f4e31382371bfea3b6e
+Subscription count: 1
+Node name: rviz
+Node namespace: /
+Topic type: geometry_msgs/msg/PoseWithCovarianceStamped
+Topic type hash: RIHS01_26432f9803e43727d3c8f668d1fdb3c630f548af631e2f4e31382371bfea3b6e
+
+### ros2 topic info -v /particle_cloud
+Type: nav2_msgs/msg/ParticleCloud
+Publisher count: 1
+Node name: amcl
+Node namespace: /
+Topic type: nav2_msgs/msg/ParticleCloud
+Topic type hash: RIHS01_193d8cb88ca2b98cd81ece15342744f054bb398ebfa8f6369914432303f42b11
+Subscription count: 1
+Node name: rviz
+Node namespace: /
+Topic type: nav2_msgs/msg/ParticleCloud
+Topic type hash: RIHS01_193d8cb88ca2b98cd81ece15342744f054bb398ebfa8f6369914432303f42b11
+
+### ros2 topic info -v /map
+Type: nav_msgs/msg/OccupancyGrid
+Publisher count: 1
+Node name: map_server
+Node namespace: /
+Topic type: nav_msgs/msg/OccupancyGrid
+Topic type hash: RIHS01_8d348150c12913a31ee0ec170fbf25089e4745d17035792a1ba94d6f0bc0cfc7
+Subscription count: 2
+Node name: amcl
+Node namespace: /
+Topic type: nav_msgs/msg/OccupancyGrid
+Topic type hash: RIHS01_8d348150c12913a31ee0ec170fbf25089e4745d17035792a1ba94d6f0bc0cfc7
+Node name: rviz
+Node namespace: /
+Topic type: nav_msgs/msg/OccupancyGrid
+Topic type hash: RIHS01_8d348150c12913a31ee0ec170fbf25089e4745d17035792a1ba94d6f0bc0cfc7
+
+### ros2 topic info -v /scan
+Type: sensor_msgs/msg/LaserScan
+Publisher count: 1
+Node name: ros_gz_bridge
+Node namespace: /
+Topic type: sensor_msgs/msg/LaserScan
+Topic type hash: RIHS01_64c191398013af96509d518dac71d5164f9382553fce5c1f8cca5be7924bd828
+Subscription count: 2
+Node name: amcl
+Node namespace: /
+Topic type: sensor_msgs/msg/LaserScan
+Topic type hash: RIHS01_64c191398013af96509d518dac71d5164f9382553fce5c1f8cca5be7924bd828
+Node name: rviz
+Node namespace: /
+Topic type: sensor_msgs/msg/LaserScan
+Topic type hash: RIHS01_64c191398013af96509d518dac71d5164f9382553fce5c1f8cca5be7924bd828
+
+### ros2 topic info -v /tf
+Type: tf2_msgs/msg/TFMessage
+Publisher count: 4
+Node name: robot_state_publisher
+Node namespace: /
+Topic type: tf2_msgs/msg/TFMessage
+Topic type hash: RIHS01_e369d0f05a23ae52508854b66f6aa0437f3449d652e8cbf22d5abe85d020f087
+Node name: diff_drive_controller
+Node namespace: /
+Topic type: tf2_msgs/msg/TFMessage
+Topic type hash: RIHS01_e369d0f05a23ae52508854b66f6aa0437f3449d652e8cbf22d5abe85d020f087
+Node name: ekf_filter_node
+Node namespace: /
+Topic type: tf2_msgs/msg/TFMessage
+Topic type hash: RIHS01_e369d0f05a23ae52508854b66f6aa0437f3449d652e8cbf22d5abe85d020f087
+Node name: amcl
+Node namespace: /
+Topic type: tf2_msgs/msg/TFMessage
+Topic type hash: RIHS01_e369d0f05a23ae52508854b66f6aa0437f3449d652e8cbf22d5abe85d020f087
+Subscription count: 3
+Node name: transform_listener_impl_63e30d3a01a0
+Node namespace: /
+Topic type: tf2_msgs/msg/TFMessage
+Topic type hash: RIHS01_e369d0f05a23ae52508854b66f6aa0437f3449d652e8cbf22d5abe85d020f087
+Node name: amcl
+Node namespace: /
+Topic type: tf2_msgs/msg/TFMessage
+Topic type hash: RIHS01_e369d0f05a23ae52508854b66f6aa0437f3449d652e8cbf22d5abe85d020f087
+Node name: transform_listener_impl_59c4cc605180
+Node namespace: /
+Topic type: tf2_msgs/msg/TFMessage
+Topic type hash: RIHS01_e369d0f05a23ae52508854b66f6aa0437f3449d652e8cbf22d5abe85d020f087
+

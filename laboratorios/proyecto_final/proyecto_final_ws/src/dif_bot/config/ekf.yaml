@@ -1,0 +1,41 @@
+# Práctica 2: EKF de robot_localization.
+# Fusiona la odometría de las ruedas (diff_drive_controller) con la IMU y publica
+# /odom_filtered y el TF odom -> base_footprint.
+#
+# Orden de las banderas de cada sensor:
+#   [x, y, z,  roll, pitch, yaw,  vx, vy, vz,  vroll, vpitch, vyaw,  ax, ay, az]
+ekf_filter_node:
+  ros__parameters:
+    use_sim_time: true
+    frequency: 50.0          # igual que la odometría de las ruedas
+    sensor_timeout: 0.2
+    two_d_mode: true          # robot en el piso: ignora z, roll y pitch
+    publish_tf: true
+
+    map_frame: map
+    odom_frame: odom
+    base_link_frame: base_footprint
+    world_frame: odom         # filtro local (continuo, sin saltos)
+
+    # Ruedas: velocidad lineal y angular (la posición la integra el filtro).
+    odom0: /diff_drive_controller/odom
+    odom0_config: [false, false, false,
+                   false, false, false,
+                   true,  true,  false,
+                   false, false, true,
+                   false, false, false]
+    odom0_queue_size: 10
+    odom0_differential: false
+    odom0_relative: false
+
+    # IMU: orientación (yaw) y velocidad angular en z.
+    imu0: /imu
+    imu0_config: [false, false, false,
+                  false, false, true,
+                  false, false, false,
+                  false, false, true,
+                  false, false, false]
+    imu0_queue_size: 20
+    imu0_differential: false
+    imu0_relative: true       # el yaw arranca en cero donde aparece el robot
+    imu0_remove_gravitational_acceleration: true
