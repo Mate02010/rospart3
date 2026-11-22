@@ -1,0 +1,48 @@
+### ros2 node list
+/robot_state_publisher
+/ros_gz_bridge
+
+### ros2 topic info -v /odom
+Type: nav_msgs/msg/Odometry
+Publisher count: 1
+Node name: ros_gz_bridge
+Node namespace: /
+Topic type: nav_msgs/msg/Odometry
+Topic type hash: RIHS01_3cc97dc7fb7502f8714462c526d369e35b603cfc34d946e3f2eda2766dfec6e0
+Subscription count: 0
+
+### ros2 topic info -v /tf
+Type: tf2_msgs/msg/TFMessage
+Publisher count: 2
+Node name: robot_state_publisher
+Node namespace: /
+Topic type: tf2_msgs/msg/TFMessage
+Topic type hash: RIHS01_e369d0f05a23ae52508854b66f6aa0437f3449d652e8cbf22d5abe85d020f087
+Node name: ros_gz_bridge
+Node namespace: /
+Topic type: tf2_msgs/msg/TFMessage
+Topic type hash: RIHS01_e369d0f05a23ae52508854b66f6aa0437f3449d652e8cbf22d5abe85d020f087
+Subscription count: 0
+
+### ros2 topic info -v /cmd_vel
+Type: geometry_msgs/msg/Twist
+Publisher count: 0
+Subscription count: 1
+Node name: ros_gz_bridge
+Node namespace: /
+Topic type: geometry_msgs/msg/Twist
+Topic type hash: RIHS01_9c45bf16fe0983d80e3cfe750d6835843d265a9a6c46bd2e609fcddde6fb8d2a
+
+### ros2 topic info -v /joint_states
+Type: sensor_msgs/msg/JointState
+Publisher count: 1
+Node name: ros_gz_bridge
+Node namespace: /
+Topic type: sensor_msgs/msg/JointState
+Topic type hash: RIHS01_a13ee3a330e346c9d87b5aa18d24e11690752bd33a0350f11c5882bc9179260e
+Subscription count: 1
+Node name: robot_state_publisher
+Node namespace: /
+Topic type: sensor_msgs/msg/JointState
+Topic type hash: RIHS01_a13ee3a330e346c9d87b5aa18d24e11690752bd33a0350f11c5882bc9179260e
+

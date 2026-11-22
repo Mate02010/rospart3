@@ -1,0 +1,21 @@
+$ ros2 control load_controller --set-state active joint_state_broadcaster
+Successfully loaded controller joint_state_broadcaster
+Successfully loaded controller joint_state_broadcaster into state active
+$ ros2 control load_controller --set-state active diff_drive_controller
+[INFO] [1795190995.941872124] [_ros2cli_1863]: waiting for service /controller_manager/list_controllers to become available...
+Successfully loaded controller diff_drive_controller
+Successfully loaded controller diff_drive_controller into state active
+$ ros2 control list_controllers
+diff_drive_controller   diff_drive_controller/DiffDriveController      active
+joint_state_broadcaster joint_state_broadcaster/JointStateBroadcaster  active
+$ ros2 control list_hardware_interfaces
+command interfaces
+	diff_drive_controller/angular/velocity [available] [unclaimed]
+	diff_drive_controller/linear/velocity [available] [unclaimed]
+	left_wheel_joint/velocity [available] [claimed]
+	right_wheel_joint/velocity [available] [claimed]
+state interfaces
+	left_wheel_joint/position
+	left_wheel_joint/velocity
+	right_wheel_joint/position
+	right_wheel_joint/velocity

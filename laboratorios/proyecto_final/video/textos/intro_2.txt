@@ -1,0 +1,1 @@
+Robot diferencial en una bodega: control, EKF, SLAM, AMCL, Nav2 y misión por waypoints

@@ -1,0 +1,1 @@
+Mapa de 5 cm por celda: error medio de 3 cm y todos los bordes de los obstáculos

@@ -1,0 +1,59 @@
+{
+  "etiqueta": "rapido",
+  "mapa": "/mnt/c/Users/BRAYAN MATEO BRAVO L/Documents/ChatGPT/Universidad/Robotica/Corte 3/Proyecto_Final/proyecto_final_ws/src/dif_bot/maps/bodega_rapido.yaml",
+  "mundo": "/mnt/c/Users/BRAYAN MATEO BRAVO L/Documents/ChatGPT/Universidad/Robotica/Corte 3/Proyecto_Final/proyecto_final_ws/src/dif_bot/worlds/bodega.sdf",
+  "resolucion_m": 0.05,
+  "tamano_celdas": [
+    239,
+    160
+  ],
+  "tamano_m": [
+    11.95,
+    8.0
+  ],
+  "origen": [
+    -5.968,
+    -4.031,
+    0.0
+  ],
+  "celdas": {
+    "ocupadas": 1988,
+    "libres": 34239,
+    "desconocidas": 2013
+  },
+  "exactitud": {
+    "media_m": 0.0265,
+    "mediana_m": 0.026,
+    "p95_m": 0.057,
+    "max_m": 0.094,
+    "media_sin_espurias_m": 0.0265
+  },
+  "completitud": {
+    "fraccion": 1.0,
+    "tolerancia_m": 0.1,
+    "celdas_borde": 1484,
+    "celdas_borde_cubiertas": 1484,
+    "por_obstaculo": {
+      "muro_norte": 1.0,
+      "muro_sur": 1.0,
+      "muro_este": 1.0,
+      "muro_oeste": 1.0,
+      "muro_interior_1": 1.0,
+      "muro_interior_2": 1.0,
+      "estante_1": 1.0,
+      "estante_2": 1.0,
+      "estante_3": 1.0,
+      "caja_1": 1.0,
+      "caja_2": 1.0,
+      "caja_3": 1.0,
+      "columna_1": 1.0,
+      "columna_2": 1.0
+    }
+  },
+  "espurias": {
+    "celdas": 0,
+    "fraccion_de_ocupadas": 0.0,
+    "umbral_m": 0.15
+  },
+  "cobertura_libre": 0.9862
+}

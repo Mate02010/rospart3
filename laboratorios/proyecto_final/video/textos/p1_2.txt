@@ -1,0 +1,1 @@
+ros2_control con diff_drive_controller: los controladores se activan a mano y la odometría la publica el controlador

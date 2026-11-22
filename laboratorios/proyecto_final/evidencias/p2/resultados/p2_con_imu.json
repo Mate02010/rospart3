@@ -1,0 +1,19 @@
+{
+  "etiqueta": "con_imu",
+  "trayectoria": "cuadrado de 1.0 m, 2 vueltas, v=0.3 m/s, w=0.6 rad/s",
+  "muestras": 2884,
+  "ruedas": {
+    "error_final_m": 0.058,
+    "error_max_m": 0.059,
+    "error_rms_m": 0.039,
+    "error_yaw_final_deg": 3.47,
+    "error_yaw_max_deg": 7.73
+  },
+  "ekf": {
+    "error_final_m": 0.012,
+    "error_max_m": 0.064,
+    "error_rms_m": 0.033,
+    "error_yaw_final_deg": 0.0,
+    "error_yaw_max_deg": 0.78
+  }
+}

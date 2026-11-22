@@ -1,0 +1,25 @@
+# Proyecto final: misión de recorrido por la bodega (la lee scripts/mision.py).
+#
+# Coordenadas en el frame map. El mapa de SLAM se hizo arrancando en el origen del
+# mundo con yaw 0, así que map coincide con el mundo de Gazebo (worlds/bodega.sdf).
+#   yaw_deg : orientación final en grados (0 = +x, 90 = +y)
+#   espera_s: tiempo que el robot se queda quieto en el punto
+#
+# Recorrido en sentido horario: noreste -> cuarto sureste -> sur -> suroeste -> noroeste
+# -> base. Todos los puntos quedan a 0,7 m o más de cualquier obstáculo.
+mision:
+  nombre: recorrido_bodega
+  frame: map
+  waypoints:
+    # Frente a la estantería 3 (lado oeste), mirando hacia ella.
+    - {nombre: Estante 3, x: 3.5, y: 2.0, yaw_deg: 0, espera_s: 3}
+    # Cuarto del sureste, detrás del muro interior 2, frente a la caja 3.
+    - {nombre: Carga sureste, x: 3.5, y: -3.0, yaw_deg: 30, espera_s: 3}
+    # Zona de carga del sur, al lado de la caja 2 (mirando hacia ella).
+    - {nombre: Carga sur, x: 0.5, y: -2.6, yaw_deg: 180, espera_s: 3}
+    # Pasillo sur, frente a la estantería 2.
+    - {nombre: Estante 2, x: -4.0, y: -2.6, yaw_deg: 90, espera_s: 3}
+    # Zona del noroeste, detrás del muro interior 1, frente a la estantería 1.
+    - {nombre: Estante 1, x: -4.0, y: 3.1, yaw_deg: -90, espera_s: 3}
+    # Regreso a la base (punto de partida).
+    - {nombre: Base, x: 0.0, y: 0.0, yaw_deg: 0, espera_s: 0}

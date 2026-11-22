@@ -187,3 +187,8 @@ ros2 topic echo /scan --once
 
 Tópicos del puente (`]` va de ROS 2 a Gazebo y `[` de Gazebo a ROS 2):\
 `/cmd_vel`, `/clock`, `/odom`, `/scan`, `/imu` y `/camera/image`.
+
+
+## Proyecto final de Robótica - Corte 3
+
+[Robot diferencial: EKF, SLAM, AMCL, Nav2 y misión autónoma](laboratorios/proyecto_final/README.md). Código, mapas, imágenes, registros de P1-P5 y video completo.
